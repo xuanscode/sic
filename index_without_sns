@@ -50,8 +50,6 @@
 						<div id="popup-text">
 							<span class="popup-link" onclick='location.href="tel:0958-284-982"'>02&nbsp;2351&nbsp;2750</span>
 							<span class="popup-link" onclick='location.href="mailto:hi@sparklab.tw"'>hi@sparklab.tw</span><br><br>
-							<span class="popup-link" onclick='location.href="https://www.facebook.com/people/靈感時空-Spark-Immersive/61562282013347/"'><img src="./image/popup-fb.png" width="12" height="12"> 靈感時空 Facebook</span>
-							<span class="popup-link" onclick='location.href="https://www.instagram.com/spark_immersive_center/"'><img src="./image/popup-ins.png" width="12px" height="12px"> 靈感時空 Instagram</span><br><br>
 							<span class="popup-link" onclick='location.href="https://goo.gl/maps/HPiPrsR4JtShPEUN9"'>100台北市中正區新生南路一段54巷8號1F</span>
 							<span>營業時間｜週一至週五（國定假日除外）&nbsp;09：30&nbsp;~&nbsp;18：30</span>
 						</div>
@@ -61,19 +59,18 @@
 						<div class="popup-menu-bar">
 							<button class="popup-menu-btn" onclick="Popup_team()" >
 								<p>團隊介紹</p></button>
-							<button class="popup-menu-btn" onclick="Popup_service()" >
-								<p>服務項目</p></button>
 							<button class="popup-menu-btn" onclick="Popup_space()" >
 								<p>空間介紹</p></button>
+							<button class="popup-menu-btn" onclick="Popup_service()" >
+								<p>服務範圍</p></button>
 							<button class="popup-menu-btn" onclick="Popup_map()" >
 								<p>交通位置</p></button>
 								<button class="popup-menu-btn" onclick="Popup_contact()" >
-								<p>聯絡我們</p></button><br>
-								
+								<p>聯絡我們</p></button>
 						</div>
 						<div class="popup-footer">
 							<p id="popup-policy" onclick='window.location.href="/Privacy&CookiePolicy"'>Privacy & Cookie Policy</p>
-							<p>Spark Immersive Center © 2024</p>
+							<p>Spark Immersive Center © 2023</p>
 						</div>
 					</div>
 
@@ -90,8 +87,8 @@
 				<div class="logo" onclick='location.href="/"'><img id="logo-img" src="./image/LOGO.svg"></div>
 				<div class="menu-bar">
 					<button class="menu-btn" onclick='location.href="#team"'><span class="btn-ainmate"></span><p>團隊介紹</p></button>
-					<button class="menu-btn" onclick='location.href="#service"'><span class="btn-ainmate"></span><p>服務項目</p></button>
 					<button class="menu-btn" onclick='location.href="#space"'><span class="btn-ainmate"></span><p>空間介紹</p></button>
+					<button class="menu-btn" onclick='location.href="#service"'><span class="btn-ainmate"></span><p>服務範圍</p></button>
 					<button class="menu-btn" onclick='location.href="#map"'><span class="btn-ainmate"></span><p>交通位置</p></button>
 				</div>
 				<div class="contact">
@@ -135,93 +132,28 @@
 				</div>
 				<div id="team-content01" data-aos="fade-up">
 					<div id="team-hollow-star"></div>
-					<div id="team-title01">Our team<h1>團隊介紹</h1></div>
+					<div id="team-title01">團隊介紹</div>
 					<div id="team-content-text">
 						<h1>靈感綻放，探索體驗可能</h1><br>
 						<p>團隊致力於實現藝術產業與尖端技術的融合，成為傳統與未來的連結。專注於藝術產業的媒體行銷整合與實體沈浸式展演內容的製作，線上媒體平台與線下展演活動的整合策略，促進藝術與技術的無縫整合，提供多元化、豐富的體驗需求。期望能建構五感碰撞的衝擊感，展示出豐富多樣的實驗性質，從體感互動、虛擬實境到沉浸式空間，透過多元藝術樣貌展示，為創作帶來豐富的層次與深度。
 						掌握「提供樂趣」及「創造啟發性」的元素，讓我們一起將沈浸式體驗融入生活日常。</p></div>
 				</div>
-				
-
 				<div id="team-title02" data-aos="fade-up">Spark&nbsp;Immersive&nbsp;Center</div>
 				<div id="team-info" data-aos="fade-up"></div>
 			</div>
-
-			<div id="service">
-				<div data-aos="fade-up">
-				 <div id="service-titleEN">Our&nbsp;services</div>
-				 <div id="service-titleCN">服務項目</div>
-				</div>
-				
-
-			    <div id="service-content01" data-aos="fade-up">
-				 <div id="service-content-text">
-					<p>Spark Immersive Center 團隊提供的解決方案，依照客戶需求，進行全面性的執行製作。從企劃規劃、腳本製作、內容規劃、硬體建置、程式設計到最後硬體系統安裝。
-						<br class="desktop">降低想像與實現的距離、減少溝通落差，創造更美好的體驗感受。</p>
-						<br>
-						<div class="space-service-line" data-aos="fade-up"></div>
-					<div id="service-wrapper"><div class="service-title01" data-aos="fade-up">
-						企劃規劃</div></div>
-					<div class="space-service-line" data-aos="fade-up"></div>
-					<div id="service-wrapper"><div class="service-title01" data-aos="fade-up">
-						腳本製作
-						
-					</div></div>
-					<div class="space-service-line" data-aos="fade-up"></div>
-					<div id="service-wrapper">
-					<div class="service-title01" data-aos="fade-up">
-						內容規劃
-					</div><div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;text-align:right;">
-						影像拍攝<br>2D 動畫<br>3D 動畫<br>空拍攝影
-					</div></div>
-					<div class="space-service-line" data-aos="fade-up"></div>
-					<div id="service-wrapper">
-					<div class="service-title01" data-aos="fade-up">
-						程式設計
-					</div><div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;text-align:right;">
-						互動系統<br>體感程式
-					</div></div>
-					<div class="space-service-line" data-aos="fade-up"></div>
-					<div id="service-wrapper">
-					<div class="service-title01" data-aos="fade-up">
-					硬體建置</div>
-						<div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;text-align:right;">
-							投影機<br>LED 面板<br>燈光系統<br>音響系統<br>感應設備
-						</div></div>
-					<div class="space-service-line" data-aos="fade-up"></div>
-					<div id="service-wrapper">
-						<div class="service-title01" data-aos="fade-up">
-					
-						硬體系統安裝</div>
-					
-					<div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;text-align:right;">
-						投影機安裝架設<br>機房搭建
-					</div></div>
-					<div class="space-service-line" data-aos="fade-up"></div>
-				 </div>
-			    </div>
-		    </div>
-	
-		
-		
-		
-		</div>
-
-
-
 			<div id="space">
 				<div id="space-content01" data-aos="fade-up">
-					<div id="space-wrapper" data-aos="fade-up">
-						<div id="space-title-EN" data-aos="fade-up">Our&nbsp;space</div>
-						<div id="space-title-CN" data-aos="fade-up">空間介紹</div>
-						<div id="space-floorPlan" data-aos="fade-up"><img src="./image/space-FP.svg"></div>
-						<div id="space-floorPlan-app" data-aos="fade-up"><img src="./image/space-FP-app.svg"></div>
-						<div id="space-floorInfo" data-aos="fade-up">
+					<div id="space-wrapper">
+						<div id="space-title-EN">Our&nbsp;space</div>
+						<div id="space-title-CN">空間介紹</div>
+						<div id="space-floorPlan"><img src="./image/space-FP.svg"></div>
+						<div id="space-floorPlan-app"><img src="./image/space-FP-app.svg"></div>
+						<div id="space-floorInfo">
 							<div class="space-FP-content">
 								<div class="space-FP-list-num"></div>
 								<div class="space-FP-box">
 									<span class="space-FP-title">空間尺寸</span><br><br>
-									<span class="space-FP-text">長 733.3cm × 寬 696.5cm × 高 270cm</span>
+									<span class="space-FP-text">長733.3cm x 寬696.5cm x 高270cm</span>
 								</div>
 							
 							</div>
@@ -229,7 +161,7 @@
 								<div class="space-FP-list-num02"></div>
 								<div class="space-FP-box">
 									<span class="space-FP-title">容納人數</span><br><br>
-									<span class="space-FP-text">16 人<span class="space-FP-text-grey">（坐席）</span>&nbsp;/&nbsp; 30 人<span class="space-FP-text-grey">（站席）</span></span>	
+									<span class="space-FP-text">16人<span class="space-FP-text-grey">（坐席）</span>&nbsp;/&nbsp; 30 人<span class="space-FP-text-grey">（站席）</span></span>	
 								</div>
 								
 							</div>
@@ -242,13 +174,12 @@
 							<div class="space-arrow"></div>
 							<div class="space-arrow"></div>
 						</div>
-						<div id="space-sound-titleEN"><font color="#969697" size="4" face="DM Sans">acoustic architecture system</font><br></div>
 						<div id="space-title">
 							聲學架構系統
 						</div>
 						<div id="space-title-info">	
-							在靈感時空 Spark Immersive Center 中，<br>
-							擁有全台第一完整的沈浸式聲學架構系統。
+							在靈感時空Spark Immersive Center中，<br>
+							擁有全台第一完整的沈浸式聲學架構系統
 						</div>
 					</div>
 					<div id="space-sound-content" >
@@ -257,7 +188,7 @@
 								<div class="space-sound-num"><span>001</span></div>
 								<div class="space-sound-title">環繞音場設計</div>
 								<div class="space-sound-img-app"><img src="./image/sound-speaker.svg"></div>
-								<div class="space-sound-text">使用 16.4 聲道，20 顆喇叭環繞式的網狀架構，針對空間進行專業的系統校正。</div>
+								<div class="space-sound-text">使用16.4聲道，20顆喇叭環繞式的網狀架構，針對空間進行專業的系統校正。</div>
 							</div>
 							<div class="space-sound-img"><img src="./image/sound-speaker.svg"></div>
 						</div>
@@ -268,7 +199,7 @@
 								<div class="space-sound-num"><span>002</span></div>
 								<div class="space-sound-title">隔音系統建構</div>
 								<div class="space-sound-img-app"><img src="./image/sound-soundproofwall.svg"></div>
-								<div class="space-sound-text">建構出 360 度包圍式的隔音牆結構，每面牆均達 STC 50DB 以上的隔音乘載量。</div>
+								<div class="space-sound-text">建構出360度包圍式的隔音牆結構，每面牆均達STC 50DB以上的隔音乘載量。</div>
 							</div>
 						</div>
 						<div class="space-sound-line" data-aos="fade-up"></div>
@@ -296,7 +227,7 @@
 				</div>
 				<div id="space-content03">
 					<div id="space-hardware-wrapper">
-						<div id="space-hardware-title" data-aos="fade-up">visual hardware system<h1>硬體視覺系統</h1>
+						<div id="space-hardware-title" data-aos="fade-up"><h1>硬體視覺系統</h1>
 							<span>在「沉浸式硬體視覺系統」同樣精心選用高品質的裝潢材質和先進的投影技術，<br class="desktop">為觀眾帶來極具震撼力和沉浸感的視覺體驗。</span>
 						</div>
 						<div class="space-hardware-line" data-aos="fade-up"></div>
@@ -305,23 +236,23 @@
 							<div class="space-hardware-deco"><img src="./image/hardware-deco01.svg"></div>
 							<div class="space-hardware-content">
 								<span class="space-hardware-subtitle">空間牆面投影</span>
-								<span class="space-hardware-text" >採用加拿大 Screen Goo 特殊銀幕漆，具卓越的反射特性，讓投影的畫面呈現得更為鮮明生動。</span>
+								<span class="space-hardware-text" >採用加拿大Screen Goo特殊銀幕漆，具卓越的反射特性，讓投影的畫面呈現得更為鮮明生動。</span>
 							</div>
 							<div class="space-hardware-deco"><img src="./image/hardware-deco02.svg"></div>
 							<div class="space-hardware-img-app"><img src="./image/hardware-wall.svg"></div>
-							<div class="space-hardware-text-app">採用加拿大 Screen Goo 特殊銀幕漆，具卓越的反射特性，讓投影的畫面呈現得更為鮮明生動。</div>
+							<div class="space-hardware-text-app">採用加拿大Screen Goo特殊銀幕漆，具卓越的反射特性，讓投影的畫面呈現得更為鮮明生動。</div>
 						</div>
 						<div class="space-hardware-line" data-aos="fade-up"></div>
 						<div class="space-hardware-block" data-aos="fade-up">
 							<div class="space-hardware-deco"><img src="./image/hardware-deco01.svg"></div>
 							<div class="space-hardware-content">
 								<span class="space-hardware-subtitle">地面投影</span>
-								<span class="space-hardware-text">透過選用英國 Harlequin PVC 材質，確保投影的視覺效果飽滿且均勻，並在觀看體驗上達到最佳表現。</span>
+								<span class="space-hardware-text">透過選用英國Harlequin PVC材質，確保投影的視覺效果飽滿且均勻，並在觀看體驗上達到最佳表現。</span>
 							</div>
 							<div class="space-hardware-deco"><img src="./image/hardware-deco02.svg"></div>
 							<div class="space-hardware-img"><img src="./image/hardware-floor.svg"></div>
 							<div class="space-hardware-img-app"><img src="./image/hardware-floor.svg"></div>
-							<div class="space-hardware-text-app">透過選用英國 Harlequin PVC 材質，確保投影的視覺效果飽滿且均勻，並在觀看體驗上達到最佳表現。</div>
+							<div class="space-hardware-text-app">透過選用英國Harlequin PVC材質，確保投影的視覺效果飽滿且均勻，並在觀看體驗上達到最佳表現。</div>
 						</div>
 						<div class="space-hardware-line" data-aos="fade-up"></div>
 						<div class="space-hardware-block" data-aos="fade-up">
@@ -329,16 +260,20 @@
 							<div class="space-hardware-deco"><img src="./image/hardware-deco01.svg"></div>
 							<div class="space-hardware-content">
 								<span class="space-hardware-subtitle">投影設備配置</span>
-								<span class="space-hardware-text">10 台 4K&nbsp;8000 高流明機台，具高解析度、高顯色度，呈現更加細緻的影像，無縫投射至 15 坪空間中，確保觀眾能無死角地完整享受視覺饗宴。</span>
+								<span class="space-hardware-text">10台4K&nbsp;8000高流明機台，具高解析度、高顯色度，呈現更加細緻的影像，無縫投射至15坪空間中，確保觀眾能無死角地完整享受視覺饗宴。</span>
 							</div>
 							<div class="space-hardware-deco"><img src="./image/hardware-deco02.svg"></div>
 							<div class="space-hardware-img-app"><img src="./image/hardware-projector.svg"></div>
-							<div class="space-hardware-text-app">10 台 4K&nbsp;8000 高流明機台，具高解析度、高顯色度，呈現更加細緻的影像，無縫投射至 15 坪空間中，確保觀眾能無死角地完整享受視覺饗宴。</div>
+							<div class="space-hardware-text-app">10台4K&nbsp;8000高流明機台，具高解析度、高顯色度，呈現更加細緻的影像，無縫投射至15坪空間中，確保觀眾能無死角地完整享受視覺饗宴。</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
+			<div id="service" data-aos="fade-up">
+				<div id="service-titleEN">Our&nbsp;services</div>
+				<div id="service-titleCN">服務範圍</div>
+				<div id="service-content">Spark Immersive Center團隊提供的解決方案，依照客戶需求，進行全面性的沉浸式規劃，<br class="desktop">降低想像與實現的距離、減少溝通落差，創造更美好的體驗感受。</div>
+			</div>
 			<div id="map-container">
 				<div id="map"></div>
 			</div>
@@ -352,7 +287,7 @@
 					<div id="ticker">
 						<div id="ticker-CN">聯絡我們</div>
 						<img src="./image/ticker-arrow.svg">
-						<div id="ticker-EN"><i>SPARK&nbsp;IMMERSIVE&nbsp;CENTER</i></div>
+						<div id="ticker-EN">SPARK&nbsp;IMMERSIVE&nbsp;CENTER</div>
 					</div>
 					<div id="ticker">
 						<div id="ticker-CN">聯絡我們</div>
@@ -362,7 +297,7 @@
 					<div id="ticker" class="desktop">
 						<div id="ticker-CN">聯絡我們</div>
 						<img src="./image/ticker-arrow.svg">
-						<div id="ticker-EN"><i>SPARK&nbsp;IMMERSIVE&nbsp;CENTER</i></div>
+						<div id="ticker-EN">SPARK&nbsp;IMMERSIVE&nbsp;CENTER</div>
 					</div>
 					<div id="ticker" class="desktop">
 						<div id="ticker-CN">聯絡我們</div>
