@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatiable" content="ie=edge">
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="email=no"/>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7124YV7P8F"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-7124YV7P8F');
+	</script>
+	<link rel="icon" href="./favicon.ico">
+	<link href="./style_homepage.css" rel="stylesheet">
+	<link href="./style_app_homepage.css" rel="stylesheet">
+	<link rel="stylesheet" href="./aos.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<script type="text/javascript" src="./homepage_map.js"></script>
+	<script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+	<script type="importmap">
+	  {
+	    "imports": {
+	      "three": "https://unpkg.com/three@0.156.1/build/three.module.js",
+	      "three/addons/": "https://unpkg.com/three@0.156.1/examples/jsm/"
+	    }
+	  }
+	</script>
+	
+	<title>靈感時空 Spark Immersive Center</title>
+</head>
+<body>
+	<div class="BG" id="top">
+		<div class="popup">
+				<div class="popup-contact">
+
+					<div id="popup-close-btn"  onclick="Popup_FadeOut()">
+						close
+						<svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path id="popup-close-icon" d="M17 7L7 17M17 17L7 7" stroke="#18181A" stroke-width="1.5" stroke-linecap="round"/>
+						</svg>	
+					</div>
+					<div id="popup-content-block">
+						<div id="popup-title"><img src="./image/popup-phone.svg">聯絡我們</div>
+						<div id="popup-text">
+							<span class="popup-link" onclick='location.href="tel:0958-284-982"'>02&nbsp;2351&nbsp;2750</span>
+							<span class="popup-link" onclick='location.href="mailto:hi@sparklab.tw"'>hi@sparklab.tw</span><br><br>
+							<span class="popup-link" onclick='location.href="https://www.facebook.com/people/靈感時空-Spark-Immersive/61562282013347/"'><img src="./image/popup-fb.png" width="12" height="12"> 靈感時空 Facebook</span>
+							<span class="popup-link" onclick='location.href="https://www.instagram.com/spark_immersive_center/"'><img src="./image/popup-ins.png" width="12px" height="12px"> 靈感時空 Instagram</span><br><br>
+							<span class="popup-link" onclick='location.href="https://goo.gl/maps/HPiPrsR4JtShPEUN9"'>100台北市中正區新生南路一段54巷8號1F</span>
+							<span>營業時間｜週一至週五（國定假日除外）&nbsp;09：30&nbsp;~&nbsp;18：30</span>
+						</div>
+					</div>
+					<div id="popup-content-block-app">
+						<div class="popup-logo" onclick='location.href="/"'><img id="popup-logo-img" src="./image/popup-app-logo.svg"></div>
+						<div class="popup-menu-bar">
+							<button class="popup-menu-btn" onclick="Popup_team()" >
+								<p>團隊介紹</p></button>
+							<button class="popup-menu-btn" onclick="Popup_service()" >
+								<p>服務項目</p></button>
+							<button class="popup-menu-btn" onclick="Popup_space()" >
+								<p>空間介紹</p></button>
+							<button class="popup-menu-btn" onclick="Popup_map()" >
+								<p>交通位置</p></button>
+								<button class="popup-menu-btn" onclick="Popup_contact()" >
+								<p>聯絡我們</p></button>
+								<botton class="popup-menu-btn" onclick='location.href="https://www.facebook.com/people/靈感時空-Spark-Immersive/61562282013347/"'>
+								<p><img src="./image/popup-fb.png" width="12" height="12"> 靈感時空 Facebook</p></botton>
+							    <botton class="popup-menu-btn" onclick='location.href="https://www.instagram.com/spark_immersive_center/"'>
+								<p><img src="./image/popup-ins.png" width="12px" height="12px"> 靈感時空 Instagram</p></botton>
+								
+						</div>
+						<div class="popup-footer">
+							
+							<span class="popup-menu-btn2" id="popup-policy" onclick='window.location.href="/Privacy&CookiePolicy"'>Privacy & Cookie Policy</span>
+							<p>Spark Immersive Center © 2024</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div id="back2top-btn" onclick='location.href="#top"'>
+				<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="40" cy="40" r="24.5" fill="white" stroke="#1A1A1A"/>
+					<path  id="back2top-arrow" d="M47 44L40 37L33 44" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</div>
+		<header>
+			<div class="header-container">
+				<div class="logo" onclick='location.href="/"'><img id="logo-img" src="./image/LOGO.svg"></div>
+				<div class="menu-bar">
+					<button class="menu-btn" onclick='location.href="#team"'><span class="btn-ainmate"></span><p>團隊介紹</p></button>
+					<button class="menu-btn" onclick='location.href="#service"'><span class="btn-ainmate"></span><p>服務項目</p></button>
+					<button class="menu-btn" onclick='location.href="#space"'><span class="btn-ainmate"></span><p>空間介紹</p></button>
+					<button class="menu-btn" onclick='location.href="#map"'><span class="btn-ainmate"></span><p>交通位置</p></button>
+				</div>
+				<div class="contact">
+					<button id="contact-btn" title="popup-btn" onclick="Popup_FadeIn()">Contact</button>
+					<button id="contact-btn-app"  title="popup-btn" onclick="Popup_FadeIn()">
+						<svg id="contact-btn-app-icon" width="4" height="14" viewBox="0 0 4 14" fill="#F5F5F5" xmlns="http://www.w3.org/2000/svg">
+							<circle id="Ellipse 8" cx="2" cy="1.5" r="1.5" />
+							<circle id="Ellipse 9" cx="2" cy="7" r="1.5" />
+							<circle id="Ellipse 10" cx="2" cy="12.5" r="1.5" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<div class="main-body">
+			<div id="head-container">				
+				<div id="head-top" data-aos="fade-down">
+					<!-- <div id="head-title" >Spark Inspiration,<br>Uncover Boundless Possibilities</div> -->
+					<div id="head-circularText" onclick='location.href="#team"'>
+						<div id="head-arrow"></div>
+					</div>
+				</div>
+				<div id="head-img-app"></div>
+				<div id="head-img">
+					
+					<!-- <div id="head-circle" data-aos="fade-up"></div> -->
+<!-- 					<div id="head-top" data-aos="fade-down">
+							<div id="head-title" >Spark Inspiration,<br>Uncover Boundless Possibilities</div>
+							<div id="head-circularText" onclick='location.href="#team"'>
+								<div id="head-arrow"></div>
+							</div>
+					</div> -->
+				</div>
+
+			</div>
+			<div id="team">
+				<div id="team-deco-star-container">
+					<div id="team-left-star"></div>
+					<div id="team-star-space"></div>
+					<div id="team-right-star"></div>
+				</div>
+				<div id="team-content01" data-aos="fade-up">
+					<div id="team-hollow-star"></div>
+					<div id="team-title01">Our team<h1>團隊介紹</h1></div>
+					<div id="team-content-text">
+						<h1>靈感綻放，探索體驗可能</h1><br>
+						<p>團隊致力於實現藝術產業與尖端技術的融合，成為傳統與未來的連結。專注於藝術產業的媒體行銷整合與實體沈浸式展演內容的製作，線上媒體平台與線下展演活動的整合策略，促進藝術與技術的無縫整合，提供多元化、豐富的體驗需求。期望能建構五感碰撞的衝擊感，展示出豐富多樣的實驗性質，從體感互動、虛擬實境到沉浸式空間，透過多元藝術樣貌展示，為創作帶來豐富的層次與深度。
+						掌握「提供樂趣」及「創造啟發性」的元素，讓我們一起將沈浸式體驗融入生活日常。</p></div>
+				</div>
+				
+
+				<div id="team-title02" data-aos="fade-up">Spark&nbsp;Immersive&nbsp;Center</div>
+				<div id="team-info" data-aos="fade-up"></div>
+			</div>
+
+			<div id="service">
+				<div data-aos="fade-up">
+				 <div id="service-titleEN">Our&nbsp;services</div>
+				 <div id="service-titleCN">服務項目</div>
+				</div>
+				
+
+			    <div id="service-content01" data-aos="fade-up">
+				 <div id="service-content-text">
+					<p>Spark Immersive Center 團隊提供的解決方案，依照客戶需求，進行全面性的執行製作。從企劃規劃、腳本製作、內容規劃、硬體建置、程式設計到最後硬體系統安裝。
+						<br class="desktop">降低想像與實現的距離、減少溝通落差，創造更美好的體驗感受。</p>
+						<br>
+						<div class="space-service-line" data-aos="fade-up"></div>
+					<div id="service-wrapper"><div class="service-title01" data-aos="fade-up">
+						企劃規劃</div></div>
+					<div class="space-service-line" data-aos="fade-up"></div>
+					<div id="service-wrapper"><div class="service-title01" data-aos="fade-up">
+						腳本製作
+						
+					</div></div>
+					<div class="space-service-line" data-aos="fade-up"></div>
+					<div id="service-wrapper">
+					<div class="service-title01" data-aos="fade-up">
+						內容規劃
+					</div><div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;text-align:right;">
+						影像拍攝<br>2D 動畫<br>3D 動畫<br>空拍攝影
+					</div></div>
+					<div class="space-service-line" data-aos="fade-up"></div>
+					<div id="service-wrapper">
+					<div class="service-title01" data-aos="fade-up">
+						程式設計
+					</div><div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;text-align:right;">
+						互動系統<br>體感程式
+					</div></div>
+					<div class="space-service-line" data-aos="fade-up"></div>
+					<div id="service-wrapper">
+					<div class="service-title01" data-aos="fade-up">
+					硬體建置</div>
+						<div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;text-align:right;">
+							投影機<br>LED 面板<br>燈光系統<br>音響系統<br>感應設備
+						</div></div>
+					<div class="space-service-line" data-aos="fade-up"></div>
+					<div id="service-wrapper">
+						<div class="service-title01" data-aos="fade-up">
+					
+						硬體系統安裝</div>
+					
+					<div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;text-align:right;">
+						投影機安裝架設<br>機房搭建
+					</div></div>
+					<div class="space-service-line" data-aos="fade-up"></div>
+				 </div>
+			    </div>
+		    </div>
+	
+		
+		
+		
+		</div>
+
+
+
+			<div id="space">
+				<div id="space-content01" data-aos="fade-up">
+					<div id="space-wrapper" data-aos="fade-up">
+						<div id="space-title-EN" data-aos="fade-up">Our&nbsp;space</div>
+						<div id="space-title-CN" data-aos="fade-up">空間介紹</div>
+						<div id="space-floorPlan" data-aos="fade-up"><img src="./image/space-FP.svg"></div>
+						<div id="space-floorPlan-app" data-aos="fade-up"><img src="./image/space-FP-app.svg"></div>
+						<div id="space-floorInfo" data-aos="fade-up">
+							<div class="space-FP-content">
+								<div class="space-FP-list-num"></div>
+								<div class="space-FP-box">
+									<span class="space-FP-title">空間尺寸</span><br><br>
+									<span class="space-FP-text">長 733.3cm × 寬 696.5cm × 高 270cm</span>
+								</div>
+							
+							</div>
+							<div class="space-FP-content">
+								<div class="space-FP-list-num02"></div>
+								<div class="space-FP-box">
+									<span class="space-FP-title">容納人數</span><br><br>
+									<span class="space-FP-text">16 人<span class="space-FP-text-grey">（坐席）</span>&nbsp;/&nbsp; 30 人<span class="space-FP-text-grey">（站席）</span></span>	
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="space-content02">
+					<div id="space-sound-titleBlock" data-aos="fade-up">
+						<div class="space-arrow-container">
+							<div class="space-arrow"></div>
+							<div class="space-arrow"></div>
+						</div>
+						<div id="space-sound-titleEN"><font color="#969697" size="4" face="DM Sans">acoustic architecture system</font><br></div>
+						<div id="space-title">
+							聲學架構系統
+						</div>
+						<div id="space-title-info">	
+							在靈感時空 Spark Immersive Center 中，<br>
+							擁有全台第一完整的沈浸式聲學架構系統。
+						</div>
+					</div>
+					<div id="space-sound-content" >
+						<div class="space-sound-contentBlock" data-aos="fade-up">
+							<div class="space-sound-textBlock">
+								<div class="space-sound-num"><span>001</span></div>
+								<div class="space-sound-title">環繞音場設計</div>
+								<div class="space-sound-img-app"><img src="./image/sound-speaker.svg"></div>
+								<div class="space-sound-text">使用 16.4 聲道，20 顆喇叭環繞式的網狀架構，針對空間進行專業的系統校正。</div>
+							</div>
+							<div class="space-sound-img"><img src="./image/sound-speaker.svg"></div>
+						</div>
+						<div class="space-sound-line" data-aos="fade-up"></div>
+						<div class="space-sound-contentBlock" data-aos="fade-up">
+							<div class="space-sound-img"><img src="./image/sound-soundproofwall.svg"></div>
+							<div class="space-sound-textBlock">
+								<div class="space-sound-num"><span>002</span></div>
+								<div class="space-sound-title">隔音系統建構</div>
+								<div class="space-sound-img-app"><img src="./image/sound-soundproofwall.svg"></div>
+								<div class="space-sound-text">建構出 360 度包圍式的隔音牆結構，每面牆均達 STC 50DB 以上的隔音乘載量。</div>
+							</div>
+						</div>
+						<div class="space-sound-line" data-aos="fade-up"></div>
+						<div class="space-sound-contentBlock" data-aos="fade-up">
+							<div class="space-sound-textBlock">
+								<div class="space-sound-num"><span>003</span></div>
+								<div class="space-sound-title">聲音校正系統</div>
+								<div class="space-sound-img-app"><img src="./image/sound-soundsystem.svg"></div>
+								<div class="space-sound-text">採用了兩層式吸音棉結構，針對中頻與低頻進行精細的聲學處理，將雜音除去確保高品質的聲音傳輸，讓聲音在空間中展現更高的清晰度，減少回音與聲響共鳴的影響，為觀眾提供純淨而真實的聲響場域。</div>
+							</div>
+							<div class="space-sound-img"><img src="./image/sound-soundsystem.svg"></div>
+						</div>
+						<div class="space-sound-line" data-aos="fade-up"></div>
+						<div class="space-sound-contentBlock" data-aos="fade-up">
+							<div class="space-sound-img"><img src="./image/sound-acoustic-system.svg"></div>
+							<div class="space-sound-textBlock">
+								<div class="space-sound-num"><span>004</span></div>
+								<div class="space-sound-title">互動立體聲響設計</div>
+								<div class="space-sound-img-app"><img src="./image/sound-acoustic-system.svg"></div>
+								<div class="space-sound-text">沉浸式聲學架構系統，除了帶來聲響質感外，能增加立體互動性，透過精確的定位系統與立體聲效處理，設計出聲響的方向性，做出環繞音場，感受聲響、空間、體驗者三者交互關係。</div>
+							</div>
+						</div>
+						<div class="space-sound-set" data-aos="fade-up"><img src="./image/space-soundacoustic.svg"></div>
+					</div>
+				</div>
+				<div id="space-content03">
+					<div id="space-hardware-wrapper">
+						<div id="space-hardware-title" data-aos="fade-up">visual hardware system<h1>硬體視覺系統</h1>
+							<span>在「沉浸式硬體視覺系統」同樣精心選用高品質的裝潢材質和先進的投影技術，<br class="desktop">為觀眾帶來極具震撼力和沉浸感的視覺體驗。</span>
+						</div>
+						<div class="space-hardware-line" data-aos="fade-up"></div>
+						<div class="space-hardware-block" data-aos="fade-up">
+							<div class="space-hardware-img"><img src="./image/hardware-wall.svg"></div>
+							<div class="space-hardware-deco"><img src="./image/hardware-deco01.svg"></div>
+							<div class="space-hardware-content">
+								<span class="space-hardware-subtitle">空間牆面投影</span>
+								<span class="space-hardware-text" >採用加拿大 Screen Goo 特殊銀幕漆，具卓越的反射特性，讓投影的畫面呈現得更為鮮明生動。</span>
+							</div>
+							<div class="space-hardware-deco"><img src="./image/hardware-deco02.svg"></div>
+							<div class="space-hardware-img-app"><img src="./image/hardware-wall.svg"></div>
+							<div class="space-hardware-text-app">採用加拿大 Screen Goo 特殊銀幕漆，具卓越的反射特性，讓投影的畫面呈現得更為鮮明生動。</div>
+						</div>
+						<div class="space-hardware-line" data-aos="fade-up"></div>
+						<div class="space-hardware-block" data-aos="fade-up">
+							<div class="space-hardware-deco"><img src="./image/hardware-deco01.svg"></div>
+							<div class="space-hardware-content">
+								<span class="space-hardware-subtitle">地面投影</span>
+								<span class="space-hardware-text">透過選用英國 Harlequin PVC 材質，確保投影的視覺效果飽滿且均勻，並在觀看體驗上達到最佳表現。</span>
+							</div>
+							<div class="space-hardware-deco"><img src="./image/hardware-deco02.svg"></div>
+							<div class="space-hardware-img"><img src="./image/hardware-floor.svg"></div>
+							<div class="space-hardware-img-app"><img src="./image/hardware-floor.svg"></div>
+							<div class="space-hardware-text-app">透過選用英國 Harlequin PVC 材質，確保投影的視覺效果飽滿且均勻，並在觀看體驗上達到最佳表現。</div>
+						</div>
+						<div class="space-hardware-line" data-aos="fade-up"></div>
+						<div class="space-hardware-block" data-aos="fade-up">
+							<div class="space-hardware-img"><img src="./image/hardware-projector.svg"></div>
+							<div class="space-hardware-deco"><img src="./image/hardware-deco01.svg"></div>
+							<div class="space-hardware-content">
+								<span class="space-hardware-subtitle">投影設備配置</span>
+								<span class="space-hardware-text">10 台 4K&nbsp;8000 高流明機台，具高解析度、高顯色度，呈現更加細緻的影像，無縫投射至 15 坪空間中，確保觀眾能無死角地完整享受視覺饗宴。</span>
+							</div>
+							<div class="space-hardware-deco"><img src="./image/hardware-deco02.svg"></div>
+							<div class="space-hardware-img-app"><img src="./image/hardware-projector.svg"></div>
+							<div class="space-hardware-text-app">10 台 4K&nbsp;8000 高流明機台，具高解析度、高顯色度，呈現更加細緻的影像，無縫投射至 15 坪空間中，確保觀眾能無死角地完整享受視覺饗宴。</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="map-container">
+				<div id="map"></div>
+			</div>
+			<footer>
+				<div id="ticker-wrapper">
+					<div id="ticker">
+						<div id="ticker-CN">聯絡我們</div>
+						<img src="./image/ticker-arrow.svg">
+						<div id="ticker-EN">SPARK&nbsp;IMMERSIVE&nbsp;CENTER</div>
+					</div>
+					<div id="ticker">
+						<div id="ticker-CN">聯絡我們</div>
+						<img src="./image/ticker-arrow.svg">
+						<div id="ticker-EN"><i>SPARK&nbsp;IMMERSIVE&nbsp;CENTER</i></div>
+					</div>
+					<div id="ticker">
+						<div id="ticker-CN">聯絡我們</div>
+						<img src="./image/ticker-arrow.svg">
+						<div id="ticker-EN">SPARK&nbsp;IMMERSIVE&nbsp;CENTER</div>
+					</div>
+					<div id="ticker" class="desktop">
+						<div id="ticker-CN">聯絡我們</div>
+						<img src="./image/ticker-arrow.svg">
+						<div id="ticker-EN"><i>SPARK&nbsp;IMMERSIVE&nbsp;CENTER</i></div>
+					</div>
+					<div id="ticker" class="desktop">
+						<div id="ticker-CN">聯絡我們</div>
+						<img src="./image/ticker-arrow.svg">
+						<div id="ticker-EN">SPARK&nbsp;IMMERSIVE&nbsp;CENTER</div>
+					</div>
+				</div>
+				<div id="foo">
+					<div id="base">
+						<div id="foo-mail" onclick='location.href="mailto:hi@sparklab.tw"'><a>hi@sparklab.tw</a></div>
+						<div id="foo-phone" onclick='location.href="tel:0958-284-982"'><span>02&nbsp;2351&nbsp;2750</span></div>
+						<span id="foo-adress" onclick='location.href="https://goo.gl/maps/HPiPrsR4JtShPEUN9"'>100台北市中正區新生南路一段54巷8號1F</span>
+					<div class="app" >營業時間｜<br>週一至週五（國定假日除外） 09：30 ~ 18：30 <br class="app">　</div>
+					<div class="app" ><br class="app"><span class="popup-link" onclick='location.href="https://www.facebook.com/people/靈感時空-Spark-Immersive/61562282013347/"'><img src="./image/popup-app-fb.png" width="12" height="12" style="border:0"> 靈感時空 Facebook</span>
+						<br class="app"></div><div class="app" ><span class="popup-link" onclick='location.href="https://www.instagram.com/spark_immersive_center/"'><img src="./image/popup-app-ins.png" width="12" height="12" style="border:0"> 靈感時空 Instagram</span><br class="app"></div>
+						<br class="app">
+					</div>
+					<div id="policy"  onclick='window.location.href="/Privacy&CookiePolicy"'>Privacy&nbsp;&&nbsp;Cookie&nbsp;Policy<br class="app"></div>
+					<div id="company">Spark&nbsp;Immersive&nbsp;Center&nbsp;©&nbsp;2024 </div>
+				</div>
+			</footer>
+		</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+		AOS.init({
+		easing: 'ease-in-out-sine',
+		duration: 800
+		});
+		function Popup_FadeOut()
+		{
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  	}
+		function Popup_FadeIn() {
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  		// console.log(popup);
+		}
+
+		function Popup_team()
+		{
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  		window.location = '#team';
+
+	  	}
+	  	function Popup_space()
+		{
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  		window.location = '#space';
+
+	  	}
+	  	function Popup_service()
+		{
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  		window.location = '#service';
+
+	  	}
+
+		function Popup_map()
+		{
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  		window.location = '#map';
+
+	  	}
+	  	function Popup_contact()
+		{
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  		window.location = '#foo';
+
+	  	}
+
+
+
+    </script>
+    <script type="module" src="../header_interact.js"></script>
+</body>
+</html>
