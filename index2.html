@@ -48,12 +48,19 @@
 					<div id="popup-content-block">
 						<div id="popup-title"><img src="./image/popup-phone.svg">聯絡我們</div>
 						<div id="popup-text">
+							<span><b>新生辦公室 & 展示空間</b></span>
 							<span class="popup-link" onclick='location.href="tel:0958-284-982"'>02&nbsp;2351&nbsp;2750</span>
-							<span class="popup-link" onclick='location.href="mailto:hi@sparklab.tw"'>hi@sparklab.tw</span><br><br>
-							<span class="popup-link" onclick='location.href="https://www.facebook.com/people/靈感時空-Spark-Immersive/61562282013347/"'><img src="./image/popup-fb.png" width="12" height="12"> 靈感時空 Facebook</span>
-							<span class="popup-link" onclick='location.href="https://www.instagram.com/spark_immersive_center/"'><img src="./image/popup-ins.png" width="12px" height="12px"> 靈感時空 Instagram</span><br><br>
-							<span class="popup-link" onclick='location.href="https://goo.gl/maps/HPiPrsR4JtShPEUN9"'>100台北市中正區新生南路一段54巷8號1F</span>
-							<span>營業時間｜週一至週五（國定假日除外）&nbsp;09：30&nbsp;~&nbsp;18：30</span>
+							<span class="popup-link" onclick='location.href="mailto:hi@sparklab.tw"'>hi@sparklab.tw</span>
+							<span class="popup-link" onclick='location.href="https://goo.gl/maps/HPiPrsR4JtShPEUN9"'>100台北市中正區新生南路一段54巷8號1F</span><br>
+							<span><b>總公司</b></span>
+							<span class="popup-link" onclick='location.href="tel:0958-284-982"'>02&nbsp;2768&nbsp;9769</span>
+							<span class="popup-link" onclick='location.href="mailto:coolassic@cool-medialab.com"'>coolassic@cool-medialab.com</span>
+							<span class="popup-link" onclick='location.href="https://maps.app.goo.gl/ut46emsDYJhWGNJs7"'>110台北市信義區東興路69號9F</span>
+							<span>營業時間｜週一至週五（國定假日除外）&nbsp;09：30&nbsp;~&nbsp;18：30</span><br>
+							<span><a href="https://www.facebook.com/people/靈感時空-Spark-Immersive/61562282013347/"><img src="./image/popup-fb.png" width="12" height="12"> 靈感時空 Facebook</a>｜
+							<a href="https://www.instagram.com/spark_immersive_center/"><img src="./image/popup-ins.png" width="12px" height="12px"> 靈感時空 Instagram</a></span>
+							
+							
 						</div>
 					</div>
 					<div id="popup-content-block-app">
@@ -70,11 +77,9 @@
 								<button class="popup-menu-btn" onclick="Popup_contact()" >
 								<p>聯絡我們</p></button>
 								<botton class="popup-menu-btn" onclick='location.href="https://www.facebook.com/people/靈感時空-Spark-Immersive/61562282013347/"'>
-								<p><img src="./image/popup-fb.png" width="12" height="12"> 靈感時空 Facebook</p></botton>
-							    <botton class="popup-menu-btn" onclick='location.href="https://www.instagram.com/spark_immersive_center/"'>
-								<p><img src="./image/popup-ins.png" width="12px" height="12px"> 靈感時空 Instagram</p></botton>
-								
-						</div>
+									<p><img src="./image/popup-fb.png" width="12" height="12"> 靈感時空 Facebook</p></botton>
+									<botton class="popup-menu-btn" onclick='location.href="https://www.instagram.com/spark_immersive_center/"'>
+									<p><img src="./image/popup-ins.png" width="12px" height="12px"> 靈感時空 Instagram</p></botton>		</div>
 						<div class="popup-footer">
 							
 							<span class="popup-menu-btn2" id="popup-policy" onclick='window.location.href="/Privacy&CookiePolicy"'>Privacy & Cookie Policy</span>
@@ -98,6 +103,7 @@
 					<button class="menu-btn" onclick='location.href="#service"'><span class="btn-ainmate"></span><p>服務項目</p></button>
 					<button class="menu-btn" onclick='location.href="#space"'><span class="btn-ainmate"></span><p>空間介紹</p></button>
 					<button class="menu-btn" onclick='location.href="#map"'><span class="btn-ainmate"></span><p>交通位置</p></button>
+					
 				</div>
 				<div class="contact">
 					<button id="contact-btn" title="popup-btn" onclick="Popup_FadeIn()">Contact</button>
@@ -449,6 +455,24 @@
 	  		popup.classList.toggle("show");
 	  		// popup.classList.toggle("hide");
 	  		window.location = '#foo';
+
+	  	}
+
+		  function Popup_fb()
+		{
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  		window.location = 'https://www.facebook.com/people/靈感時空-Spark-Immersive/61562282013347/';
+
+	  	}
+
+		  function Popup_ig()
+		{
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  		window.location = 'https://www.instagram.com/spark_immersive_center/';
 
 	  	}
 
