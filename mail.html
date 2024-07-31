@@ -117,7 +117,7 @@ button {
           </div>
           <div class="input__container">
             <label for="message" style="border: 0px;"></label>
-            <textarea type="text" id="message" name="message" rows="6" class="validate-input" placeholder="留言 (必填)
+            <textarea id="message" name="message" rows="6" class="validate-input" placeholder="留言 (必填)
 Write us a message*" required /></textarea>
           </div>
           <button class="btn">
@@ -146,7 +146,7 @@ Write us a message*" required /></textarea>
             "entry.324056890": $('#message').val()
           },
           type: "POST", //因為是要進行insert的動作，故用POST
-          dataType: "JSONP",
+          
           complete: function () {
             //完成後把這些欄位清空
             $('#name').val('')
@@ -156,7 +156,7 @@ Write us a message*" required /></textarea>
             $('#title').val('')
             $('#message').val('')
             //最後跳轉到感謝的視窗
-            window.alert("表單已送出，感謝您的建議!"); //完成送出表單的警告視窗
+            alert("表單已送出，感謝您的建議!"); //完成送出表單的警告視窗
           }
         });
       }
