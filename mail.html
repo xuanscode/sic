@@ -146,7 +146,7 @@ Write us a message*" required /></textarea>
             "entry.324056890": $('#message').val()
           },
           type: "POST", //因為是要進行insert的動作，故用POST
-          
+          dataType: "JSONP",
           complete: function () {
             //完成後把這些欄位清空
             $('#name').val('')
