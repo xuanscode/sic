@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatiable" content="ie=edge">
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="email=no"/>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7124YV7P8F"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-7124YV7P8F');
+	</script>
+	<link rel="icon" href="./favicon.ico">
+	<link href="./style_homepage.css" rel="stylesheet">
+	<link href="./style_app_homepage.css" rel="stylesheet">
+	<link rel="stylesheet" href="./aos.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<script type="text/javascript" src="./homepage_map.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+<style type="text/css">
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html {
+ font-size: 62.5%;
+ color: #fff;
+}
+
+body {
+ font-family: "Mulish", sans-serif;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+main {
+ width: 40rem;
+ box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+ margin: 0 auto;
+ height: 45rem;
+ border-radius: 2rem;
+ padding: 2rem;
+}
+
+h1 {
+ text-align: center;
+ font-size: 3rem;
+ padding: 1rem 2rem;
+}
+
+form {
+ margin: 3rem 0;
+ display: flex;
+ flex-direction: column;
+ row-gap: 2rem;
+}
+
+.input__container {
+ display: flex;
+ flex-direction: column;
+ row-gap: 0.5rem;
+}
+
+.input__container label { font-size: 1.6rem; }
+
+.input__container input,
+textarea {
+ padding: 1rem 2rem;
+ border-radius: 5px;
+ border: 1px solid #555;
+ resize: none;
+}
+
+button {
+ align-self: flex-start;
+ padding: 1rem 2rem;
+ border-radius: 5px;
+ border: none;
+ background: #333;
+ color: #fff;
+ cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+    <main>
+        <h1>Contact us</h1>
+        <form id="GoogleForm">
+          <div class="input__container">
+              <!-- The 'required' prop ensures a filled field before submission -->
+            <input type="text" id="name" name="name" placeholder="Name 您的姓名*" class="validate-input" required />
+          </div>
+          <div class="input__container">
+            <input type="text" id="com" name="com" placeholder="Company Name 公司名稱">
+          </div>
+          <div class="input__container">
+            <input type="text" id="email" name="email" placeholder="E-mail 電郵地址*" required />
+          </div>
+          <div class="input__container">
+            <input type="text" id="phone" name="phone" placeholder="Phone Number 電話號碼">
+          </div>
+          <div class="input__container">
+            <input type="text" id="title" name="title" placeholder="Message Title 留言主旨">
+          </div>
+          <div class="input__container">
+            <label for="message" style="border: 0px;"></label>
+            <textarea type="text" id="message" name="message" rows="6" class="validate-input" placeholder="留言 (必填)
+Write us a message*" required /></textarea>
+          </div>
+          <button class="btn">
+            送出 Submit
+          </button>
+        </form>
+   </main>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="./main.js"></script>
+   <script>
+    $('#GoogleForm').submit(function (e) {
+      //在這裡我們要先擋掉form默認事件
+      e.preventDefault();
+
+      if ($('#name').val() && $('#title').val() && $('#message').val()) {//需要先確認必填欄位是否填寫
+        $.ajax({
+          // url為Google Form按下submit的aciotn
+          url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSe9n5Nlb6FZKzGYx8cyEw9stxQoyJ4ZNQa1z6ZjH7HSdBhdeA/formResponse",
+          crossDomain: true,//解決跨網域CORS的問題
+          data: {// entry.xxxxx 這些需要填寫您表單裡面的值，與其相互對應
+            "entry.1988888890": $('#name').val(),
+            "entry.1347377074": $('#com').val(),
+            "entry.796140159": $('#email').val(),
+            "entry.1244930106": $('#phone').val(),
+            "entry.2011503437": $('#title').val(),
+            "entry.324056890": $('#message').val()
+          },
+          type: "POST", //因為是要進行insert的動作，故用POST
+          dataType: "JSONP",
+          complete: function () {
+            //完成後把這些欄位清空
+            $('#name').val('')
+            $('#com').val('')
+            $('#email').val('')
+            $('#phone').val('')
+            $('#title').val('')
+            $('#message').val('')
+            //最後跳轉到感謝的視窗
+            window.alert("表單已送出，感謝您的建議!"); //完成送出表單的警告視窗
+          }
+        });
+      }
+    });
+  </script>
+
+
+
+    </body></html>
+
+   
