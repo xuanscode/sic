@@ -23,7 +23,7 @@
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 	<script type="text/javascript" src="./homepage_map.js"></script>
 	<script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="importmap">
 	  {
 	    "imports": {
@@ -57,7 +57,7 @@
                             <span class="popup-link" onclick='location.href="mailto:coolassic@cool-medialab.com"'>coolassic@cool-medialab.com</span>
 							<span class="popup-link" onclick='location.href="https://maps.app.goo.gl/ut46emsDYJhWGNJs7"'>110台北市信義區東興路69號9F</span>
 							<span>營業時間｜週一至週五（國定假日除外）&nbsp;09：30&nbsp;~&nbsp;18：30</span><br>
-							<span><a href="#contactus" onclick="Popup_FadeOut()">聯絡表單</a>｜<a href="https://www.facebook.com/people/靈感時空-Spark-Immersive/61562282013347/" target="_blank"><img src="./image/popup-fb.png" width="12" height="12"> 靈感時空 Facebook</a>｜
+							<span><a href="#contactus" onclick="Popup_FadeOut()"><img src="./image/popup-write.png" width="12" height="12"> 聯絡表單</a>｜<a href="https://www.facebook.com/people/靈感時空-Spark-Immersive/61562282013347/" target="_blank"><img src="./image/popup-fb.png" width="12" height="12"> 靈感時空 Facebook</a>｜
 							<a href="https://www.instagram.com/spark_immersive_center/" target="_blank"><img src="./image/popup-ins.png" width="12px" height="12px"> 靈感時空 Instagram</a></span>
 							
 							
@@ -168,7 +168,7 @@
 			    <div id="service-content01" data-aos="fade-up">
 				 <div id="service-content-text">
 					<h2>打破想像與現實的限界</h2>
-					<p><br>靈感時空 Spark Immersive Center 專注打造全方位的沈浸式解決方案，從主題規劃、腳本設計、內容製作到硬體建置和互動程式，一站式服務讓精彩的創意成為真實。可廣泛應用於品牌展示、博物館、娛樂、房地產、教育、醫療、展覽、零售和旅遊等多種領域。無論是提升品牌形象、重現歷史場景、創造沉浸式娛樂體驗，還是展示未來住宅格局，靈感時空都能提供最完美的解決方案，讓想像與實現零距離，減少溝通落差，創造更美好的體驗感受。
+					<p><br>靈感時空 Spark Immersive Center 專注於打造全方位的沈浸式解決方案，從主題規劃、腳本設計、內容製作到硬體建置和互動程式，一站式服務讓精彩的創意成為真實。可廣泛應用於品牌展示、博物館、娛樂、房地產、教育、醫療、展覽、零售和旅遊等多種領域。無論是提升品牌形象、重現歷史場景、創造沉浸式娛樂體驗，還是展示未來住宅格局，靈感時空都能提供最完美的解決方案，讓想像與實現零距離，減少溝通落差，創造更美好的體驗感受。
 						<br class="desktop"><br class="desktop">讓我們一起打破想像與現實的界限，創造無限可能。</p>
 						<br>
 						<div class="space-service-line" data-aos="fade-up"></div>
@@ -353,7 +353,7 @@
 
 			<div id="contactus" class="contactus" style="height: 800px;">
 				<main>
-					<h1>Contact us</h1>
+					<h1 data-aos="fade-up">Contact us</h1>
 					<form id="GoogleForm">
 					  <div class="input__container">
 						  <!-- The 'required' prop ensures a filled field before submission -->
@@ -366,7 +366,7 @@
 						<input type="email" id="email" name="email" placeholder="E-mail 電郵地址*"  class="validate-input" required />
 					  </div>
 					  <div class="input__container">
-						<input type="text" id="phone" name="phone" placeholder="Phone Number 電話號碼">
+						<input type="tel" id="phone" name="phone" placeholder="Phone Number 電話號碼">
 					  </div>
 					  <div class="input__container">
 						<input type="text" id="title" name="title" placeholder="Message Title 留言主旨">
@@ -387,12 +387,12 @@ Write us a Message*" required /></textarea>
       //在這裡我們要先擋掉form默認事件
       e.preventDefault();
 
-      if ($('#name').val() && $('#title').val() && $('#email').val() && $('#message').val()) {//需要先確認必填欄位是否填寫
+      if ($('#name').val() && $('#email').val() && $('#message').val()) {//需要先確認必填欄位是否填寫
         $.ajax({
           // url為Google Form按下submit的aciotn
           url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdy_3rICR-1ygfFZ1832THPCd2TG7SHush4qpzaOA32StiEIw/formResponse",
           crossDomain: true,//解決跨網域CORS的問題
-          data: {// entry.xxxxx 這些需要填寫您表單裡面的值，與其相互對應
+          data: {// entry.xxxxx 這些需要填寫表單裡面的值，與其相互對應
             "entry.1465591059": $('#name').val(),
             "entry.454107596": $('#com').val(),
             "entry.680054753": $('#email').val(),
