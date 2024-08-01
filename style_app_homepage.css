@@ -849,17 +849,7 @@
 		letter-spacing: 0.45px;
 	}
 
-	#service-content-text p{
-		/*background-color: pink;*/
-		margin-top: -15px;
-		font-family: Noto Sans TC;
-		font-size: 13px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: 32px; /* 246.154% */
-		letter-spacing: 0.39px;
-	}
-
+	
 	
 #service-content-text h2{
 	/*background-color: pink;*/
@@ -925,6 +915,16 @@
 	}
 
 
+
+	#service-content-text p{
+		/*background-color: pink;*/
+		font-family: Noto Sans TC;
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 400; /* 246.154% */
+		letter-spacing: 0.39px;
+		
+	}
 
 
 
@@ -1538,9 +1538,11 @@
 
    .btn {
 	display: block;
+	width:112%;
+	margin-right:-22px;
+	margin-left:0px;
 	padding: 1rem 2rem;
 	border-radius: 5px;
-	margin-left: 10px;
 	border: none;
 	background: #333;
 	color: #fff;
