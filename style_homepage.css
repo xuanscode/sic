@@ -1213,6 +1213,16 @@ header{
 
 
 
+#service-wrapper{
+	flex-wrap: wrap;
+	display: flex;
+	width: 100%;
+	height: auto;
+	padding: 10px 0px 15px 30px;
+	overflow: hidden;
+	line-height: 30px;
+	justify-content: space-between;
+}
 
 #service-content-text{
 	display: flex;
@@ -1253,6 +1263,17 @@ header{
 
 #service-content-text p{
 	/*background-color: pink;*/
+	font-family: Noto Sans TC;
+	font-style: normal;
+	font-weight: 400;
+	text-align: left;
+	margin-top: 20px; /* 213.333% */
+	letter-spacing: 0.45px;
+	justify-content:start;
+}
+
+#service-content-text {
+	/*background-color: pink;*/
 	margin-top: -15px;
 	font-family: Noto Sans TC;
 	font-style: normal;
@@ -1272,27 +1293,19 @@ header{
 	align-self:right;
 }
 
-#service-wrapper{
-	flex-wrap: wrap;
-	display: flex;
-	width: 100%;
-	height: auto;
-	padding: 10px 0px 15px 30px;
-	overflow: hidden;
-	justify-content: space-between;
-}
 
 #service-title01{
 /*background-color: pink;*/
 	height: auto;
 	font-family: Noto Sans TC;
-	font-style: bold;
+	font-weight: bold;
 	font-weight: 700;
 	letter-spacing: 0.8px;
 	width: 40%;
-	line-height: 80px;
-	gap: 20px;
+	line-height: 120px;
+	gap: 100px;
 	justify-content: space-between;
+	padding:100px;
 }
 
 #service-text01{
