@@ -23,6 +23,7 @@
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 	<script type="text/javascript" src="./homepage_map.js"></script>
 	<script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="importmap">
 	  {
 	    "imports": {
@@ -49,15 +50,14 @@
 						<div id="popup-title"><img src="./image/popup-phone.svg">聯絡我們</div>
 						<div id="popup-text">
 							<span><b>新生辦公室 & 展示空間</b></span>
-							<span class="popup-link" onclick='location.href="tel:0958-284-982"'>02&nbsp;2351&nbsp;2750</span>
-							<span class="popup-link" onclick='location.href="mailto:hi@sparklab.tw"'>hi@sparklab.tw</span>
+							<span class="popup-link"><a href="mailto:hi@sparklab.tw">hi@sparklab.tw</a></span>
 							<span class="popup-link" onclick='location.href="https://goo.gl/maps/HPiPrsR4JtShPEUN9"'>100台北市中正區新生南路一段54巷8號1F</span><br>
 							<span><b>總公司</b></span>
 							<span class="popup-link" onclick='location.href="tel:0958-284-982"'>02&nbsp;2768&nbsp;9769</span>
-							<span class="popup-link" onclick='location.href="mailto:coolassic@cool-medialab.com"'>coolassic@cool-medialab.com</span>
+                            <span class="popup-link" onclick='location.href="mailto:coolassic@cool-medialab.com"'>coolassic@cool-medialab.com</span>
 							<span class="popup-link" onclick='location.href="https://maps.app.goo.gl/ut46emsDYJhWGNJs7"'>110台北市信義區東興路69號9F</span>
 							<span>營業時間｜週一至週五（國定假日除外）&nbsp;09：30&nbsp;~&nbsp;18：30</span><br>
-							<span><a href="https://www.facebook.com/people/靈感時空-Spark-Immersive/61562282013347/" target="_blank"><img src="./image/popup-fb.png" width="12" height="12"> 靈感時空 Facebook</a>｜
+							<span><a href="#contactus" onclick="Popup_FadeOut()">聯絡表單</a>｜<a href="https://www.facebook.com/people/靈感時空-Spark-Immersive/61562282013347/" target="_blank"><img src="./image/popup-fb.png" width="12" height="12"> 靈感時空 Facebook</a>｜
 							<a href="https://www.instagram.com/spark_immersive_center/" target="_blank"><img src="./image/popup-ins.png" width="12px" height="12px"> 靈感時空 Instagram</a></span>
 							
 							
@@ -149,7 +149,7 @@
 					<div id="team-title01">Our team<h1>團隊介紹</h1></div>
 					<div id="team-content-text">
 						<h1>靈感綻放，探索體驗可能</h1><br>
-						<p>團隊致力於實現藝術產業與尖端技術的融合，成為傳統與未來的連結。專注於藝術產業的媒體行銷整合與實體沈浸式展演內容的製作，線上媒體平台與線下展演活動的整合策略，促進藝術與技術的無縫整合，提供多元化、豐富的體驗需求。期望能建構五感碰撞的衝擊感，展示出豐富多樣的實驗性質，從體感互動、虛擬實境到沉浸式空間，透過多元藝術樣貌展示，為創作帶來豐富的層次與深度。
+						<p>靈感時空團隊致力於實現藝術產業與尖端技術的融合，成為傳統與未來的連結。專注於藝術產業的媒體行銷整合與實體沈浸式展演內容的製作，線上媒體平台與線下展演活動的整合策略，促進藝術與技術的無縫整合，提供多元化、豐富的體驗需求。期望能建構五感碰撞的衝擊感，展示出豐富多樣的實驗性質，從體感互動、虛擬實境到沉浸式空間，透過多元藝術樣貌展示，為創作帶來豐富的層次與深度。
 						掌握「提供樂趣」及「創造啟發性」的元素，讓我們一起將沈浸式體驗融入生活日常。</p></div>
 				</div>
 				
@@ -167,8 +167,9 @@
 
 			    <div id="service-content01" data-aos="fade-up">
 				 <div id="service-content-text">
-					<p>Spark Immersive Center 團隊提供的解決方案，依照客戶需求，進行全面性的執行製作。從企劃規劃、腳本製作、內容規劃、硬體建置、程式設計到最後硬體系統安裝。
-						<br class="desktop">降低想像與實現的距離、減少溝通落差，創造更美好的體驗感受。</p>
+					<h2>打破想像與現實的限界</h2>
+					<p><br>靈感時空 Spark Immersive Center 專注打造全方位的沈浸式解決方案，從主題規劃、腳本設計、內容製作到硬體建置和互動程式，一站式服務讓精彩的創意成為真實。可廣泛應用於品牌展示、博物館、娛樂、房地產、教育、醫療、展覽、零售和旅遊等多種領域。無論是提升品牌形象、重現歷史場景、創造沉浸式娛樂體驗，還是展示未來住宅格局，靈感時空都能提供最完美的解決方案，讓想像與實現零距離，減少溝通落差，創造更美好的體驗感受。
+						<br class="desktop"><br class="desktop">讓我們一起打破想像與現實的界限，創造無限可能。</p>
 						<br>
 						<div class="space-service-line" data-aos="fade-up"></div>
 					<div id="service-wrapper"><div class="service-title01" data-aos="fade-up">
@@ -183,7 +184,7 @@
 					<div class="service-title01" data-aos="fade-up">
 						內容規劃
 					</div><div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;text-align:right;">
-						影像拍攝<br>2D 動畫<br>3D 動畫<br>空拍攝影
+						影像拍攝<br>2D 動畫<br>3D 動畫
 					</div></div>
 					<div class="space-service-line" data-aos="fade-up"></div>
 					<div id="service-wrapper">
@@ -349,6 +350,74 @@
 					</div>
 				</div>
 			</div>
+
+			<div id="contactus" class="contactus" style="height: 800px;">
+				<main>
+					<h1>Contact us</h1>
+					<form id="GoogleForm">
+					  <div class="input__container">
+						  <!-- The 'required' prop ensures a filled field before submission -->
+						<input type="text" id="name" name="name" placeholder="Name 您的姓名*" class="validate-input" required />
+					  </div>
+					  <div class="input__container">
+						<input type="text" id="com" name="com" placeholder="Company Name 公司名稱">
+					  </div>
+					  <div class="input__container">
+						<input type="email" id="email" name="email" placeholder="E-mail 電郵地址*"  class="validate-input" required />
+					  </div>
+					  <div class="input__container">
+						<input type="text" id="phone" name="phone" placeholder="Phone Number 電話號碼">
+					  </div>
+					  <div class="input__container">
+						<input type="text" id="title" name="title" placeholder="Message Title 留言主旨">
+					  </div>
+					  <div class="input__container">
+						<textarea id="message" name="message" rows="6" class="validate-input" placeholder="留言 (必填)
+Write us a Message*" required /></textarea>
+					  </div>
+					  <button class="btn" type="submit">
+						送出 Submit
+					  </button>
+					</form>
+			   </main>
+			   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="./main.js"></script>
+   <script>
+    $('#GoogleForm').submit(function (e) {
+      //在這裡我們要先擋掉form默認事件
+      e.preventDefault();
+
+      if ($('#name').val() && $('#title').val() && $('#email').val() && $('#message').val()) {//需要先確認必填欄位是否填寫
+        $.ajax({
+          // url為Google Form按下submit的aciotn
+          url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdy_3rICR-1ygfFZ1832THPCd2TG7SHush4qpzaOA32StiEIw/formResponse",
+          crossDomain: true,//解決跨網域CORS的問題
+          data: {// entry.xxxxx 這些需要填寫您表單裡面的值，與其相互對應
+            "entry.1465591059": $('#name').val(),
+            "entry.454107596": $('#com').val(),
+            "entry.680054753": $('#email').val(),
+            "entry.1724693102": $('#phone').val(),
+            "entry.1328923141": $('#title').val(),
+            "entry.832610839": $('#message').val()
+          },
+          type: "POST", //因為是要進行insert的動作，故用POST
+          
+          complete: function () {
+            //完成後把這些欄位清空
+            $('#name').val('')
+            $('#com').val('')
+            $('#email').val('')
+            $('#phone').val('')
+            $('#title').val('')
+            $('#message').val('')
+            //最後跳轉到感謝的視窗
+            alert("表單已送出，感謝您的留言!\nThanks for your message"); //完成送出表單的警告視窗
+          }
+        });
+      }
+    });
+  </script>
+			</div>
 			
 			<div id="map-container">
 				<div id="map"></div>
@@ -385,8 +454,7 @@
 					<div><span id="foo-adress" style="font-size: 13px;"><b>新生辦公室 & 展演空間</b></span><div class="home">　</div>
 					<div id="base">
 					    <div id="foo-mail" onclick='location.href="mailto:hi@sparklab.tw"'><a>hi@sparklab.tw</a></div>
-						<div id="foo-phone" onclick='location.href="tel:0958-284-982"'><span>02&nbsp;2351&nbsp;2750</span></div>
-						<span id="foo-adress" onclick='location.href="https://goo.gl/maps/HPiPrsR4JtShPEUN9"'>100台北市中正區新生南路一段54巷8號1F</span>
+						<br class="desktop"><span id="foo-adress" onclick='location.href="https://goo.gl/maps/HPiPrsR4JtShPEUN9"'>100台北市中正區新生南路一段54巷8號1F</span>
 					    <div class="app" >營業時間｜<br>採預約制，歡迎來電諮詢</div>
 						<br class="app">
 					</div></div>
@@ -394,7 +462,7 @@
 					<div id="base">
 						<div id="foo-mail" onclick='location.href="mailto:coolassic@cool-medialab.com"'><a>coolassic@cool-medialab.com</a></div>
 						<div id="foo-phone" onclick='location.href="tel:0958-284-982"'><span>02&nbsp;2768&nbsp;9769</span></div>
-						<span id="foo-adress" onclick='location.href="https://maps.app.goo.gl/ut46emsDYJhWGNJs7"'>110台北市信義區東興路69號9F</span>
+						<br class="desktop"><span id="foo-adress" onclick='location.href="https://maps.app.goo.gl/ut46emsDYJhWGNJs7"'>110台北市信義區東興路69號9F</span>
 					<div class="app" >營業時間｜<br>週一至週五（國定假日除外） 09：30 ~ 18：30 <br class="app">　</div>
 					<div class="app" ><br class="app"><span class="popup-link" onclick='location.href="https://www.facebook.com/people/靈感時空-Spark-Immersive/61562282013347/"'><img src="./image/popup-app-fb.png" width="12" height="12" style="border:0"> 靈感時空 Facebook</a></span>
 						<br class="app"></div><div class="app" ><span class="popup-link" onclick='location.href="https://www.instagram.com/spark_immersive_center/"'><img src="./image/popup-app-ins.png" width="12" height="12" style="border:0"> 靈感時空 Instagram</span><br class="app"></div>
