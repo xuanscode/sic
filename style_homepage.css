@@ -171,7 +171,7 @@ header{
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
-	height: 144px;
+	height: 300px;
 	width: 100%;
 	gap:52px;
 	/*justify-content: space-between;*/
@@ -186,7 +186,7 @@ header{
 	flex-direction: column;
 	align-content: flex-start;
 	width: 140px;
-	height: 100px;
+	height: 350px;
 	color: var(--darkGrey);
 	font-family: Noto Sans TC;
 	font-size: 25px;
