@@ -447,7 +447,7 @@ header{
 	height: 80vh;
 	/*bottom:0%;*/
 	/*left: 50%;*/
-	top: 11.5%; /*圈圈位置*/
+	top: 8.5%; /*圈圈位置*/
 	/*transform: translate(-50%, 50%);*/
 	align-items: center;
 	justify-content: center;
@@ -466,6 +466,13 @@ header{
 	line-height: 80px; /* 116.667% */
 	letter-spacing: 1.2px;
 }
+
+.head-title a:hover{
+color: var(--greenColor);}
+
+.head-title a{
+	color: #fff;}
+
 
 #head-circularText{
 	/*background-color: yellow;*/
@@ -1204,7 +1211,7 @@ header{
 	flex-direction: column;
 	width: 100%;
 	text-align: justify;
-	justify-content: right;
+	justify-content: left;
 	gap:25px;
 	padding-bottom: 10px;
 	line-height: 32px;
@@ -1214,8 +1221,7 @@ header{
 
 
 #service-wrapper{
-	flex-wrap: wrap;
-	display: flex;
+	flex-flow: column nowrap;
 	width: 100%;
 	height: auto;
 	padding: 10px 0px 15px 30px;
@@ -1230,7 +1236,7 @@ header{
 	padding-top: 50px;
 	width: 50%;
 	height: auto;
-	justify-content:right;
+	justify-content:left;
 	text-align: left;
 	line-height: 32px;
 	letter-spacing: 0.48px;
@@ -1301,11 +1307,13 @@ header{
 	font-weight: bold;
 	font-weight: 700;
 	letter-spacing: 0.8px;
-	width: 40%;
+	width: 100%;
 	line-height: 120px;
 	gap: 100px;
-	justify-content: space-between;
+	justify-content: stretch;
 	padding:100px;
+	margin-top: 40px;
+	display: block;
 }
 
 #service-text01{
@@ -1315,11 +1323,12 @@ header{
 		font-style: normal;
 		font-weight: 400;
 		letter-spacing: 0.8px;
-		width: 50%;
+		width: 100%;
 		line-height: 30px;
-		justify-content:space-between;
-		text-align: right;
+		justify-content:stretch;
+		text-align: left;
 		position:fixed 50% 100%;
+		display: block;
 	}
 
 	
@@ -1346,6 +1355,46 @@ header{
 
 	
 	
+
+.service-arrow-container{
+	/*background-color: green;*/
+	width: 40px;
+	height: 20px;
+	position: static;
+	overflow: hidden;
+	-moz-transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	transform:rotate(-90deg);
+	bottom:0px;
+	right:0px;
+}
+
+.service-arrow{
+	width: 20px;
+	height: 20px;
+	background-image: url("./image/space-arrow.svg");
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	animation: arrow-right 1s infinite linear;
+	animation-delay: -2s;
+	Top:10px;
+	right:0px;
+
+}
+
+
+@keyframes arrow-right{
+	0%{
+		transform: translateY(-100%);
+	}
+
+	100%{
+		transform: translateY(0%);
+	}
+}
 
 
 
@@ -1699,6 +1748,7 @@ header{
 	align-items: center;
 	justify-content: center;
 	align-items: center;
+	vertical-align:middle;
 	}
    
    form {
