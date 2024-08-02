@@ -360,7 +360,7 @@
 		flex-direction: column;
 		width: 100%;
 		height: auto;
-		top: 16%;/*圈圈位置*/
+		top: 10%;/*圈圈位置*/
 		/*bottom:43%;
 		left: 50%;*/
 		/*transform: translate(-50%, 50%);*/
@@ -897,6 +897,7 @@
 		line-height: normal;
 		letter-spacing: 0.8px;
 		width: 90%;
+		margin-top: 20px;
 		justify-content: space-between;
 	}
 
@@ -1530,7 +1531,7 @@
    textarea {
 	padding: 0.8rem;
 	border-radius: 5px;
-	border: 0px;
+	border: 1px solid #555;
 	resize: none;
 	width:98%;
 	text-align: center;
