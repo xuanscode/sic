@@ -68,6 +68,8 @@
 						<div class="popup-menu-bar">
 							<button class="popup-menu-btn" onclick="Popup_team()" >
 								<p>團隊介紹</p></button>
+							<button class="popup-menu-btn" onclick="Popup_work()" >
+								<p>歷年作品</p></button>
 							<button class="popup-menu-btn" onclick="Popup_service()" >
 								<p>營業項目</p></button>
 							<button class="popup-menu-btn" onclick="Popup_space()" >
@@ -100,6 +102,7 @@
 				<div class="logo" onclick='location.href="/"'><img id="logo-img" src="./image/LOGO.svg"></div>
 				<div class="menu-bar">
 					<button class="menu-btn" onclick='location.href="#team"'><span class="btn-ainmate"></span><p>團隊介紹</p></button>
+					<button class="menu-btn" onclick='location.href="#work"'><span class="btn-ainmate"></span><p>歷年作品</p></button>
 					<button class="menu-btn" onclick='location.href="#service"'><span class="btn-ainmate"></span><p>營業項目</p></button>
 					<button class="menu-btn" onclick='location.href="#space"'><span class="btn-ainmate"></span><p>空間介紹</p></button>
 					<button class="menu-btn" onclick='location.href="#map"'><span class="btn-ainmate"></span><p>交通位置</p></button>
@@ -158,6 +161,30 @@
 				<div id="team-info" data-aos="fade-up"></div>
 			</div>
 
+			<div id="work">
+				<div class="work2 work3" data-aos="fade-up">
+				 <div id="service-titleEN">Our&nbsp;work</div>
+				 <div id="service-titleCN">歷年作品</div></div>
+
+				 <div class="work4"></div>
+
+				 <div class="work2">
+				 <div class="service-arrow-container">
+					<div class="service-arrow" data-aos="fade-up" style="top: -200px;padding-top: -100px;"></div></div><a href="work.html"><div class="head-title" style="padding:0px;width:200px;color:#fff;height:20px;top:-40px"><h1 style="text-align:left;font-size: 15px;font-weight: 400;letter-spacing: 1px;margin-left: 50px;margin-top:-10px;" data-aos="fade-up">see more</a></h1></div>
+				 </div>
+
+				 <div class="work-img">
+                    <img  data-aos="fade-up-right" src='./image/work-01.jpg' alt=' ' >　　
+                    <img  data-aos="fade-up-left" src='./image/work-02.jpg' alt=' ' style="padding-top: 15px;"></div>
+				
+				
+
+			</div>
+				
+
+
+
+
 			<div id="service">
 				<div data-aos="fade-up">
 				 <div id="service-titleEN">Our&nbsp;services</div>
@@ -166,9 +193,8 @@
 				
 
 			    <div id="service-content01" data-aos="fade-up">
-				 <div id="service-content-text">
-					<h2>打破想像與現實的限界</h2>
-					<p><br>靈感時空 Spark Immersive Center 專注於打造全方位的沈浸式解決方案，從主題規劃、腳本設計、內容製作到硬體建置和互動程式，一站式服務讓精彩的創意成為真實。可廣泛應用於品牌展示、博物館、娛樂、房地產、教育、醫療、展覽、零售和旅遊等多種領域。無論是提升品牌形象、重現歷史場景、創造沉浸式娛樂體驗，還是展示未來住宅格局，靈感時空都能提供最完美的解決方案，讓想像與實現零距離，減少溝通落差，創造更美好的體驗感受。
+				 <div id="service-content-text"><h2>打破想像與現實的限界</h2>
+					<br>靈感時空 Spark Immersive Center 專注於打造全方位的沈浸式解決方案，從主題規劃、腳本設計、內容製作到硬體建置和互動程式，一站式服務讓精彩的創意成為真實。可廣泛應用於品牌展示、博物館、娛樂、房地產、教育、醫療、展覽、零售和旅遊等多種領域。無論是提升品牌形象、重現歷史場景、創造沉浸式娛樂體驗，還是展示未來住宅格局，靈感時空都能提供最完美的解決方案，讓想像與實現零距離，減少溝通落差，創造更美好的體驗感受。
 						<br class="desktop"><br class="desktop">讓我們一起打破想像與現實的界限，創造無限可能。</p>
 						<br>
 						<div class="space-service-line" data-aos="fade-up"></div>
@@ -194,6 +220,13 @@
                     <div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;">
                     <p>創意廣告策劃與製作，有效提升品牌知名度</p></div></div>
                     <div class="space-service-line" data-aos="fade-up"></div>
+
+					<div id="service-wrapper"><div class="service-title01" data-aos="fade-up">
+						動態網頁設計</div>
+						
+						<div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;">
+						<p>設計具有視覺張力與豐富效果的動態網頁，提升品牌與活動質感</p></div></div>
+						<div class="space-service-line" data-aos="fade-up"></div>
 
                     <div id="service-wrapper"><div class="service-title01" data-aos="fade-up">
                     房地產企劃</div>
@@ -253,19 +286,32 @@
 
 					<div class="space-service-line" data-aos="fade-up"></div>
 
+					<div id="service-wrapper"><div class="service-title01" data-aos="fade-up">數位導覽系統</div>
+	
+						<div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;">
+						<p>提供全方位數位導覽解決方案，包括旅遊導覽、數位說明書，適應各種裝置，並支持房地產電子展示板，讓信息呈現更加生動直觀。</p></div></div>
+	
+						<div class="space-service-line" data-aos="fade-up"></div>
+
+						<div id="service-wrapper"><div class="service-title01" data-aos="fade-up">插畫繪製</div>
+		
+							<div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;">
+							<p>專業創作客製化插畫，以增強視覺表現力，為您的品牌或專案增添獨特魅力。</p></div></div>
+		
+							<div class="space-service-line" data-aos="fade-up"></div>
+
 				<div id="service-wrapper">
                     
 					<div class="service-arrow-container">
 						<div class="service-arrow" data-aos="fade-up"></div>
 						<div class="service-arrow" data-aos="fade-up"></div></div><a href="#contactus"><div class="head-title" style="padding:0px;width:90%;color:#fff;height:20px;top:0px"><h1 style="text-align:left;font-size: larger;font-weight: 600;letter-spacing: 3px;margin-left: 50px;margin-top:-17px;" data-aos="fade-up">歡迎來信諮詢</a></h1></div>
-						<div data-aos="fade-up" style="margin-left: 30px;margin-top: 25px;">如有任何關於視覺與沈浸的執行需求，都歡迎您隨時與我們聯繫</div>
+						<div data-aos="fade-up" style="margin-left: 30px;margin-top: 25px;">如有任何關於視覺與沈浸的執行需求，歡迎您隨時與我們聯繫</div>
 					</div>
 					
 				</div>
 			    </div>
-		    </div>
-	
-		
+
+		</div>
 			
 		
 		</div>
@@ -524,6 +570,15 @@ Write us a Message*" required /></textarea>
 				</div>
 			</footer>
 		</div>
+		<link rel="preload" href=".image/work-01.jpg" as="image" />
+		<link rel="preload" href=".image/work-02.jpg" as="image" />
+		<link rel="preload" href=".image/work-03.jpg" as="image" />
+		<link rel="preload" href=".image/work-04.jpg" as="image" />
+		<link rel="preload" href=".image/work-05.jpg" as="image" />
+		<link rel="preload" href=".image/work-06.png" as="image" />
+		<link rel="preload" href=".image/work-07.jpg" as="image" />
+		<link rel="preload" href=".image/work-08.jpg" as="image" />
+		<link rel="preload" href=".image/work-09.jpg" as="image" />
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <script>
@@ -560,6 +615,18 @@ Write us a Message*" required /></textarea>
 	  		window.location = '#space';
 
 	  	}
+
+		  function Popup_work()
+		{
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  		window.location = '#work';
+
+	  	}
+
+
+
 	  	function Popup_service()
 		{
 			var popup = document.getElementsByClassName("popup")[0];
