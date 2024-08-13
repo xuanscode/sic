@@ -360,7 +360,7 @@
 		flex-direction: column;
 		width: 100%;
 		height: auto;
-		top: 10%;/*圈圈位置*/
+		top: 8.5%;/*圈圈位置*/
 		/*bottom:43%;
 		left: 50%;*/
 		/*transform: translate(-50%, 50%);*/
@@ -1382,6 +1382,27 @@
 	.app{
 		display: flex;
 	}
+
+	.work-img img{
+		width: 80vw;
+		height: auto;
+		border: 0px;
+		
+		}
+
+
+		
+.workflow img{
+	width: 80vw;
+	height: auto;
+	border: 0px;
+}
+
+#workflow img{
+	width: 80vw;
+	height:auto;
+	border: 0px;
+}
 
 	/*privacy & cookie policy*/
 
