@@ -682,7 +682,6 @@ color: var(--greenColor);}
 	width: 100%;
 	height: auto;
 	min-width: 1200px;
-
 	background-color: rgba(0,0,0,0);
 	align-content: center;
 	align-items: center;
@@ -833,7 +832,7 @@ color: var(--greenColor);}
 	position: relative;
 	width: 100%;
 	height:auto;
-	padding-top: 300px;
+	padding-top: 100px;
 	align-items: center;
 	/*align-content: center;*/
 }
@@ -1038,10 +1037,10 @@ color: var(--greenColor);}
 #space-content03{
 	display: flex;
 	width: 100%;
-	padding: 120px 0px 180px 0px;	
+	padding: 70px 0px 100px 0px;	
 	border-radius: 30px;
 	background: #FFF;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 .space-hardware-line{
@@ -1186,6 +1185,19 @@ color: var(--greenColor);}
     z-index: 99;
 }
 
+#work-content-text{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 0px;
+	width: 95%;
+	height: auto;
+	justify-content:space-between;
+	text-align: justify;
+	line-height: 32px;
+	letter-spacing: 0.48px;
+
+}
+
 .work-img {flex-direction: row nowrap;}
 
 .work-img img{
@@ -1206,7 +1218,7 @@ align-items: flex-start;
 }
 
 
-#workflow{
+#workflow {
     color:#202020;
 	line-height: 20px;
 	padding-top: 10px;
@@ -1223,6 +1235,23 @@ align-items: flex-start;
 #workflow img{
 	height: 50vh;
 	border: 0px;
+}
+
+
+.workflow iframe{
+	height: 400px;
+	width:722px;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#workflow iframe{
+	height: 400px;
+	width:722px;
+	border: 0px;	
+	padding: 0px;
+	margin: 0px;
 }
 
 .coverflow{
@@ -1322,8 +1351,8 @@ align-items: flex-start;
 	/*background-color: pink;*/
 	display: flex;
 	position: relative;
-	padding-top:100px; 
-	padding-bottom:189px; 
+	padding-top:50px; 
+	padding-bottom:50px; 
 	width: 75%;
 	margin: auto;
 	flex-direction: column;
@@ -1701,7 +1730,7 @@ align-items: flex-start;
 	width: 100%;
 	min-width: 1300px;
 	height: auto;
-	padding-top: 200px;
+	padding-top: 100px;
 	padding-bottom: 110px;
 }
 #policy-wrapper{
@@ -1934,4 +1963,26 @@ align-items: flex-start;
 	color: #fff;
 	cursor: pointer;
 
+   }
+
+
+   #loading{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+   }
+
+   #loading >i{
+	width: 64px;
+	height: 64px;
+	position:absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+	background:url("./image/logo_icon.gif") no-repeat;
    }
