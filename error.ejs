@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatiable" content="ie=edge">
+	<link rel="icon" href="favicon.ico">
+	<link href="./style_homepage.css" rel="stylesheet">
+	<link href="./style_app_homepage.css" rel="stylesheet">
+	<link href="./style_error.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="../aos.css" /> -->
+	<title>靈感時空 Spark Immersive Center</title>
+</head>
+<body>
+	<div class="BG">
+		<div class="popup">
+			<div class="popup-contact">
+
+				<div id="popup-close-btn"  onclick="Popup_FadeOut()">
+					close
+					<svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path id="popup-close-icon" d="M17 7L7 17M17 17L7 7" stroke="#18181A" stroke-width="1.5" stroke-linecap="round"/>
+					</svg>	
+				</div>
+				<div id="popup-content-block">
+					<div id="popup-title"><img src="./image/popup-phone.svg">聯絡我們</div>
+					<div id="popup-text">
+						<span><b>新生辦公室 & 展示空間</b></span>
+						<span class="popup-link"><a href="mailto:hi@sparklab.tw">hi@sparklab.tw</a></span>
+						<span class="popup-link" onclick='location.href="https://goo.gl/maps/HPiPrsR4JtShPEUN9"'>100台北市中正區新生南路一段54巷8號1F</span><br>
+						<span><b>總公司</b></span>
+						<span class="popup-link"><a href="tel:0958-284-982">02&nbsp;2768&nbsp;9769</a>｜<a href="mailto:coolassic@cool-medialab.com">coolassic@cool-medialab.com</a></span>
+						<span class="popup-link" onclick='location.href="https://maps.app.goo.gl/ut46emsDYJhWGNJs7"'>110台北市信義區東興路69號9F</span>
+						<span>營業時間｜週一至週五（國定假日除外）&nbsp;09：30&nbsp;~&nbsp;18：30</span><br>
+						<span><a href="https://www.facebook.com/people/靈感時空-Spark-Immersive/61562282013347/" target="_blank"><img src="./image/popup-fb.png" width="12" height="12"> 靈感時空 Facebook</a>｜
+						<a href="https://www.instagram.com/spark_immersive_center/" target="_blank"><img src="./image/popup-ins.png" width="12px" height="12px"> 靈感時空 Instagram</a><br><a href="https://sparklab.tw/#contactus" onclick="Popup_FadeOut()"><img src="./image/popup-write.png" width="12" height="12"> 聯絡表單 Contact us</a></span>
+						
+						
+					</div>
+				</div>
+				<div id="popup-content-block-app">
+					<div class="popup-logo" onclick='location.href="/"'><img id="popup-logo-img" src="./image/popup-app-logo.svg"></div>
+					<div class="popup-menu-bar">
+						<button class="popup-menu-btn" href="https://sparklab.tw/#team">
+							<p>團隊介紹</p></button>
+                        <button class="popup-menu-btn"  href="https://sparklab.tw/work.html">
+                            <p>歷年作品</p></button>
+						<button class="popup-menu-btn"  href="https://sparklab.tw/#service">
+							<p>營業項目</p></button>
+						<button class="popup-menu-btn" href="https://sparklab.tw/#space">
+							<p>空間介紹</p></button>
+						<button class="popup-menu-btn" href="https://sparklab.tw/#map">
+							<p>交通位置</p></button>
+							<button class="popup-menu-btn" href="https://sparklab.tw/contactus.html">
+							<p>聯絡我們</p></button>
+							<botton class="popup-menu-btn" onclick='location.href="https://www.facebook.com/people/靈感時空-Spark-Immersive/61562282013347/"'>
+								<p><img src="./image/popup-fb.png" width="12" height="12"> 靈感時空 Facebook</p></botton>
+								<botton class="popup-menu-btn" onclick='location.href="https://www.instagram.com/spark_immersive_center/"'>
+								<p><img src="./image/popup-ins.png" width="12px" height="12px"> 靈感時空 Instagram</p></botton>		</div>
+					<div class="popup-footer">
+						
+						<span class="popup-menu-btn2" id="popup-policy" onclick='window.location.href="/Privacy&CookiePolicy"'>Privacy & Cookie Policy</span>
+						<p>Spark Immersive Center © 2024</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	<header>		
+		<div class="header-container">
+			<div class="logo" onclick='location.href="/"'><img id="logo-img" src="./image/LOGO.svg"></div>
+			<div class="menu-bar">
+				<button class="menu-btn" onclick='location.href="https://sparklab.tw/#team"'><span class="btn-ainmate"></span><p>團隊介紹</p></button>
+				<button class="menu-btn" onclick='location.href="https://sparklab.tw/work.html"'><span class="btn-ainmate"></span><p>歷年作品</p></button>
+				<button class="menu-btn" onclick='location.href="https://sparklab.tw/#service"'><span class="btn-ainmate"></span><p>營業項目</p></button>
+				<button class="menu-btn" onclick='location.href="https://sparklab.tw/#space"'><span class="btn-ainmate"></span><p>空間介紹</p></button>
+				<button class="menu-btn" onclick='location.href="https://sparklab.tw/#map"'><span class="btn-ainmate"></span><p>交通位置</p></button>
+					</div>
+				<div class="contact">
+					<button id="contact-btn" title="popup-btn" onclick="Popup_FadeIn()">Contact</button>
+					<button id="contact-btn-app"  title="popup-btn" onclick="Popup_FadeIn()">
+						<svg id="contact-btn-app-icon" width="4" height="14" viewBox="0 0 4 14" fill="#F5F5F5" xmlns="http://www.w3.org/2000/svg">
+							<circle id="Ellipse 8" cx="2" cy="1.5" r="1.5" />
+							<circle id="Ellipse 9" cx="2" cy="7" r="1.5" />
+							<circle id="Ellipse 10" cx="2" cy="12.5" r="1.5" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+			<div class="error-container">
+				<div class="error-content">
+					<div id="error-image">
+						<div id="img-face"><img src="./image/error-img-face.svg"></div>
+						<div id="oops"><span>O<span>ops!</div>
+					</div>
+					<div id="error-title">404</div>
+					<div id="error-text">喔喔...你好像迷失在這個空間中了</div>
+					<div id="error-redirect-btn" onclick='window.location.href="/"'>重新尋找靈感</div>
+				</div>
+			</div>
+	</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+		AOS.init({
+		easing: 'ease-in-out-sine',
+		duration: 800
+		});
+		function Popup_FadeOut()
+		{
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  	}
+		function Popup_FadeIn() {
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  		// console.log(popup);
+		}
+
+		function Popup_team()
+		{
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  		window.location = '#team';
+
+	  	}
+	  	function Popup_space()
+		{
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  		window.location = '#space';
+
+	  	}
+	  	function Popup_service()
+		{
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  		window.location = '#service';
+
+	  	}
+
+		function Popup_map()
+		{
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  		window.location = '#map';
+
+	  	}
+	  	function Popup_contact()
+		{
+			var popup = document.getElementsByClassName("popup")[0];
+	  		popup.classList.toggle("show");
+	  		// popup.classList.toggle("hide");
+	  		window.location = '#foo';
+
+	  	}
+
+
+
+    </script>
+</body>
+
+</html>
