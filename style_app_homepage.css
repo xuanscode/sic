@@ -166,8 +166,15 @@
 		
 	}
 
-	
+	.popup-menu-btn a{
+		color: #000;
+		/*opacity: 0;*/
+	}
 
+	.popup-menu-btn a:hover{
+		color: var(--greenColor);
+		/*opacity: 0;*/
+	}
 
 	.popup-menu-btn:hover{
 		color: var(--greenColor);
@@ -360,7 +367,7 @@
 		flex-direction: column;
 		width: 100%;
 		height: auto;
-		top: 8.5%;/*圈圈位置*/
+		top: 7.5%;/*圈圈位置*/
 		/*bottom:43%;
 		left: 50%;*/
 		/*transform: translate(-50%, 50%);*/
@@ -1391,6 +1398,25 @@
 		}
 
 
+		#work-content-text{
+			display: flex;
+			flex-wrap: wrap;
+			padding-top: 30px;
+			width: 100%;
+			height: auto;
+			font-size: 13px;
+			justify-content:left;
+			text-align: left;
+			line-height: 32px;
+			letter-spacing: 0.48px;
+		
+		}
+
+
+		#work-content-text h2{
+			font-size: 15px;
+		}
+
 		
 .workflow img{
 	width: 80vw;
@@ -1402,6 +1428,19 @@
 	width: 80vw;
 	height:auto;
 	border: 0px;
+}
+
+
+.workflow iframe{
+	width:80vw;
+	border: 0px;
+	padding: 0px;
+}
+
+#workflow iframe{
+	width:80vw;
+	border: 0px;
+	padding: 0px;
 }
 
 	/*privacy & cookie policy*/
