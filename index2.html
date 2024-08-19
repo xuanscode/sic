@@ -20,6 +20,9 @@
 	<link href="./style_app_homepage.css" rel="stylesheet">
 	<link rel="stylesheet" href="./aos.css" />
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
+	<link rel="stylesheet" href="./owl.carousel.min.css">
+<link rel="stylesheet" href="./owl.theme.default.min.css">
+<script src="./owl.carousel.min.js"></script>
 	<link rel="preload" href="https://unpkg.com/aos@next/dist/aos.js" as="script">
     <link rel="preload" href=".image/work-1.jpg" as="img">
 		<link rel="preload" href=".image/work-2.jpg" as="img">
@@ -140,16 +143,22 @@
 			</div>
 		</header>
 		<div class="main-body">
-			<div id="head-container">				
+			<div id="head-container" >
+				
 				<div id="head-top" data-aos="fade-down">
-					<!-- <div id="head-title" >Spark Inspiration,<br>Uncover Boundless Possibilities</div> -->
+					
 					<div id="head-circularText" onclick='location.href="#team"'>
 						<div id="head-arrow"></div>
 					</div>
 				</div>
-				<div id="head-img-app"></div>
+				
+				
 				<div id="head-img">
-					
+					<div id="head-title" 
+					data-aos="fade-up"
+					data-aos-anchor-placement="bottom-center"
+					data-aos-once="true"
+					data-aos-duration="2000">Spark Inspiration,<br>Uncover <br class="app">Boundless <br class="app">Possibilities</div>
 					<!-- <div id="head-circle" data-aos="fade-up"></div> -->
 <!-- 					<div id="head-top" data-aos="fade-down">
 							<div id="head-title" >Spark Inspiration,<br>Uncover Boundless Possibilities</div>
@@ -158,7 +167,7 @@
 							</div>
 					</div> -->
 				</div>
-
+				<div style="height: 800px;" class="desktop"></div>
 			</div>
 			<div id="team">
 				<div id="team-deco-star-container">
@@ -188,19 +197,21 @@
 				 <div class="work4"></div>
 
 				 <div class="work2">
-				 <div class="service-arrow-container">
-					<div class="service-arrow" data-aos="fade-up" style="top: -200px;padding-top: -100px;"></div></div><a href="work.html"><div class="head-title" style="padding:0px;width:200px;color:#fff;height:20px;top:-40px"><h1 style="text-align:left;font-size: 15px;font-weight: 400;letter-spacing: 1px;margin-left: 50px;margin-top:-10px;" data-aos="fade-up">see more</a></h1></div>
-				 </div>
+				 
 
 				 <div class="work-img">
-                    <img  data-aos="fade-up-right" src='./image/work-1.jpg' alt=' ' >　　
-                    <img  data-aos="fade-up-left" src='./image/work-2.jpg' alt=' ' style="padding-top: 15px;"></div>
+                    <img  data-aos="fade-up-right" src='./image/work-mov1.png' alt=' ' >　　
+                    <img  data-aos="fade-up-left" src='./image/work-mov2.png' alt=' ' style="padding-top: 15px;"></div>
 					
 						<div id="work-content-text" data-aos="fade-up-right"><h2 data-aos="fade-up-left">打破想像與現實的限界</h2><br>
 						   靈感時空 Spark Immersive Center 專注於打造全方位的沈浸式解決方案，從主題規劃、腳本設計、內容製作到硬體建置和互動程式，一站式服務讓精彩的創意成為真實。可廣泛應用於品牌展示、博物館、娛樂、房地產、教育、醫療、展覽、零售和旅遊等多種領域。無論是提升品牌形象、重現歷史場景、創造沉浸式娛樂體驗，還是展示未來住宅格局，靈感時空都能提供最完美的解決方案，讓想像與實現零距離，減少溝通落差，創造更美好的體驗感受。
 						   <br>　<br>讓我們一起打破想像與現實的界限，創造無限可能。</br></p>
 							   <br>
 							   </div>
+
+							   <div class="service-arrow-container">
+								<div class="service-arrow" data-aos="fade-up" style="top: -200px;padding-top: -100px;"></div></div><a href="work.html"><div class="head-title" style="padding:0px;width:200px;color:#fff;height:20px;top:-40px"><h1 style="text-align:left;font-size: 15px;font-weight: 400;letter-spacing: 1px;margin-left: 50px;margin-top:-10px;" data-aos="fade-up">see more</a></h1></div>
+							 </div>
 				
 
 			</div>
@@ -273,36 +284,36 @@
                     內容創作與製作</div>
                     
                     <div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;">
-					<p>影像拍攝：高質量影片製作，提升視覺效果</p><p>
-                	2D 動畫：創意無限的動畫設計，與顧客增強互動體驗</p><p>
-                	3D 動畫：數位孿生技術，在虛擬世界中打造真實感受</p></div></div>
+				 <p>影像拍攝：高質量製作，提升視覺</p><p>
+                	2D 動畫：創意動畫增強顧客互動</p><p>
+                	3D 動畫：數位孿生，以虛擬打造真實</p></div></div>
                     <div class="space-service-line" data-aos="fade-up"></div>
                     
                     <div id="service-wrapper"><div class="service-title01" data-aos="fade-up">
                     互動程式與 AI 智能開發</div>
                     
                     <div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;">
-                    <p>互動系統：客製化開發，實現專有互動體驗</p><p>
-                	體感應用：感應技術，具娛樂性並提升參與感</p><p>
-                    AI 辨識技術：未來即是現在，針對策展規劃專有 AI 功能</p></div></div>
+                    <p>互動系統：<br class="app">客製化開發，實現專有互動體驗</p><p>
+                	體感應用：<br class="app">感應技術，具娛樂性並提升參與感</p><p>
+                    AI 辨識技術：<br class="app">未來即現在，策展規劃專有 AI 功能</p></div></div>
                     <div class="space-service-line" data-aos="fade-up"></div>
 
                     <div id="service-wrapper"><div class="service-title01" data-aos="fade-up">
                     硬體方案設計與規劃</div>
 
                     <div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;">
-                    <p>投影、LED規劃：完整規劃各類影像呈現的視覺層次</p><p>
-                	燈光設計：劇場等級燈光設計，營造絕佳氛圍</p><p>
-                	聲學規劃：環繞音效設計，提升聽覺享受</p><p>
-                	感應裝置：精確感應，實現智能互動與藝術的結合</p></div></div>
+                    <p>投影、LED規劃：豐富視覺呈現層次</p><p>
+                	燈光設計：劇場級燈控營造絕佳氛圍</p><p>
+                	聲學規劃：以環繞音效提升聽覺享受</p><p>
+                	感應裝置：精確實現智能與藝術互動</p></div></div>
                     <div class="space-service-line" data-aos="fade-up"></div>
 
                     <div id="service-wrapper"><div class="service-title01" data-aos="fade-up">
                     系統設備安裝與集成</div>
 
                     <div class="service-text01" data-aos="fade-up" style="color:#a5a3a3;margin-left:30px;">
-                    <p>設備架設：經驗豐富穩定安裝，確保現場使用效果</p><p>
-                	機房搭建：專業配置，保障系統運行順暢</p></div></div>
+                    <p>設備架設：經驗豐富，為您專業規劃</p><p>
+                	   機房搭建：安心保障系統運行順暢</p></div></div>
 
 					<div class="space-service-line" data-aos="fade-up"></div>
 
@@ -686,6 +697,10 @@ Write us a Message*" required /></textarea>
 
 
     </script>
-    <script type="module" src="../header_interact.js"></script>
+    <script>
+		$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+	</script>
 </body>
 </html>
