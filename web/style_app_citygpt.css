@@ -1,0 +1,150 @@
+@media  (max-width: 900px), (orientation: portrait) {
+
+	html,body{
+	 border: 0px;
+	 font-size: 35px;
+	 line-height: 80px;
+	}
+ 
+    div {
+        line-height: 80px;
+    }
+ 
+	 #gotop {
+		 display: block;
+		 position: fixed;
+		 right: 30px;
+		 bottom: 10px;
+		 font-size: 23px;
+		 background-image:url(top.png);
+		 background-size: 100%;
+		 width:150px;height:80px;
+		 background-repeat: no-repeat;
+		 color: white;
+		 cursor: pointer;
+		 z-index: 999;
+         line-height: 70px;
+	 }
+ 
+    .about{
+        min-height: 100%;
+        margin: 30px;
+        width:100%;
+    }
+
+	 #aboutext{
+		 text-align: justify;
+		 width: 60%;line-height: 80px;
+         letter-spacing: 1px;
+	 }
+
+
+     #headimg:img{
+        align-items: center;
+        text-align: center;
+        vertical-align: middle;
+        width:70%;height: auto;
+        border:0px;padding-bottom: 30px;
+    }
+
+    #img{
+        align-items: center;
+        text-align: center;
+        vertical-align: middle;
+        width:80%;height: auto;
+        border:0px;padding-bottom: 20px;
+    }
+    img {border:0px;}
+ 
+    #bt {
+        padding-top: 0px;
+        letter-spacing: 3px;line-height: 90px;
+    }
+    #bt2{
+    line-height: 100px;}
+
+    .atc{
+        font-size: 60px;
+        text-shadow:
+             0 0 5px rgba(255, 255, 255, 1),
+             0 0 10px rgba(255, 255, 255, 1);
+        animation:ate-shine 2s linear infinite;
+        letter-spacing: 2px;
+       }
+       
+       .ate{
+        display: inline;
+        font-size:45px;
+        padding-bottom: 20px;
+        border-bottom: 20px solid #550d7a;
+        letter-spacing: 2px;
+       }
+
+
+
+ 
+    .backdrop-blur{
+        backdrop-filter: blur(50px) brightness(30%);
+    }
+
+    .backdrop-blur2 {
+        font-size: 17px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 0px;
+        
+        
+    }
+ 
+    .copyright{
+        text-align: left;
+        align-items: center;
+        padding: 20px;
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 1px;
+    }
+
+ 
+ 
+    .desktop{
+        display: none;
+    }
+
+    .app{
+        display: inline-block;
+    }
+
+    .apphr{
+        
+        
+        line-height: 100px;
+        border: 1px #fff solid;
+        
+    }
+
+ 
+
+     nav::-webkit-scrollbar {
+        display: none;
+        width: 0px;
+    }
+ 
+ 
+    html {
+        overflow: -moz-hidden-unscrollable;
+        height: 100%;
+    }
+    
+    body::-webkit-scrollbar {
+        display: none;
+        width: 0px;
+    }
+    
+    body {
+        -ms-overflow-style: none;
+        height: 100%;
+    }
+
+
+ }
