@@ -436,17 +436,15 @@ text-align: center;
 }
 
 /*浮動固定選單*/
-nav{box-shadow: 5px 0 50px rgba(0, 0, 0, 0.7);
-	padding: 10px;
-	-webkit-background:rgba(8, 0, 21, 0.7);
+.navigation{
+	transition:1s ease-in;
+	background-color: transparent;
 	-webkit-backdrop-filter: blur(9px);
-	-webkit-overflow-scrolling: touch;
-	-webkit-opacity:0.9;
-	background:rgba(8, 0, 21, 0.7);
-	backdrop-filter: blur(50px) brightness(10%);
+	backdrop-filter: blur(50px);
+	padding: 10px;
 	top:0;
 	right: 0;
-	color:#8213ba;
+	color: #000;
 	z-index: 9999;
 	width: 108%;
 	text-align: center;
@@ -456,7 +454,39 @@ nav{box-shadow: 5px 0 50px rgba(0, 0, 0, 0.7);
 	position: sticky;
 
   }
-  
+
+
+  .navigation a {      /* 超連結設定*/
+    color:#e5a9f3;          /* 文字顏色設定*/
+    text-decoration: none; /* 文字無底線*/
+	transition:0.5s ease-out;
+}
+
+
+
+.navigation.ab a:hover {/* 超連結滑鼠滑過設定*/
+    color: #e5a9f3;        /* 文字顏色設定*/
+    text-decoration: none;/* 文字有底線*/
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+  .navigation.ab{
+	color:#8213ba;
+	-webkit-backdrop-filter: blur(9px);
+	backdrop-filter: blur(50px);
+	-webkit-overflow-scrolling: touch;
+	box-shadow: 5px 0 50px rgba(0, 0, 0, 0.7);
+	transition:1s ease-in;
+	opacity: 1;
+
+  }
+
+  .navigation.ab a{
+	color:#8213ba;
+  }
+
+
 
   nav::-webkit-scrollbar {
 	display: none;
@@ -476,19 +506,6 @@ nav{box-shadow: 5px 0 50px rgba(0, 0, 0, 0.7);
     display: inline;       /* 成一行排列*/
     margin: 0 5px;         /* 外距設定為0.5px*/
     font-size: 15px;       /* 字體大小15px*/
-}
-.navigation a {      /* 超連結設定*/
-    color:#bd4af7;         /* 文字顏色設定*/
-    text-decoration: none; /* 文字無底線*/
-	transition:1s ease-out;
-}
-
-
-
-.navigation a:hover {/* 超連結滑鼠滑過設定*/
-    color: #e5a9f3;        /* 文字顏色設定*/
-    text-decoration: none;/* 文字有底線*/
-	font-size: 18px;
 }
 
 
