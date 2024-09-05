@@ -9,6 +9,8 @@ html {
     overflow: -moz-hidden-unscrollable;
     height: 100%;
 	padding-top:30px;
+	transition:1s ease-in;
+	
 }
 
 body::-webkit-scrollbar {
@@ -29,17 +31,12 @@ html,body{
 	margin: 0;
 	padding: 0;
 	border: 0;
-	background: var(--baseColor);
 	font-family: 'Noto Sans TC', sans-serif;
     font-style: normal;
     font-weight: 400;
     scroll-behavior: smooth;
-	background: url(bgs.png) #000 fixed;
-	background: url(bg.png) #000 fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size:cover;
 	color: #fff;
+	z-index: -20;
 }
 
 
@@ -78,7 +75,7 @@ html,body{
 #img{
 	align-items: center;
 	vertical-align: middle;
-	height:100px;width:auto;
+	width: 30%;height: auto;
 	border:0px;padding-bottom: 10px;
 	font-size:0;
 
@@ -165,6 +162,7 @@ a{
 	width: 110.5%;
 	text-shadow: black 0.1em 0.1em 0.2em;
 	overflow: hidden;
+	transition:1s ease-in;
 
 }
 
@@ -174,9 +172,19 @@ a{
 	padding-top: 65px;
 	line-height: 40px;
 	letter-spacing: 0.5px;
-
 	color:#fff;
+	transition:1s ease-in;
 }
+
+.eng{
+	line-height: 40px;
+	padding: 0;
+	margin: 0;
+}
+
+div.delay{
+	animation-delay: 1s; /* 先等待 2 秒再執行 */
+  }
 
 #gotop {
 	border: 0px;
@@ -227,10 +235,12 @@ a{
 #bt {
 	line-height: 40px;
 	letter-spacing: 3px;
+	transition:1s ease-in;
 }
 
 #bt2 {
 	letter-spacing: 2px;
+	transition:1s ease-in;
 }
 
 
@@ -238,10 +248,9 @@ a{
 
 .content{
 	display: block;
-    width: 400px;
 	padding-left: 300px;
 	text-align: justify;
-
+	transition:1s ease-in;
 
 }
 
@@ -251,6 +260,7 @@ a{
 	  0 0 5px rgba(255, 255, 255, 1),
 	  0 0 10px rgba(255, 255, 255, 1);
  animation:ate-shine 2s linear infinite;
+ transition:1s ease-in;
 }
 
 .ate{
@@ -260,7 +270,7 @@ a{
  padding-bottom: 10px;
  letter-spacing: 2px;
  line-height: 50px;
- border-bottom: 10px solid #550d7a;
+ transition:1s ease-in;
 }
 
 @keyframes ate-shine{
@@ -271,83 +281,65 @@ a{
 	
   }  
 
+/*漸層底線*/
+  .underline1 {
+	display: inline;
+	padding-bottom: 30px;
+	height: 130%;
+	background-image: linear-gradient(120deg, #4418d1 0%, #9966FF 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 7px;
+	background-position: 0 88%;
+	transition:5s ease-in;
+	&:hover {
+		background-image: linear-gradient(120deg, #9966FF 0%, #4418d1 100%);
+		
+		transition:5s ease-out;
+	}
+  }
+
+
 #sec1{
-	padding: 40px;
+	margin: 100px;
 }
 
 #sec2{
 
-	padding: 40px;
+	padding: 100px;
 }
 
+#sec3{
 
-.se{
+	color: #9966FF;
+	line-height: 10px;
+	padding: 20px;
+	background: #000;
+	display: inline;
 	position: relative;
-	position:-1000px 30px;
-	z-index: -3;
-	top:0;
-	left:0;
-
-	z-index: 9999999999;
-}
-
-.secw{
-	display: block;
-	position: relative;
-	text-align: justify;
-	width: 60%;padding-left:60px;
-	left:30px;
-	top:0px;
-	padding-top: 30px;
-	letter-spacing: 0.5px;
-	color:transparent;
-	border: 20px solid transparent;
-	border-radius: 30px;
-	opacity: 0.7;
-	
+	letter-spacing: 1px;
 
 }
 
 
+.secp{
+	width: 100%;
+	height: auto;
+text-align: center;
+	right: 0;
+	padding-right:40px;
+}
+
+.secp img{
+	width: 50%;
+	right: 0;
+	padding-right:0px;
+}
 
 
-.backdrop-blur3 {
-
-	-moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
-	  -webkit-border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
-	          border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a4ed5 100%);
-	  border-image-slice: 1;
-	  border-radius: 30px;
-	  filter: blur(10px);
-	  z-index: 10;
-	  padding-left:30px;
-	  top:50px;
-	  
-	
-	
-	  }
-
-
-	  .secws{
-        position: relative;
-		text-align: justify;
-		width: 55%;padding: 50px;
-		letter-spacing: 0.5px;
-		color:#fff;
-		border-radius: 30px;
-		z-index: 500;
-        letter-spacing: 0.5px;
-		margin-left:30px;
-        line-height: 30px;
-		border-radius: 30px;
-		background:rgba(8, 0, 21, 0.7);
-	    backdrop-filter: blur(50px) brightness(10%);
-	
-	}
 
 
 	  .box {
-		left: 10%;
+		
 		border-radius: 21px;
 		position: relative;
 		width: 60%;
@@ -357,8 +349,8 @@ a{
 		background: #fff;
 		opacity: 0.8;
 		
-		
-	  }
+		}
+
 	  /*一个溢出的盒子作为边框，添加背景后形成光源效果*/
 	  .box::before {
 		content: '';
@@ -387,30 +379,30 @@ a{
 		filter: blur(40px);
 		border-radius: 20px;
 		backdrop-filter: blur(60px) brightness(10%);
-		filter: blur(10px);
+	
 		
 	  }
+
 	  .box::before,
 	  .box::after {
-		filter: blur(10px);
-		backdrop-filter: blur(60px) brightness(10%);
+		filter: blur(30px);
 		border-radius: 20px;
 		padding: 13px;
 		/*三色渐变，中间为背景色，融入背景*/
-		background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
-	  
+		background: linear-gradient(235deg, #4418d1, #060c21, #9966FF);
+		backdrop-filter: blur(60px) brightness(10%);
 	}
 	  .content {
-		width: 100%;
-
+		transition:1s ease-in;
+		display: inline;
 		background: #0b000d;
 		border-radius: 5px;
 		padding: 20px;
 		margin: 7px;
 		box-sizing: border-box;
 		color: #fff;
-
-		box-shadow: 0 0 10px 10px #0b000d;
+		line-height: 35px;
+		box-shadow: 0 0 10px 13px #0b000d;
 
 	  }
  
@@ -443,15 +435,15 @@ a{
 
 }
 
+/*浮動固定選單*/
 nav{box-shadow: 5px 0 50px rgba(0, 0, 0, 0.7);
 	padding: 10px;
-	-webkit-background:#000000;
+	-webkit-background:rgba(8, 0, 21, 0.7);
 	-webkit-backdrop-filter: blur(9px);
 	-webkit-overflow-scrolling: touch;
 	-webkit-opacity:0.9;
 	background:rgba(8, 0, 21, 0.7);
 	backdrop-filter: blur(50px) brightness(10%);
-	position: sticky;
 	top:0;
 	right: 0;
 	color:#8213ba;
@@ -464,6 +456,7 @@ nav{box-shadow: 5px 0 50px rgba(0, 0, 0, 0.7);
 	position: sticky;
 
   }
+  
 
   nav::-webkit-scrollbar {
 	display: none;
@@ -495,6 +488,7 @@ nav{box-shadow: 5px 0 50px rgba(0, 0, 0, 0.7);
 .navigation a:hover {/* 超連結滑鼠滑過設定*/
     color: #e5a9f3;        /* 文字顏色設定*/
     text-decoration: none;/* 文字有底線*/
+	font-size: 18px;
 }
 
 
@@ -540,7 +534,31 @@ nav{box-shadow: 5px 0 50px rgba(0, 0, 0, 0.7);
 	letter-spacing: 1px;
 }
 
+/*background*/
 
+.bgm{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	background-color: #000;
+	background: #000 url(bg.png);
+	background-size: cover;
+	-webkit-background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-x: 50%;
+	background-position-y: 50%;
+	position: fixed;
+	-webkit-postion: fixed;
+	-webkit-overflow-scrolling: touch;
+	height: 100%;
+	width: 100%;
+	z-index:-1 ;}
+
+	body,html{
+		background-color: #000;
+		z-index: -100;
+	}
 
 
 
