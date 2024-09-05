@@ -170,6 +170,10 @@
     .navigation a:hover{
         font-size: 38px;
     }
+
+    .navigation.ab a:hover{
+        font-size: 38px;
+    }
  
  
     html {
