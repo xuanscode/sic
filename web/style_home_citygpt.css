@@ -13,16 +13,6 @@ html {
 	
 }
 
-body::-webkit-scrollbar {
-    display: none;
-	width: 0px;
-}
-
-body {
-    -ms-overflow-style: none;
-    height: 100%;
-	width: calc(100vw + 8px);
-}
 
 
 html,body{
@@ -38,12 +28,13 @@ html,body{
 	color: #fff;
 	z-index: -20;
 	font-display: swap;
+	font-size:24px;
 }
 
 
 
 #headimg{
-    right: 0;bottom: 0;
+    margin: 0px;
 	display: block;
 	width: 100%;
 	height:95vh;
@@ -51,8 +42,6 @@ html,body{
 	background-repeat: no-repeat;
 	background-size:cover;
 	vertical-align: middle;
-	background: url(bgs.png);
-	background: url(bg.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size:cover;
@@ -60,6 +49,7 @@ html,body{
 	text-align: center;
 	align-content: center;
 	padding: 50px;
+	padding-top:150px;
 
 	
 }
@@ -89,8 +79,10 @@ a{
 
 
 	  .backdrop-blur {
+		text-align: left;
 		-webkit-background:#180633;
 		-webkit-overflow-scrolling: touch;
+		-webkit-backdrop-filter: blur(9px);
 		backdrop-filter: blur(10px);
 		border: 0;
 		align-items: center;
@@ -153,7 +145,7 @@ a{
 		  }
 
 #about{
-	
+	text-align: left;
 	width: 110.5%;
 	text-shadow: black 0.1em 0.1em 0.2em;
 	overflow: hidden;
@@ -162,7 +154,7 @@ a{
 }
 
 #aboutext{
-	
+	text-align: left;
 	width: 50%;padding-left:65px;
 	padding-top: 65px;
 	line-height: 40px;
@@ -178,7 +170,7 @@ a{
     transition: 1s;
     border: 0;
     background:url('TopBar.png');
-    width: 1750px;height: 70px;position: absolute;z-index:0;padding:0px;margin:0;margin-left:-40px;top:0;left:0;background: cover;
+    width:100%;height: 60px;position: absolute;z-index:0;padding:0px;margin:0;margin-left:-60px;top:0;left:0;background-size: cover;
 }
 
 #downbar{
@@ -286,6 +278,7 @@ a{
 	  0 0 10px rgba(255, 255, 255, 1);
  animation:ate-shine 2s linear infinite;
  transition:1s ease-in;
+ text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .ate{
@@ -296,6 +289,7 @@ a{
  letter-spacing: 2px;
  line-height: 50px;
  transition:1s ease-in;
+ text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 @keyframes ate-shine{
@@ -355,7 +349,7 @@ text-align: center;
 }
 
 .secp img{
-	width: 50%;
+	width: 60%;
 	right: 0;
 	padding-right:0px;
 }
@@ -387,7 +381,9 @@ text-align: center;
 		background: #ffffff;
 		z-index: -1; /*元素堆叠顺序*/
 		border-radius: 20px;
+		-webkit-filter: blur(10px);
 		filter: blur(10px);
+		-webkit-backdrop-filter: blur(9px);
 		backdrop-filter: blur(50px);
 	  }
 
@@ -402,8 +398,10 @@ text-align: center;
 		background: #ffffff;
 		z-index: -2;
 		/*添加模糊滤镜*/
+		-webkit-filter: blur(10px);
 		filter: blur(40px);
 		border-radius: 20px;
+		-webkit-backdrop-filter: blur(9px);
 		backdrop-filter: blur(50px);
 	
 		
@@ -440,7 +438,7 @@ text-align: center;
   border-radius: 20px;
   display:block;
   padding:30px;
-  width: 50%;
+  width: 70%;
   -webkit-backdrop-filter: blur(9px);
 	backdrop-filter: blur(70px);
 
@@ -523,6 +521,7 @@ text-align: center;
 	overflow: hidden;
 	margin: 0;
 	border: 0;
+	padding: 0;
 
 
 }
@@ -626,6 +625,9 @@ text-align: center;
 	  0 0 20px rgba(255, 255, 255, 1),
 	  0 0 40px rgba(255, 255,255, 1);
 	animation:neon-shine 3s linear infinite;
+	margin: 0;
+        border: 0;
+        padding: 0;
 	
   }
 
@@ -675,6 +677,7 @@ text-align: center;
 	text-align: center;
 	align-items: center;
 	padding: 20px;
+	margin:0px;
 	font-size: 14px;
 	letter-spacing: 1px;
 	-webkit-backdrop-filter: blur(9px);
@@ -688,7 +691,7 @@ text-align: center;
 	border: 0;
 	padding: 0;
 	background-color: #000;
-	background: #000 url(bg.png);
+	background: #000 url(bgs.png);
 	background-size: cover;
 	-webkit-background-size: cover;
 	background-repeat: no-repeat;
@@ -703,8 +706,19 @@ text-align: center;
 	z-index:-1 ;}
 
 	body{
-		
 		overflow-x:hidden;
 		
 	
+}
+
+
+
+body::-webkit-scrollbar {
+    display: none;
+	width: 0px;
+}
+
+body {
+    -ms-overflow-style: none;
+    height: 100%;
 }
