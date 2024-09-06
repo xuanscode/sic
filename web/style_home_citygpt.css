@@ -37,13 +37,13 @@ html,body{
     scroll-behavior: smooth;
 	color: #fff;
 	z-index: -20;
+	font-display: swap;
 }
 
 
+
 #headimg{
-	/*background-color: yellow;*/
-    right: 0;
-    bottom: 0;
+    right: 0;bottom: 0;
 	display: block;
 	width: 100%;
 	height:95vh;
@@ -90,11 +90,8 @@ a{
 
 	  .backdrop-blur {
 		-webkit-background:#180633;
-		-webkit-backdrop-filter: blur(9px);
 		-webkit-overflow-scrolling: touch;
-		-webkit-opacity:0.85;
-
-		backdrop-filter: blur(50px) brightness(60%);
+		backdrop-filter: blur(10px);
 		border: 0;
 		align-items: center;
 		text-align: center;
@@ -110,11 +107,9 @@ a{
 		  }
 
 	  .backdrop-blur2 {
-		-webkit-background:#000;
 		-webkit-backdrop-filter: blur(9.5px);
 		-webkit-overflow-scrolling: touch;
-		-webkit-opacity:0.85;
-			backdrop-filter: blur(60px) brightness(10%);
+			backdrop-filter: blur(60px);
 			background: rgba(5, 0, 0, 0.4);
 			align-items: center;
 			text-align: center;
@@ -174,6 +169,42 @@ a{
 	letter-spacing: 0.5px;
 	color:#fff;
 	transition:1s ease-in;
+	border: 0;
+}
+
+
+
+#topbar{
+	transition: 1s;
+	border: 0;
+	width: 1750px;position: absolute;z-index:0;padding:0px;margin:0;margin-left:-40px;top:0;left:0;background:transparent;background: cover;
+}
+
+#downbar{
+	transition: 1s;
+	position: absolute;
+	display: block;
+	transition: 1s;
+	border: 0;
+	width: 400px;z-index:0;bottom:30px;left:40px;background:transparent;
+}
+
+.downbar{
+	transition: 1s;
+	position: static;
+	display: block;
+	transition: 1s;
+	border: 0;
+	width: 400px;bottom:20px;left:40px;background:transparent;
+}
+
+#downbar2{
+	transition: 1s;
+	position: absolute;
+	display: block;
+	transition: 1s;
+	border: 0;
+	width: 400px;z-index:0;bottom:30px;right:40px;background:transparent;
 }
 
 .eng{
@@ -182,7 +213,7 @@ a{
 	margin: 0;
 }
 
-div.delay{
+.delay{
 	animation-delay: 1s; /* 先等待 2 秒再執行 */
   }
 
@@ -200,7 +231,7 @@ div.delay{
     color: white;
     cursor:pointer;
 	z-index: 999;
-	transition: 1s;
+	transition: 1s ease-in-out;
 	animation:top-shine 3s linear infinite;
 	
 }
@@ -233,12 +264,14 @@ div.delay{
 
 
 #bt {
+	z-index: 3;
 	line-height: 40px;
 	letter-spacing: 3px;
 	transition:1s ease-in;
 }
 
 #bt2 {
+	z-index: 3;
 	letter-spacing: 2px;
 	transition:1s ease-in;
 }
@@ -363,6 +396,7 @@ text-align: center;
 		z-index: -1; /*元素堆叠顺序*/
 		border-radius: 20px;
 		filter: blur(10px);
+		backdrop-filter: blur(50px);
 	  }
 
 	  /*另一个溢出的盒子，模糊形成光晕效果*/
@@ -378,7 +412,7 @@ text-align: center;
 		/*添加模糊滤镜*/
 		filter: blur(40px);
 		border-radius: 20px;
-		backdrop-filter: blur(60px) brightness(10%);
+		backdrop-filter: blur(50px);
 	
 		
 	  }
@@ -390,7 +424,7 @@ text-align: center;
 		padding: 13px;
 		/*三色渐变，中间为背景色，融入背景*/
 		background: linear-gradient(235deg, #4418d1, #060c21, #9966FF);
-		backdrop-filter: blur(60px) brightness(10%);
+		backdrop-filter: blur(50px);
 	}
 	  .content {
 		transition:1s ease-in;
@@ -403,11 +437,75 @@ text-align: center;
 		color: #fff;
 		line-height: 35px;
 		box-shadow: 0 0 10px 13px #0b000d;
+		backdrop-filter: blur(50px);
 
 	  }
  
 
+.box2 {
+  position: absolute;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+  display:block;
+  padding:30px;
+  width: 50%;
+  -webkit-backdrop-filter: blur(9px);
+	backdrop-filter: blur(70px);
 
+}
+
+
+#aboutext2{
+	text-align: justify;
+	line-height: 40px;
+	color:#fff;
+	transition:1s ease-in;
+	border: 0;
+	margin-top: -83px;
+	margin-left:45px;
+}
+
+.box2 sh {
+  position: absolute;
+  inset: calc(-30px - 0px - 71px);
+  border: calc(30px + 0px + 71px) solid #0000;
+  border-radius: calc(30px + 0px + 71px + 20px);
+  -webkit-mask: linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  transform: translateZ(-1px);
+  pointer-events: none;
+}
+.box2 sh::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  border-radius: 20px;
+  -webkit-background: conic-gradient(from 235deg at 40% -25%,#4418d1, #060c21, #9966FF);  ;
+  background: conic-gradient(from 235deg at 40% -25%,#4418d1, #060c21, #9966FF);
+  -webkit-filter: blur(30px); 
+  filter: blur(30px);
+  transform: translate(0px,0px);
+
+}
+
+
+
+.box3 {
+	position: relative;
+	transform-style: preserve-3d;
+	border-radius: 20px;
+  }
+  .box3::before {
+	content: "";
+	position: absolute; 
+	inset: 0px;
+	background: conic-gradient(from 235deg at 40% -25%,#4418d1, #060c21, #9966FF);
+	filter: blur(30px);
+	transform: translate3d(36px,35px,-1px);
+	border-radius: inherit;
+	pointer-events: none;
+  }
 
 
 
@@ -431,6 +529,8 @@ text-align: center;
 .container{
 	windows:100%;
 	overflow: hidden;
+	margin: 0;
+	border: 0;
 
 
 }
@@ -441,17 +541,21 @@ text-align: center;
 	background-color: transparent;
 	-webkit-backdrop-filter: blur(9px);
 	backdrop-filter: blur(50px);
+	/*background-color: rgba(12, 0, 14, 0.5);*/
 	padding: 10px;
+	margin: 0;
 	top:0;
 	right: 0;
 	color: #000;
 	z-index: 9999;
-	width: 108%;
+	width: 110%;
 	text-align: center;
 	overflow-x:scroll;
 	overflow-y: hidden;
 	white-space: nowrap;
 	position: sticky;
+	transition:1s ease-in-out;
+	font-size: 15px;
 
   }
 
@@ -459,31 +563,45 @@ text-align: center;
   .navigation a {      /* 超連結設定*/
     color:#e5a9f3;          /* 文字顏色設定*/
     text-decoration: none; /* 文字無底線*/
-	transition:0.5s ease-out;
+	transition:1s ease-in-out;
+	text-shadow: black 0em 0em 0.2em;
+	font-size: 15px;
 }
 
+.navigation a:hover {/* 超連結滑鼠滑過設定*/
+    color: #fff;        /* 文字顏色設定*/
+    text-decoration: none;/* 文字有底線*/
+	font-size: 16px;
+	letter-spacing: 1px;
+}
 
+.trans{
+	color: rgba(0, 0, 0, 0);
+}
 
 .navigation.ab a:hover {/* 超連結滑鼠滑過設定*/
     color: #e5a9f3;        /* 文字顏色設定*/
     text-decoration: none;/* 文字有底線*/
-	font-size: 18px;
+	font-size: 16px;
 	letter-spacing: 1px;
 }
 
   .navigation.ab{
-	color:#8213ba;
+	color:#3e0958;
+	font-size: 15px;
 	-webkit-backdrop-filter: blur(9px);
 	backdrop-filter: blur(50px);
 	-webkit-overflow-scrolling: touch;
 	box-shadow: 5px 0 50px rgba(0, 0, 0, 0.7);
-	transition:1s ease-in;
+	transition:1s ease-in-out;
 	opacity: 1;
 
   }
 
   .navigation.ab a{
 	color:#8213ba;
+	transition:1s ease-in-out;
+	text-shadow: black 0em 0em 0.2em;
   }
 
 
@@ -493,8 +611,6 @@ text-align: center;
 	width: 0px;
 }
 
-.navigation{
-	transition:1s ease-in;}
 
   .navigation ul {           /* 導覽列整體設定*/
     margin: 0;             /* 取消外距，設定為0*/
@@ -532,6 +648,26 @@ text-align: center;
 	
   }
 
+  .neon-effect2{
+	text-shadow:
+	  0 0 5px rgba(255, 255, 255, 1),
+	  0 0 10px rgba(255, 255, 255, 1),
+	  0 0 20px rgba(255, 255, 255, 1),
+	  0 0 30px rgba(255,255,255, 1);
+	animation:neon-shine 4s linear infinite;
+	
+  }
+
+  .neon-effect3{
+	text-shadow:
+	  0 0 5px rgba(255, 255, 255, 1),
+	  0 0 10px rgba(255, 255, 255, 1),
+	  0 0 20px rgba(255, 255, 255, 1),
+	  0 0 30px rgba(255,255,255, 1);
+	animation:neon-shine 2s linear infinite;
+	
+  }
+
 
   @keyframes neon-shine{
 	0%{opacity:0.5;}
@@ -549,6 +685,8 @@ text-align: center;
 	padding: 20px;
 	font-size: 14px;
 	letter-spacing: 1px;
+	-webkit-backdrop-filter: blur(9px);
+	backdrop-filter: blur(70px);
 }
 
 /*background*/
@@ -572,10 +710,12 @@ text-align: center;
 	width: 100%;
 	z-index:-1 ;}
 
-	body,html{
-		background-color: #000;
-		z-index: -100;
-	}
+	body{
+		
+		overflow-x:hidden;
+		
+	
+}
 
 
 
