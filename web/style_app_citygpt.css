@@ -8,10 +8,68 @@
         scroll-behavior: smooth;
         color: #fff;
         z-index: -20;
+        font-display: swap;
+        
 	}
 
+    #loading{
+        position: fixed;
+        top:0;left:0;
+        width: 100%;
+        height: 100%;
+        background: #fff url(loading.gif) no-repeat center;
+        z-index: 999999999999;
+    
+    }
 
 
+    html {
+        background: #000;
+        overflow: -moz-hidden-unscrollable;
+        height: 100%;
+    }
+    
+    body::-webkit-scrollbar {
+        display: none;
+        width: 0px;
+    }
+    
+    body {
+        -ms-overflow-style: none;
+        height: 100%;
+    }
+
+    .bgm{
+        background-color: transparent;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        position: fixed;
+        -webkit-postion: fixed;
+        -webkit-overflow-scrolling: touch;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        z-index:-1 ;}
+
+
+
+
+
+
+
+
+
+    #topbar{
+        transition: 1s;
+        width: 3300px;height: auto;position:fixed;z-index:0;padding:0px;margin:0;top:0;margin-left:-60px;background:transparent;
+    }
  
     div {
         line-height: 80px;
@@ -39,7 +97,7 @@
         align-items: center;
         text-align: center;
         vertical-align: middle;
-        width:70%;height: auto;
+        height: auto;
         border:0px;padding-bottom: 30px;
     }
 
@@ -82,22 +140,29 @@
 
  
     .backdrop-blur{
-        backdrop-filter: blur(50px) brightness(30%);
-        -webkit-opacity:0.6;
-        -webkit-backdrop-filter: blur(10px);
-        background:#000;
+        border: 0px;
+        padding: 0;
+        margin: 0;
+        -webkit-backdrop-filter: blur(9px);
+	backdrop-filter: blur(70px);
+        background-color: rgba(12, 0, 14, 0.3);
     }
 
     .backdrop-blur2 {
         font-size: 17px;
         vertical-align: middle;
         line-height: 0px;
+		-webkit-overflow-scrolling: touch;
+        -webkit-backdrop-filter: blur(9px);
+			backdrop-filter: blur(60px);
+			background: rgba(5, 0, 0, 0.3);
         
         
     }
 
 
     .about{
+        padding: 0;
         min-height: 100%;
         margin: 30px;
         width:100%;
@@ -105,11 +170,28 @@
 
 	 #aboutext{
         color: #fff;
-		 text-align: justify;
 		 width: 60%;line-height: 80px;
-         letter-spacing: 1px;
+         letter-spacing: 0.5px;
 
 	 }
+
+    .box2{
+        width:90vw;
+        padding:30px;
+    }
+
+     #aboutext2{
+        padding:30px;
+        color: #fff;
+         padding:50px;
+		 line-height: 80px;
+         letter-spacing: 0.5px;
+         margin-top: -94px;
+         margin-left:45px;
+
+	 }
+     
+
 
     .box {
 		
@@ -161,58 +243,57 @@
     }
 
  
-
-     nav::-webkit-scrollbar {
-        display: none;
-        width: 0px;
-    }
-
-    .navigation a:hover{
-        font-size: 38px;
-    }
-
-    .navigation.ab a:hover{
-        font-size: 38px;
-    }
- 
- 
-    html {
-        overflow: -moz-hidden-unscrollable;
-        height: 100%;
-    }
-    
-    body::-webkit-scrollbar {
-        display: none;
-        width: 0px;
-    }
-    
-    body {
-        -ms-overflow-style: none;
-        height: 100%;
-    }
-
-    .bgm{
-        background-color: #000;
+    .navigation{
+        font-size: 35px;
+        border: 0px;
+        padding: 0;
         margin: 0;
-	    border: 0;
-	    padding: 0;
-        background: #000 url(bg.png);
-        background-size: cover;
-        -webkit-background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-position-x: 50%;
-        background-position-y: 50%;
-        position: fixed;
-        -webkit-postion: fixed;
-        -webkit-overflow-scrolling: touch;
-        overflow: hidden;
-        height: 100%;
-        width: 100%;
-        z-index:-1 ;}
-
-        body,html{
-            z-index: -100;
+        letter-spacing: 0px;
+        -webkit-backdrop-filter: blur(9px);
+        backdrop-filter: blur(70px);
+        background-color: rgba(12, 0, 14, 0.5);
+    	-webkit-overflow-scrolling: touch;
         }
 
- }
+
+        nav::-webkit-scrollbar {
+            display: none;
+            width: 0px;
+        }
+
+        .navigation a {
+            font-size: 35px;}
+
+        .navigation.ab {
+            border: 0px;
+            padding: 0;
+            margin: 0;
+            letter-spacing: 0px;
+            font-size: 35px;}
+
+        .navigation.ab a {
+            font-size: 35px;}
+    
+        .navigation a:hover{
+            font-size: 38px;
+        }
+    
+        .navigation.ab a:hover{
+            font-size: 38px;
+        }
+     
+        #downbar{
+            bottom: 0;}
+        
+        #headimg{
+         height: 100vh;
+        border: 0;
+        padding-top:100px;}
+            
+    
+
+
+
+
+
+    }
