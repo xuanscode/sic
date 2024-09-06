@@ -1,3 +1,4 @@
+
 @media  (max-width: 900px), (orientation: portrait) {
 
 	html,body{
@@ -66,10 +67,12 @@
 
 
 
-    #topbar{
-        transition: 1s;
-        width: 3300px;height: auto;position:fixed;z-index:0;padding:0px;margin:0;top:0;margin-left:-60px;background:transparent;
-    }
+        #topbar{
+            transition: 1s;
+            border: 0;
+            background:url('TopBar.png') 3300px auto;
+            width:100%;height: 70px;position: absolute;z-index:0;padding:0px;margin:0;margin-left:-50px;top:0;left:0;background: cover;
+        }
  
     div {
         line-height: 80px;
@@ -176,7 +179,7 @@
 	 }
 
     .box2{
-        width:90vw;
+        width:70%;
         padding:30px;
     }
 
@@ -284,16 +287,22 @@
      
         #downbar{
             bottom: 0;}
-        
-        #headimg{
-         height: 100vh;
-        border: 0;
-        padding-top:100px;}
-            
+          
     
+        #headimg{
+            height: 130%;
+            width: 100%;
+           border: 0px;
+           padding-top:200px;
+           padding-bottom:300px;}
+               
+
+
+           body{
+               max-width: 99%;
+               overflow-x: hidden;}
 
 
 
-
-
-    }
+}
+        
