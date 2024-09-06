@@ -1,254 +1,726 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-    <script type=”text/javascript” src=”https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-<link rel=”stylesheet” type=”text/css” href=”https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-<link rel=”stylesheet” type=”text/css” href=”https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
-<link rel="icon" href="icon.png">
-<link href="style_home_citygpt.css" rel="stylesheet">
-	<link href="style_app_citygpt.css" rel="stylesheet">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link> 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<title>City GPT｜2024 鴻海科技日</title>
-<body>
-    <div class="bgm"></div><!--BGM-->
-    
-    <div id="gotop" class="gotop"></div>
-<div id="head"></div>
-
-<div id="pt1"><!--pt1-->
-<nav style="width: 100vw;border: 0;"><img src="TopBar.png" class="neon-effect3" id="topbar"></nav>
-
-<div id="headimg">
-<div class="logo" style="text-align: center;border:0px;" data-aos="fade-up">
-    <br class="app">　<img src="logo.png" id="img"><div class="neon-effect" id="bt" style="border: 0;">—— 2024 鴻海科技日 ——<div id="bt2" class="neon-effect">Hon Hai Tech Day 2024<hr style="width: 210px;" class="apphr"></div> 
-    Oct. 08-09, 2024
-    <br>展覽地點｜南港展覽館
-    <br> Venue｜TaiNEX, Taipei
-    <br>主辦單位｜鴻海科技集團
-    <br>協辦單位｜靈感時空
-
-    
-    
-</div>
-
-</div></div></div><!--pt1-->
-<span class="downbar desktop"><img src="down.png" class="neon-effect3" id="downbar" style="animation-delay: 0.6s;"></span>
-<span class="downbar2 desktop"><img src="down.png" class="neon-effect3" id="downbar2" style="animation-delay: 0.3s;"></span>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
 
 
-
-<!---container---><div id="container"><nav class="navigation">
-    　<a href="#about" title="Intro">簡介</a>｜
-    <a href="#aicity" title="AI City">智慧城市</a>｜
-    <a href="#sroom" title="City Situation Room">戰情室</a>｜
-    <a href="#AIguider" title="AI Guider">AI解說員</a>｜
-    <a href="#ebus" title="eBus Panel">電動巴士</a>｜
-    <a href="#estop" title="Smart Stop">智慧站牌</a>｜
-    <a href="#map" title="Exhibition Map">展場地圖</a>
-    <a href=""></a>　　　<span class="trans">｜</span></nav>
-    
-
-<article id="about">
-<div id="about"><div class="backdrop-blur"><br><br><br><br>
-    <div data-aos="fade-right" style="text-align: right;" id="aboutext"><h2 style="letter-spacing:5px;" class="eng">[展覽簡介]</h2><div class="neon-effect">About HHTD 2024&nbsp; </div></div>
-        <div id="aboutext" data-aos="fade-up-left">Hon Hai Tech Day ( HHTD24 )，迄今已邁入第五年，去年我們將集團 3+3 發展策略融入了智慧製造、智慧電動車、智慧城市三大智慧平台。今年除了有全新的智慧電動車解決方案，展現科技創新的速度外，我們也會說明集團如何將 AI 的應用導入三大智慧平台，期待能讓外界感受運用 AI 科技 “Accelerating Imagination” 的震撼！
-            <br><br>Hon Hai Tech Day (HHTD24) has entered its fifth year so far. Last year, we integrated the group’s 3+3 development strategy into the three smart platforms of smart manufacturing, smart electric vehicles, and smart cities. In addition to launching new smart electric vehicle solutions this year, demonstrating the speed of technological innovation, we will also explain how the group has introduced the application of AI (artificial intelligence) into three major smart platforms, hoping to let the outside world experience the use of AI technology "Accelerating Imagination" What a shock!</div>
-        <div class="backdrop-blur2" data-aos="fade-up-right" style=" width: 180px; height: 40px;border:0px;"> explore now... </div><br><br>
-   </div></article>
-
-
-<br><br>
-<div data-aos="fade-down" style="text-align:left;width: 50%;" id="aboutext"><h2 style="letter-spacing:5px;" class="eng">
-    [各展區介紹]</h2><div class="neon-effect" style="line-height: 40px;" id="ent">Exhibition Section Intro&nbsp; </div></div>
-
-<article id="aicity">
-<div id="sec1">
-    <br><br><br>
-    <div class="atc delay" data-aos="fade-up">智慧城市</div>
-    <div class="underline1"><div class="ate" data-aos="fade-up-right">AI Smart City</div></div>
-    
-    <br> <br> 
-    <div class="box">
-    <div class="content">
-      <h1>簡介</h1>
-      <p>
-        Hai Tech Day ( HHTD24 )，迄今已邁入第五年，去年我們將集團 3+3 發展策略融入了智慧製造、智慧電動車、智慧城市三大智慧平台。今年除了有全新的智慧電動車解決方案，展現科技創新的速度外，我們也會說明集團如何將 AI 的應用導入三大智慧平台，期待能讓外界感受運用 AI 科技 “Accelerating Imagination” 的震撼！
-
-        <br><br>Hon Hai Tech Day (HHTD24) has entered its fifth year so far. Last year, we integrated the group’s 3+3 development strategy into the three smart platforms of smart manufacturing, smart electric vehicles, and smart cities. In addition to launching new smart electric vehicle solutions this year, demonstrating the speed of technological innovation, we will also explain how the group has introduced the application of AI (artificial intelligence) into three major smart platforms, hoping to let the outside world experience the use of AI technology "Accelerating Imagination" What a shock!
-    </p>
-    </div>
-  </div>
-
-</article>
-
-<article id="sroom">
-    <br><br><br>
-    <div class="secp" data-aos="fade-up-right"><img src="sec10.png" class="secp"></div>
-  <div id="sec2">
-    <div class="atc" data-aos="fade-right">城市治理戰情室</div>
-    <div class="underline1"><div class="ate">City Situation Room</div></div>
-
-    <br class="apps"><br class="apps">
-    <div class="box">
-    <div class="content">
-      <h1>簡介</h1>
-      <p>
-        Hai Tech Day ( HHTD24 )，迄今已邁入第五年，去年我們將集團 3+3 發展策略融入了智慧製造、智慧電動車、智慧城市三大智慧平台。今年除了有全新的智慧電動車解決方案，展現科技創新的速度外，我們也會說明集團如何將 AI 的應用導入三大智慧平台，期待能讓外界感受運用 AI 科技 “Accelerating Imagination” 的震撼！
-
-        <br><br>Hon Hai Tech Day (HHTD24) has entered its fifth year so far. Last year, we integrated the group’s 3+3 development strategy into the three smart platforms of smart manufacturing, smart electric vehicles, and smart cities. In addition to launching new smart electric vehicle solutions this year, demonstrating the speed of technological innovation, we will also explain how the group has introduced the application of AI (artificial intelligence) into three major smart platforms, hoping to let the outside world experience the use of AI technology "Accelerating Imagination" What a shock!
-    </p>
-    </div>
-
-  </div></article>
-
-<article id="AIguider">
-    <br><br><br>
-  <div id="sec1">
-    <div class="atc" data-aos="fade-down">AI解說員</div>
-    <div class="underline1"><div class="ate" data-aos="fade-down">AI Guider</div></div>
-    <br> <br> 
-    <div class="box">
-    <div class="content">
-      <h1>簡介</h1>
-      <p>
-        Hai Tech Day ( HHTD24 )，迄今已邁入第五年，去年我們將集團 3+3 發展策略融入了智慧製造、智慧電動車、智慧城市三大智慧平台。今年除了有全新的智慧電動車解決方案，展現科技創新的速度外，我們也會說明集團如何將 AI 的應用導入三大智慧平台，期待能讓外界感受運用 AI 科技 “Accelerating Imagination” 的震撼！
-
-        <br><br>Hon Hai Tech Day (HHTD24) has entered its fifth year so far. Last year, we integrated the group’s 3+3 development strategy into the three smart platforms of smart manufacturing, smart electric vehicles, and smart cities. In addition to launching new smart electric vehicle solutions this year, demonstrating the speed of technological innovation, we will also explain how the group has introduced the application of AI (artificial intelligence) into three major smart platforms, hoping to let the outside world experience the use of AI technology "Accelerating Imagination" What a shock!
-    </p>
-    </div></div>
-
-
-  </div>
-
-</article>
-
-<article id="ebus">
-    <br><br><br>
-    <div id="sec2">
-    <div class="atc" data-aos="fade-down">電巴管理平台</div>
-    <div class="underline1"><div class="ate">Manage Panel for eBus</div></div>
-
-    <br> <br> 
-    <div class="box">
-    <div class="content">
-      <h1>簡介</h1>
-      <p>
-        Hai Tech Day ( HHTD24 )，迄今已邁入第五年，去年我們將集團 3+3 發展策略融入了智慧製造、智慧電動車、智慧城市三大智慧平台。今年除了有全新的智慧電動車解決方案，展現科技創新的速度外，我們也會說明集團如何將 AI 的應用導入三大智慧平台，期待能讓外界感受運用 AI 科技 “Accelerating Imagination” 的震撼！
-
-        <br><br>Hon Hai Tech Day (HHTD24) has entered its fifth year so far. Last year, we integrated the group’s 3+3 development strategy into the three smart platforms of smart manufacturing, smart electric vehicles, and smart cities. In addition to launching new smart electric vehicle solutions this year, demonstrating the speed of technological innovation, we will also explain how the group has introduced the application of AI (artificial intelligence) into three major smart platforms, hoping to let the outside world experience the use of AI technology "Accelerating Imagination" What a shock!
-    </p>
-    </div></div>
-
-</div>
-</article>
-
-<article id="estop">
-    <br><br><br>
- <div id="sec1">
-    <div class="atc" data-aos="fade-down">智慧站牌與乘客助理</div>
-    <div class="underline1"><div class="ate">Smart Stop & Bus Assistant</div></div>
-
-    <br> <br> 
-    <div class="box">
-    <div class="content">
-      <h1>簡介</h1>
-      <p>
-        Hai Tech Day ( HHTD24 )，迄今已邁入第五年，去年我們將集團 3+3 發展策略融入了智慧製造、智慧電動車、智慧城市三大智慧平台。今年除了有全新的智慧電動車解決方案，展現科技創新的速度外，我們也會說明集團如何將 AI 的應用導入三大智慧平台，期待能讓外界感受運用 AI 科技 “Accelerating Imagination” 的震撼！
-
-        <br><br>Hon Hai Tech Day (HHTD24) has entered its fifth year so far. Last year, we integrated the group’s 3+3 development strategy into the three smart platforms of smart manufacturing, smart electric vehicles, and smart cities. In addition to launching new smart electric vehicle solutions this year, demonstrating the speed of technological innovation, we will also explain how the group has introduced the application of AI (artificial intelligence) into three major smart platforms, hoping to let the outside world experience the use of AI technology "Accelerating Imagination" What a shock!
-    </p>
-    </div></div>
-
-</div>
-
-</article>
-
-<article id="map">
-    <br><br><br>
- <div id="sec2">
-    <div class="atc" data-aos="fade-down">展場地圖</div>
-    <div class="underline1"><div class="ate">Exhibition Map</div></div>
-
- </div>
- <div class="box2" id="aboutext2" style="position:absolute;left:50px;">
-    <h1>簡介</h1>
-          <p style="text-align: justify;">
-            Hai Tech Day ( HHTD24 )，迄今已邁入第五年，去年我們將集團 3+3 發展策略融入了智慧製造、智慧電動車、智慧城市三大智慧平台。今年除了有全新的智慧電動車解決方案，展現科技創新的速度外，我們也會說明集團如何將 AI 的應用導入三大智慧平台，期待能讓外界感受運用 AI 科技 “Accelerating Imagination” 的震撼！
-    
-            </p><br>Hon Hai Tech Day (HHTD24) has entered its fifth year so far. Last year, we integrated the group’s 3+3 development strategy into the three smart platforms of smart manufacturing, smart electric vehicles, and smart cities. In addition to launching new smart electric vehicle solutions this year, demonstrating the speed of technological innovation, we will also explain how the group has introduced the application of AI (artificial intelligence) into three major smart platforms, hoping to let the outside world experience the use of AI technology "Accelerating Imagination" What a shock!
-        </p>
-    
-        
-        <sh></sh></div>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
-</article>
-
-</div><!---container---></div>
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<p class="copyright">Copyright © 2024 Hon Hai Precision Industry Co., Ltd. 
-    <br class="app">All rights reserved. </p><br><br><br><br class="desktop"><br class="desktop">
-
-
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-<script>
-   AOS.init({
-		easing: 'ease-in-out-sine',
-		duration: 800
-		});
-
-
-        $(function(){
-$("#gotop").click(function(){
-jQuery("html,body").animate({
-scrollTop:0
-},1500);
-});
-$(window).scroll(function() {
-if ( $(this).scrollTop() > 1000){
-$('#gotop').fadeIn("slow");
-} else {
-$('#gotop').stop().fadeOut("fast");
+html {
+    overflow: -moz-hidden-unscrollable;
+    height: 100%;
+	padding-top:30px;
+	transition:1s ease-in;
+	width: 100%;
+	
 }
-});
-});
 
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $(".navigation");
-    $nav.toggleClass('ab', $(this).scrollTop() > 900);
-  });
-});
+body::-webkit-scrollbar {
+    display: none;
+	width: 0px;
+}
+
+body {
+    -ms-overflow-style: none;
+    height: 100%;
+	width: 100%;
+	
+}
 
 
- </script>
- <script>
-    window.addEventListener('load',
-        function(){
-            var Loading = document.getElementById('loading');
-            Loading.parentNode.removeChild(Loading)
-        }
-    )
- </script>
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Noto Sans TC', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    scroll-behavior: smooth;
+	color: #fff;
+	z-index: -20;
+	font-display: swap;
+}
 
- </body>
- </head>
- </html>
+
+
+#headimg{
+    right: 0;bottom: 0;
+	display: block;
+	width: 100%;
+	height:95vh;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	background-size:cover;
+	/*background: url(bg.png);*/
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	align-items: center;
+	text-align: center;
+	align-content: center;
+	vertical-align: middle;
+	padding: 50px;
+
+	
+}
+
+#headimg:img{
+	align-items: center;
+	text-align: center;
+	vertical-align: middle;
+	height:120px;width:auto;
+	border:0px;
+}
+
+#img{
+	align-items: center;
+	vertical-align: middle;
+	width: 30%;height: auto;
+	border:0px;padding-bottom: 10px;
+	font-size:0;
+
+}
+
+
+a{
+	color:#fff;
+	text-decoration: none;}
+
+
+
+	  .backdrop-blur {
+		-webkit-background:#180633;
+		-webkit-overflow-scrolling: touch;
+		-webkit-backdrop-filter: blur(9px);
+		backdrop-filter: blur(10px);
+		border: 0;
+		align-items: center;
+		text-align: center;
+		align-content: center;
+		align-self: center;
+		margin:0px;
+		padding: 0px;
+		right:0px;
+		width: 100%;
+		color:#fff;
+
+	
+		  }
+
+	  .backdrop-blur2 {
+		-webkit-backdrop-filter: blur(9.5px);
+		-webkit-overflow-scrolling: touch;
+			backdrop-filter: blur(60px);
+			background: rgba(5, 0, 0, 0.4);
+			align-items: center;
+			text-align: center;
+			align-content: center;
+			align-self: center;
+			padding: 10px;
+			text-shadow: black 0.1em 0.1em 0.2em;
+			left:50%;
+			top:50%;
+			position: relative;
+			margin: 80px 0 0 -100px;
+			border-radius: 20px;
+			color:#fff;
+
+		
+		  }
+
+
+
+		  .backdrop {
+			-webkit-background:#000;
+			-webkit-backdrop-filter: blur(9.5px);
+			-webkit-overflow-scrolling: touch;
+			-webkit-opacity:0.85;
+			backdrop-filter: blur(50px) brightness(10%);
+			background: rgba(5, 0, 0, 0.4);
+			align-items: center;
+			text-align: center;
+			align-content: center;
+			align-self: center;
+			padding: 10px;
+			text-shadow: black 0.1em 0.1em 0.2em;
+			left:50%;
+			top:50%;
+			position: relative;
+			margin: 80px 0 0 -100px;
+			border-radius: 20px;
+			color:#fff;
+
+		
+		  }
+
+#about{
+	
+	width: 110.5%;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	overflow: hidden;
+	transition:1s ease-in;
+
+}
+
+#aboutext{
+	width: 50%;padding-left:65px;
+	padding-top: 65px;
+	line-height: 40px;
+	letter-spacing: 0.5px;
+	color:#fff;
+	transition:1s ease-in;
+	border: 0;
+	text-align: left;
+}
+
+
+
+#topbar{
+	transition: 1s;
+	border: 0;
+	width: 1750px;position: absolute;z-index:0;padding:0px;margin:0;margin-left:-40px;top:0;left:0;background:transparent;background: cover;
+}
+
+#downbar{
+	transition: 1s;
+	position: absolute;
+	display: block;
+	transition: 1s;
+	border: 0;
+	width: 400px;z-index:0;bottom:30px;left:40px;background:transparent;
+}
+
+.downbar{
+	transition: 1s;
+	position: static;
+	display: block;
+	transition: 1s;
+	border: 0;
+	width: 400px;bottom:20px;left:40px;background:transparent;
+}
+
+#downbar2{
+	transition: 1s;
+	position: absolute;
+	display: block;
+	transition: 1s;
+	border: 0;
+	width: 400px;z-index:0;bottom:30px;right:40px;background:transparent;
+}
+
+.eng{
+	line-height: 40px;
+	padding: 0;
+	margin: 0;
+}
+
+.delay{
+	animation-delay: 1s; /* 先等待 2 秒再執行 */
+  }
+
+#gotop {
+	border: 0px;
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+    background-image:url(top.png);
+	background-size: 90%;
+	width:100px;height:40px;
+    background-repeat: no-repeat;
+    color: white;
+    cursor:pointer;
+	z-index: 999;
+	transition: 1s ease-in-out;
+	animation:top-shine 3s linear infinite;
+	
+}
+
+@keyframes top-shine{
+	0%{opacity:0.5;}
+	5%{opacity:1;}
+	70%{opacity:0.8}
+	100%{opacity:0;}
+	
+	
+  }  
+
+#gotop:hover{
+	bottom: 30px;
+	opacity: 1;
+	-webkit-opacity:1;
+	transition: 1s;
+	transform: rotateY(180deg);
+}
+
+#gotop a:hover{
+	bottom: 30px;
+	opacity: 1;
+	-webkit-opacity:1;
+	transition: 1s;
+}
+
+
+
+
+#bt {
+	z-index: 3;
+	line-height: 40px;
+	letter-spacing: 3px;
+	transition:1s ease-in;
+}
+
+#bt2 {
+	z-index: 3;
+	letter-spacing: 2px;
+	transition:1s ease-in;
+}
+
+
+
+
+.content{
+	display: block;
+	padding-left: 300px;
+	text-align: justify;
+	transition:1s ease-in;
+
+}
+
+.atc{
+ font-size: 40px;
+ text-shadow:
+	  0 0 5px rgba(255, 255, 255, 1),
+	  0 0 10px rgba(255, 255, 255, 1);
+ animation:ate-shine 2s linear infinite;
+ transition:1s ease-in;
+}
+
+.ate{
+ display: inline;
+ font-size:28px;
+ font-weight:400;
+ padding-bottom: 10px;
+ letter-spacing: 2px;
+ line-height: 50px;
+ transition:1s ease-in;
+}
+
+@keyframes ate-shine{
+	0%{opacity:0.5;}
+	5%{opacity:1;}
+	70%{opacity:0.8}
+	100%{opacity:0;}
+	
+  }  
+
+/*漸層底線*/
+  .underline1 {
+	display: inline;
+	padding-bottom: 30px;
+	height: 130%;
+	background-image: linear-gradient(120deg, #4418d1 0%, #9966FF 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 7px;
+	background-position: 0 88%;
+	transition:5s ease-in;
+	&:hover {
+		background-image: linear-gradient(120deg, #9966FF 0%, #4418d1 100%);
+		
+		transition:5s ease-out;
+	}
+  }
+
+
+#sec1{
+	margin: 100px;
+}
+
+#sec2{
+
+	padding: 100px;
+}
+
+#sec3{
+
+	color: #9966FF;
+	line-height: 10px;
+	padding: 20px;
+	background: #000;
+	display: inline;
+	position: relative;
+	letter-spacing: 1px;
+
+}
+
+
+.secp{
+	width: 100%;
+	height: auto;
+text-align: center;
+	right: 0;
+	padding-right:40px;
+}
+
+.secp img{
+	width: 50%;
+	right: 0;
+	padding-right:0px;
+}
+
+
+
+
+	  .box {
+		
+		border-radius: 21px;
+		position: relative;
+		width: 60%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #fff;
+		opacity: 0.8;
+		
+		}
+
+	  /*一个溢出的盒子作为边框，添加背景后形成光源效果*/
+	  .box::before {
+		content: '';
+		position: absolute;
+		top: -2px;
+		left: -2px;
+		right: -2px;
+		bottom: -2px;
+		background: #ffffff;
+		z-index: -1; /*元素堆叠顺序*/
+		border-radius: 20px;
+		filter: blur(10px);
+		-webkit-backdrop-filter: blur(9px);
+		backdrop-filter: blur(50px);
+	  }
+
+	  /*另一个溢出的盒子，模糊形成光晕效果*/
+	  .box::after {
+		content: '';
+		position: absolute;
+		top: -2px;
+		left: -2px;
+		right: -2px;
+		bottom: -2px;
+		background: #ffffff;
+		z-index: -2;
+		/*添加模糊滤镜*/
+		filter: blur(40px);
+		border-radius: 20px;
+		-webkit-backdrop-filter: blur(9px);
+		backdrop-filter: blur(50px);
+	
+		
+	  }
+
+	  .box::before,
+	  .box::after {
+		filter: blur(30px);
+		border-radius: 20px;
+		padding: 13px;
+		/*三色渐变，中间为背景色，融入背景*/
+		background: linear-gradient(235deg, #4418d1, #060c21, #9966FF);
+		backdrop-filter: blur(50px);
+	}
+	  .content {
+		transition:1s ease-in;
+		display: inline;
+		background: #0b000d;
+		border-radius: 5px;
+		padding: 20px;
+		margin: 7px;
+		box-sizing: border-box;
+		color: #fff;
+		line-height: 35px;
+		box-shadow: 0 0 10px 13px #0b000d;
+		backdrop-filter: blur(50px);
+
+	  }
+ 
+
+.box2 {
+  position: absolute;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+  display:block;
+  padding:30px;
+  width: 50%;
+  background: rgba(5, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(9px);
+	backdrop-filter: blur(70px);
+
+}
+
+
+#aboutext2{
+	line-height: 40px;
+	color:#fff;
+	transition:1s ease-in;
+	border: 0;
+	margin-top: -83px;
+	margin-left:45px;
+}
+
+.box2 sh {
+  position: absolute;
+  inset: calc(-30px - 0px - 71px);
+  border: calc(30px + 0px + 71px) solid #0000;
+  border-radius: calc(30px + 0px + 71px + 20px);
+  -webkit-mask: linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  transform: translateZ(-1px);
+  pointer-events: none;
+}
+.box2 sh::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  border-radius: 20px;
+  -webkit-background: conic-gradient(from 235deg at 40% -25%,#4418d1, #060c21, #9966FF);  ;
+  background: conic-gradient(from 235deg at 40% -25%,#4418d1, #060c21, #9966FF);
+  -webkit-filter: blur(30px); 
+  filter: blur(30px);
+  transform: translate(0px,0px);
+
+}
+
+
+
+.box3 {
+	position: relative;
+	transform-style: preserve-3d;
+	border-radius: 20px;
+  }
+  .box3::before {
+	content: "";
+	position: absolute; 
+	inset: 0px;
+	background: conic-gradient(from 235deg at 40% -25%,#4418d1, #060c21, #9966FF);
+	filter: blur(30px);
+	transform: translate3d(36px,35px,-1px);
+	border-radius: inherit;
+	pointer-events: none;
+  }
+
+
+
+.apphr{
+
+	border: 1px #550d7a solid;
+	
+}
+
+
+
+
+.app{
+	display: none;
+}
+
+.desktop{
+	display: block;
+}
+
+.container{
+	windows:100%;
+	overflow: hidden;
+	margin: 0;
+	border: 0;
+
+
+}
+
+/*浮動固定選單*/
+.navigation{
+	transition:1s ease-in;
+	background-color: transparent;
+	-webkit-backdrop-filter: blur(9px);
+	backdrop-filter: blur(50px);
+	/*background-color: rgba(12, 0, 14, 0.5);*/
+	padding: 10px;
+	margin: 0;
+	top:0;
+	right: 0;
+	color: #000;
+	z-index: 9999;
+	width: 110%;
+	text-align: center;
+	overflow-x:scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	position: sticky;
+	transition:1s ease-in-out;
+	font-size: 15px;
+
+  }
+
+
+  .navigation a {      /* 超連結設定*/
+    color:#e5a9f3;          /* 文字顏色設定*/
+    text-decoration: none; /* 文字無底線*/
+	transition:1s ease-in-out;
+	text-shadow: black 0em 0em 0.2em;
+	font-size: 15px;
+}
+
+.navigation a:hover {/* 超連結滑鼠滑過設定*/
+    color: #fff;        /* 文字顏色設定*/
+    text-decoration: none;/* 文字有底線*/
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.trans{
+	color: rgba(0, 0, 0, 0);
+}
+
+.navigation.ab a:hover {/* 超連結滑鼠滑過設定*/
+    color: #e5a9f3;        /* 文字顏色設定*/
+    text-decoration: none;/* 文字有底線*/
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+  .navigation.ab{
+	color:#3e0958;
+	font-size: 15px;
+	-webkit-backdrop-filter: blur(9px);
+	backdrop-filter: blur(50px);
+	-webkit-overflow-scrolling: touch;
+	box-shadow: 5px 0 50px rgba(0, 0, 0, 0.7);
+	transition:1s ease-in-out;
+	opacity: 1;
+
+  }
+
+  .navigation.ab a{
+	color:#8213ba;
+	transition:1s ease-in-out;
+	text-shadow: black 0em 0em 0.2em;
+  }
+
+
+
+  nav::-webkit-scrollbar {
+	display: none;
+	width: 0px;
+}
+
+
+  .navigation ul {           /* 導覽列整體設定*/
+    margin: 0;             /* 取消外距，設定為0*/
+    padding: 4px;          /* 內部距離，設定為4px*/
+    text-align: center;    /* 文字置中*/
+}
+.navigation ul li {        /* 按鈕個別設定*/
+    list-style-type: none; /* 取消前面的小黑點*/
+    display: inline;       /* 成一行排列*/
+    margin: 0 5px;         /* 外距設定為0.5px*/
+    font-size: 15px;       /* 字體大小15px*/
+}
+
+
+
+
+.neon-effect:nth-of-type(1){
+	text-shadow:
+	  0 0 5px rgba(255, 255, 255, 1),
+	  0 0 10px rgba(255, 255, 255, 1),
+	  0 0 20px rgba(255, 255, 255, 1),
+	  0 0 40px rgba(255, 255,255, 1);
+	animation:neon-shine 3s linear infinite;
+	
+  }
+
+
+  .neon-effect:nth-of-type(2){
+	text-shadow:
+	  0 0 5px rgba(255, 255, 255, 1),
+	  0 0 10px rgba(255, 255, 255, 1),
+	  0 0 20px rgba(255, 255, 255, 1),
+	  0 0 30px rgba(255,255,255, 1);
+	animation:neon-shine 4s linear infinite;
+	
+  }
+
+  .neon-effect2{
+	text-shadow:
+	  0 0 5px rgba(255, 255, 255, 1),
+	  0 0 10px rgba(255, 255, 255, 1),
+	  0 0 20px rgba(255, 255, 255, 1),
+	  0 0 30px rgba(255,255,255, 1);
+	animation:neon-shine 4s linear infinite;
+	
+  }
+
+  .neon-effect3{
+	text-shadow:
+	  0 0 5px rgba(255, 255, 255, 1),
+	  0 0 10px rgba(255, 255, 255, 1),
+	  0 0 20px rgba(255, 255, 255, 1),
+	  0 0 30px rgba(255,255,255, 1);
+	animation:neon-shine 2s linear infinite;
+	
+  }
+
+
+  @keyframes neon-shine{
+	0%{opacity:0.5;}
+	5%{opacity:1;}
+	70%{opacity:0.8}
+	100%{opacity:0;}
+	
+  }  
+
+
+
+  .copyright{
+	text-align: center;
+	align-items: center;
+	padding: 20px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	-webkit-backdrop-filter: blur(9px);
+	backdrop-filter: blur(70px);
+}
+
+/*background*/
+
+.bgm{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	background: #000 url(bgs.png);
+	background-size: cover;
+	-webkit-background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-x: 50%;
+	background-position-y: 50%;
+	position: fixed;
+	-webkit-postion: fixed;
+	-webkit-overflow-scrolling: touch;
+	height: 100%;
+	width: 100%;
+	z-index:-1 ;
+	transition:1s ease-in-out;}
+
+	body{
+		width: 100%;
+		overflow-x:hidden;
+		
+	
+}
+
+
+
 
