@@ -162,7 +162,7 @@ a{
 }
 
 #aboutext{
-	text-align: justify;
+	
 	width: 50%;padding-left:65px;
 	padding-top: 65px;
 	line-height: 40px;
@@ -175,9 +175,10 @@ a{
 
 
 #topbar{
-	transition: 1s;
-	border: 0;
-	width: 1750px;position: absolute;z-index:0;padding:0px;margin:0;margin-left:-40px;top:0;left:0;background:transparent;background: cover;
+    transition: 1s;
+    border: 0;
+    background:url('TopBar.png');
+    width: 1750px;height: 70px;position: absolute;z-index:0;padding:0px;margin:0;margin-left:-40px;top:0;left:0;background: cover;
 }
 
 #downbar{
@@ -186,17 +187,9 @@ a{
 	display: block;
 	transition: 1s;
 	border: 0;
-	width: 400px;z-index:0;bottom:30px;left:40px;background:transparent;
+	width: 400px;z-index:0;bottom:30px;left:50px;background:transparent;
 }
 
-.downbar{
-	transition: 1s;
-	position: static;
-	display: block;
-	transition: 1s;
-	border: 0;
-	width: 400px;bottom:20px;left:40px;background:transparent;
-}
 
 #downbar2{
 	transition: 1s;
@@ -282,7 +275,6 @@ a{
 .content{
 	display: block;
 	padding-left: 300px;
-	text-align: justify;
 	transition:1s ease-in;
 
 }
@@ -456,7 +448,7 @@ text-align: center;
 
 
 #aboutext2{
-	text-align: justify;
+	
 	line-height: 40px;
 	color:#fff;
 	transition:1s ease-in;
@@ -599,7 +591,7 @@ text-align: center;
   }
 
   .navigation.ab a{
-	color:#8213ba;
+	color:#9f3cd1;
 	transition:1s ease-in-out;
 	text-shadow: black 0em 0em 0.2em;
   }
@@ -716,7 +708,3 @@ text-align: center;
 		
 	
 }
-
-
-
-
