@@ -40,6 +40,7 @@
         height: 100%;
     }
 
+
     .bgm{
         background-color: transparent;
         margin: 0;
@@ -74,7 +75,9 @@
             width:100%;height: 70px;position: absolute;z-index:0;padding:0px;margin:0;margin-left:-50px;top:0;left:0;background: cover;
         }
  
-    div {
+    div {margin: 0;
+        border: 0;
+        padding: 0;
         line-height: 80px;
     }
  
@@ -115,11 +118,12 @@
     img {border:0px;}
  
     #bt {
-        padding-top: 0px;
+        padding:0px
         letter-spacing: 3px;line-height: 90px;
     }
 
     #bt2{
+        padding: 0px;
     line-height: 100px;}
 
     .atc{
@@ -143,12 +147,13 @@
 
  
     .backdrop-blur{
-        border: 0px;
-        padding: 0;
-        margin: 0;
+        
         -webkit-backdrop-filter: blur(9px);
 	backdrop-filter: blur(70px);
         background-color: rgba(12, 0, 14, 0.3);
+        border: 0px;
+        padding: 0;
+        margin: 0;
     }
 
     .backdrop-blur2 {
@@ -165,16 +170,17 @@
 
 
     .about{
-        padding: 0;
-        min-height: 100%;
-        margin: 30px;
+        padding: 30px;
+        margin:0px;
         width:100%;
+        display: inline;
     }
 
 	 #aboutext{
         color: #fff;
 		 width: 60%;line-height: 80px;
          letter-spacing: 0.5px;
+         text-align: center;
 
 	 }
 
@@ -210,12 +216,14 @@
 
  
     .copyright{
+        margin:0px;
         text-align: left;
         align-items: center;
         padding: 20px;
         font-size: 24px;
         line-height: 40px;
         letter-spacing: 1px;
+        width: 100%;
     }
 
  
@@ -293,6 +301,7 @@
             height: 130%;
             width: 100%;
            border: 0px;
+           padding:0;
            padding-top:200px;
            padding-bottom:300px;}
                
@@ -301,6 +310,18 @@
            body{
                max-width: 99%;
                overflow-x: hidden;}
+
+
+body::-webkit-scrollbar {
+    display: none;
+	width: 0px;
+}
+
+body {
+    -ms-overflow-style: none;
+    height: 100%;
+	width: calc(100vw + 8px);
+}
 
 
 
