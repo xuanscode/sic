@@ -172,6 +172,12 @@
         
     }
 
+    .secp{
+        width: 90%;
+        height: auto;
+        padding-left: 50px;
+
+    }
 
     .about{
         padding: 30px;
@@ -182,11 +188,16 @@
 
 	 #aboutext{
         color: #fff;
-		 width: 60%;line-height: 80px;
+		 width: 70%;line-height: 80px;
          letter-spacing: 0.5px;
          text-align: center;
 
 	 }
+
+     .eng{
+        line-height: 90px;
+        padding-top: 40px;
+     }
 
     .box2{
         width:70%;
@@ -207,6 +218,7 @@
 
 
 
+
 .aboutextc{
 	
 	color:#fff;
@@ -220,7 +232,7 @@
 
 	text-align:start;
 	color:#fbf0ff;
-	font-weight:400;
+	font-weight:300;
 	font-size:30px;
 	line-height: 70px;
 }
@@ -280,6 +292,7 @@
 
  
     .navigation{
+        width: 100%;
         font-size: 35px;
         border: 0px;
         padding: 0;
@@ -341,7 +354,7 @@
 
 
            body{
-               max-width: 99%;
+               min-width: 99%;
                overflow-x: hidden;}
 
 
