@@ -30,7 +30,7 @@ html,body{
 	font-size:24px;
 }
 
-
+#ent {border: 0px;}
 
 #headimg{
     margin: 0px;
@@ -38,7 +38,7 @@ html,body{
 	padding: 0;
 	display: block;
 	width: 100%;
-	height: 130%;
+	height: 95%;
 	overflow:hidden;
 	background-repeat: no-repeat;
 	background-size:cover;
@@ -48,10 +48,41 @@ html,body{
 	align-items: center;
 	text-align: center;
 	align-content: center;
-	padding-top:200px;
-	padding-bottom: 200px;
+	padding-top: 10%;
+	padding-bottom: 40px;
+}
 
-	
+
+#topbar{
+    transition: 1s;
+    border: 0;
+    background:url('TopBar.png');
+	background-size: cover;
+    width:calc(100% + 50px);height: 57px;position: absolute;z-index:0;padding:0px;margin:0;margin-left:-50px;top:0;left:0;
+}
+
+#downbar{
+	transition: 1s;
+	position: absolute;
+	display: block;
+	transition: 1s;
+	border: 0;
+	width: 400px;bottom:40px;left:50px;background:transparent;
+}
+
+
+#downbar2{
+	transition: 1s;
+	position: absolute;
+	display: block;
+	transition: 1s;
+	border: 0;
+	width: 400px;z-index:0;bottom:40px;right:40px;background:transparent;
+}
+
+
+#pt1 {
+	min-height:calc(99% + 60px) ;
 }
 
 #headimg:img{
@@ -155,8 +186,11 @@ a{
 	text-shadow: black 0.1em 0.1em 0.2em;
 	overflow: hidden;
 	transition:1s ease-in;
+	border: 0px;padding: 0px;margin: 0px;
 
 }
+
+
 
 #aboutext{
 	text-align: left;
@@ -166,42 +200,20 @@ a{
 	letter-spacing: 0.5px;
 	color:#fff;
 	transition:1s ease-in;
-	border: 0;
-}
-
-
-
-#topbar{
-    transition: 1s;
-    border: 0;
-    background:url('TopBar.png');
-    width:100%;height: 60px;position: absolute;z-index:0;padding:0px;margin:0;margin-left:-60px;top:0;left:0;background-size: cover;
-}
-
-#downbar{
-	transition: 1s;
-	position: absolute;
-	display: block;
-	transition: 1s;
-	border: 0;
-	width: 400px;bottom:30px;left:50px;background:transparent;
-}
-
-
-#downbar2{
-	transition: 1s;
-	position: absolute;
-	display: block;
-	transition: 1s;
-	border: 0;
-	width: 400px;z-index:0;bottom:30px;right:40px;background:transparent;
+	border: 0;margin: 0px;
 }
 
 .eng{
-	line-height: 40px;
-	padding: 0;
-	margin: 0;
+	padding:65px 0px 65px;
+	margin: 0px;
+	line-height: 55px;
+	letter-spacing: 0.5px;
+	color:#fff;
+	transition:1s ease-in;
+	border: 0;
 }
+
+
 
 .delay{
 	animation-delay: 1s; /* 先等待 2 秒再執行 */
@@ -231,8 +243,6 @@ a{
 	5%{opacity:1;}
 	70%{opacity:0.8}
 	100%{opacity:0;}
-	
-	
   }  
 
 #gotop:hover{
@@ -240,7 +250,6 @@ a{
 	opacity: 1;
 	-webkit-opacity:1;
 	transition: 1s;
-	transform: rotateY(180deg);
 }
 
 #gotop a:hover{
@@ -255,7 +264,7 @@ a{
 
 #bt {
 	z-index: 3;
-	line-height: 40px;
+	line-height: 50px;
 	letter-spacing: 3px;
 	transition:1s ease-in;
 }
@@ -267,7 +276,7 @@ a{
 }
 
 .smallf{
-	font-size: 16px;
+	font-size: 16px;font-weight:300;
 }
 
 
@@ -276,8 +285,6 @@ a{
 	display: block;
 	padding-left: 300px;
 	transition:1s ease-in;
-	
-
 }
 
 .atc{
@@ -287,8 +294,7 @@ a{
 	  0 0 10px rgba(255, 255, 255, 1);
  animation:ate-shine 2s linear infinite;
  transition:1s ease-in;
- text-shadow: black 0.1em 0.1em 0.2em;
-}
+ text-shadow: black 0.1em 0.1em 0.2em;}
 
 .ate{
  display: inline;
@@ -306,7 +312,6 @@ a{
 	5%{opacity:1;}
 	70%{opacity:0.8}
 	100%{opacity:0;}
-	
   }  
 
 /*漸層底線*/
@@ -328,7 +333,7 @@ a{
 
 
 #sec1{
-	margin: 100px;
+	padding:0px 100px 100px;
 }
 
 #sec2{
@@ -348,27 +353,22 @@ a{
 
 }
 
-h2{
-	font-weight: 500;
-}
+h2{font-weight: 400;letter-spacing: 2px;margin:0;}
 
-h3{
-	font-weight: 500;
-	color: #9966FF;
-}
+h3{font-weight: 500;color: #9966FF;margin-top: 0;}
 
 .secp{
-	width: 100%;
+	width: 70%;
 	height: auto;
 text-align: center;
-	right: 0;
-	padding-right:40px;
+align-content: center;
+padding-left: 15%;
+
 }
 
 .secp img{
-	width: 60%;
-	right: 0;
-	padding-right:0px;
+	width: 100%;
+	text-align: center;
 }
 
 
@@ -554,7 +554,7 @@ text-align: center;
 }
 
 .container{
-	width: 99%;
+	width: 100%;
 	overflow: hidden;
 	margin: 0;
 	border: 0;
@@ -576,7 +576,7 @@ text-align: center;
 	right: 0;
 	color: #000;
 	z-index: 9999;
-	width: 99%;
+	width: 98%;
 	text-align: center;
 	overflow-x:scroll;
 	overflow-y: hidden;
@@ -714,6 +714,7 @@ text-align: center;
   }
 
 
+
   .neon-effect4{
 	text-shadow:
 	  0 0 5px rgba(255, 255, 255, 1),
@@ -749,8 +750,7 @@ text-align: center;
 	margin: 0;
 	border: 0;
 	padding: 0;
-	background-color: #000;
-	background: #000 url(bgs.png);
+	background: url(bgs.png);
 	background-size: cover;
 	-webkit-background-size: cover;
 	background-repeat: no-repeat;
@@ -762,15 +762,20 @@ text-align: center;
 	-webkit-overflow-scrolling: touch;
 	height: 100%;
 	width: 100%;
-	z-index:-1 ;}
+	z-index:-1 ;  
+	animation:bgmshine 5s linear infinite;
+
+	}
+
+	@keyframes bgmshine{
+		0%{opacity:1;}
+		70%{opacity:0.5}
+		100%{opacity:1;}} 
 
 	body{
-		overflow-x:hidden;
-		
-	
-}
+		overflow-x:hidden;}
 
-
+html{background: #000;}
 
 body::-webkit-scrollbar {
     display: none;
