@@ -14,7 +14,8 @@
 
 
     #headimg{
-        padding-top: 20%;
+        padding-top:100px;
+        padding-bottom: 100px;
     }
 
     .bgm{
@@ -58,7 +59,7 @@
         text-align: center;
         vertical-align: middle;
         width:80%;height: auto;
-        border:0px;padding-bottom: 20px;
+        border:0px;
     }
 
 
@@ -80,6 +81,7 @@
              0 0 10px rgba(255, 255, 255, 1);
         animation:ate-shine 2s linear infinite;
         letter-spacing: 2px;
+        clear: both;
        }
        
     .ate{
@@ -138,11 +140,19 @@
 .aboutextc{
 
 color:#fff;
-line-height: 70px;
+line-height: 65px;
 text-align: justify;
 font-weight: 400;
 letter-spacing: 0.5px;
 
+}
+
+.center{
+    display: flexbox;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    align-items:center;
 }
 
 
@@ -152,7 +162,7 @@ text-align:start;
 color:#fbf0ff;
 font-weight: 400;
 font-size:30px;
-line-height: 70px;
+line-height: 60px;
 letter-spacing: 0.5px;
 }
  
@@ -177,9 +187,10 @@ letter-spacing: 0.5px;
     text-align: left;
     align-items: center;
     padding: 30px;
-    font-size: 12px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 35px;
     letter-spacing: 1px;
+    
 }
 
 
@@ -210,19 +221,18 @@ letter-spacing: 0.5px;
 
 
 .navigation{
-
-	transition:1s ease-in;
+    font-size: 28px;
+    text-align: right;
     width: 100%;
-    font-size: 35px;
     border: 0px;
     padding: 0;
     margin: 0;
-    overflow: hidden;
     letter-spacing: 0px;
     -webkit-backdrop-filter: blur(9px);
     backdrop-filter: blur(70px);
     background-color: rgba(12, 0, 14, 0.5);
     -webkit-overflow-scrolling: touch;
+    transition:1s ease-in;
     }
 
 
@@ -232,32 +242,50 @@ letter-spacing: 0.5px;
     }
 
     .navigation a {
-        font-size: 30px;}
+        font-size: 28px;
+        transition:1s ease-in;}
 
     .navigation.ab {
+        font-size: 28px;
         border: 0px;
         padding: 0;
-        margin: 0;
-        letter-spacing: 0px;
-        font-size: 34px;}
+        margin: 0;}
 
     .navigation.ab a {
-        font-size: 30px;}
+        font-size: 28px;}
 
     .navigation a:hover{
-        font-size: 34px;
+        font-size: 38px;
     }
 
-    .navigation a:focus,a:active{
-        font-size: 34px;
+    .navigation a:focus{
+        letter-spacing: 1px;
+        font-size: 38px;
+        transition:1s ease-in;
+    }
+
+    .navigation a:active{
+        letter-spacing: 1px;
+        font-size: 38px;
+        transition:1s ease-in;
     }
 
     .navigation.ab a:hover{
-        font-size: 34px;
+        font-size: 38px;
+        transition:1s ease-in;
     }
 
-    .navigation a:focus,a:active{
-        font-size: 34px;
+    .navigation.ab a:focus{
+        font-size: 38px;
+        letter-spacing: 1px;
+        transition:1s ease-in;
+    }
+
+    .navigation.ab a:active{
+        font-size: 38px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        transition:1s ease-in;
     }
 
 
