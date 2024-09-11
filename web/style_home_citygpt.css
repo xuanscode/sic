@@ -27,7 +27,9 @@ html,body{
 	color: #fff;
 	z-index: -20;
 	font-display: swap;
-	font-size:24px;
+	font-size:24px;-webkit-font-smoothing: antialiased; /* for safari & chrome */
+	-moz-osx-font-smoothing: grayscale; /* for firefox */
+	
 }
 
 #ent {border: 0px;}
@@ -48,8 +50,6 @@ html,body{
 	align-items: center;
 	text-align: center;
 	align-content: center;
-	padding-top: 10%;
-	padding-bottom: 40px;
 }
 
 
@@ -83,6 +83,9 @@ html,body{
 
 #pt1 {
 	min-height:calc(99% + 60px) ;
+	display: flex;
+	align-items: center;
+	vertical-align: middle;
 }
 
 #headimg:img{
@@ -116,10 +119,11 @@ a{
 
 	  .backdrop-blur {
 		text-align: left;
-		-webkit-background:#180633;
+		-webkit-background:rgba(12, 0, 14, 0.3);
 		-webkit-overflow-scrolling: touch;
 		-webkit-backdrop-filter: blur(9px);
 		backdrop-filter: blur(10px);
+        background-color: rgba(12, 0, 14, 0.3);
 		border: 0;
 		align-items: center;
 		text-align: center;
@@ -144,7 +148,7 @@ a{
 			align-content: center;
 			align-self: center;
 			padding: 10px;
-			text-shadow: black 0.1em 0.1em 0.2em;
+        	text-shadow: rgba(28, 4, 49, 0.7) 0em 0em 0.1em;
 			left:50%;
 			top:50%;
 			position: relative;
@@ -183,9 +187,9 @@ a{
 #about{
 	text-align: left;
 	width: 100%;
-	text-shadow: black 0.1em 0.1em 0.2em;
 	overflow: hidden;
 	transition:1s ease-in;
+	left:0px;
 	border: 0px;padding: 0px;margin: 0px;
 
 }
@@ -220,21 +224,22 @@ a{
   }
 
 #gotop {
-	border: 0px;
+	
     display: block;
     position: fixed;
     right: 20px;
     bottom: 20px;
     font-size: 20px;
-    background-image:url(top.png);
+    background-image:url(top2.png);
 	background-size: 90%;
-	width:100px;height:40px;
+	width:140px;height:70px;
     background-repeat: no-repeat;
     color: white;
     cursor:pointer;
 	z-index: 999;
 	transition: 1s ease-in-out;
 	animation:top-shine 3s linear infinite;
+	border: 0px;
 	
 }
 
@@ -290,11 +295,11 @@ a{
 .atc{
  font-size: 40px;
  text-shadow:
-	  0 0 5px rgba(255, 255, 255, 1),
-	  0 0 10px rgba(255, 255, 255, 1);
- animation:ate-shine 2s linear infinite;
+ 0 0 5px rgba(250, 241, 255, 1),
+ 0 0 10px rgba(250, 241, 255, 0.7);
+        animation:ate-shine 2s linear infinite;
  transition:1s ease-in;
- text-shadow: black 0.1em 0.1em 0.2em;}
+letter-spacing: 0.5px;}
 
 .ate{
  display: inline;
@@ -304,7 +309,7 @@ a{
  letter-spacing: 2px;
  line-height: 50px;
  transition:1s ease-in;
- text-shadow: black 0.1em 0.1em 0.2em;
+ text-shadow: rgba(28, 4, 49, 1) 0em 0.1em 0.3em;
 }
 
 @keyframes ate-shine{
@@ -334,6 +339,7 @@ a{
 
 #sec1{
 	padding:0px 100px 100px;
+	
 }
 
 #sec2{
@@ -462,6 +468,8 @@ padding-left: 15%;
 
 }
 
+.f200{font-weight: 300;}
+
 
 #aboutext2{
 	
@@ -478,12 +486,13 @@ padding-left: 15%;
 	color:#fff;
 	line-height: 45px;
 	text-align: justify;
-
+    font-weight: 400;
+	letter-spacing: 0.5px;text-shadow: rgba(28, 4, 49, 0.8) 0em 0em 0.2em;
 }
 
 
 .aboutexte{
-
+	letter-spacing: 0.5px;
 	text-align:start;
 	color:#fbf0ff;
 	font-weight:300;
@@ -507,7 +516,7 @@ padding-left: 15%;
   content: "";
   position: absolute;
   inset: 0px;
-  border-radius: 20px;
+  border-radius: 100px;
   -webkit-background: conic-gradient(from 235deg at 40% -25%,#4418d1, #060c21, #9966FF);  ;
   background: conic-gradient(from 235deg at 40% -25%,#4418d1, #060c21, #9966FF);
   -webkit-filter: blur(30px); 
@@ -559,8 +568,6 @@ padding-left: 15%;
 	margin: 0;
 	border: 0;
 	padding: 0;
-
-
 }
 
 /*浮動固定選單*/
@@ -592,7 +599,7 @@ padding-left: 15%;
     color:#e5a9f3;          /* 文字顏色設定*/
     text-decoration: none; /* 文字無底線*/
 	transition:1s ease-in-out;
-	text-shadow: black 0em 0em 0.2em;
+	text-shadow: rgba(28, 4, 49, 0.8) 0em 0em 0.2em;
 	font-size: 20px;
 }
 
@@ -643,7 +650,7 @@ padding-left: 15%;
   .navigation.ab a{
 	color:#9966FF;
 	transition:1s ease-in-out;
-	text-shadow: black 0em 0em 0.2em;
+	text-shadow: rgba(28, 4, 49, 0.8) 0em 0em 0.2em;
   }
 
 
@@ -671,10 +678,10 @@ padding-left: 15%;
 
 .neon-effect:nth-of-type(1){
 	text-shadow:
-	  0 0 5px rgba(255, 255, 255, 1),
-	  0 0 10px rgba(255, 255, 255, 1),
-	  0 0 20px rgba(255, 255, 255, 1),
-	  0 0 40px rgba(255, 255,255, 1);
+	0 0 5px rgba(249, 254, 255, 1),
+	0 0 10px rgba(249, 254, 255, 1),
+	0 0 20px rgba(249, 254, 255, 1),
+	0 0 40px rgba(249, 254, 255, 1);
 	animation:neon-shine 3s linear infinite;
 	margin: 0;
         border: 0;
@@ -685,20 +692,20 @@ padding-left: 15%;
 
   .neon-effect:nth-of-type(2){
 	text-shadow:
-	  0 0 5px rgba(255, 255, 255, 1),
-	  0 0 10px rgba(255, 255, 255, 1),
-	  0 0 20px rgba(255, 255, 255, 1),
-	  0 0 30px rgba(255,255,255, 1);
+	0 0 5px rgba(249, 254, 255, 1),
+	0 0 10px rgba(249, 254, 255, 1),
+	0 0 20px rgba(249, 254, 255, 1),
+	0 0 30px rgba(249, 254, 255, 1);
 	animation:neon-shine 4s linear infinite;
 	
   }
 
   .neon-effect2{
 	text-shadow:
-	  0 0 5px rgba(255, 255, 255, 1),
-	  0 0 10px rgba(255, 255, 255, 1),
-	  0 0 20px rgba(255, 255, 255, 1),
-	  0 0 30px rgba(255,255,255, 1);
+	  0 0 5px rgba(249, 254, 255, 1),
+	  0 0 10px rgba(249, 254, 255, 1),
+	  0 0 20px rgba(249, 254, 255, 1),
+	  0 0 30px rgba(249, 254, 255, 1);
 	animation:neon-shine 4s linear infinite;
 	
   }
@@ -718,7 +725,7 @@ padding-left: 15%;
   .neon-effect4{
 	text-shadow:
 	  0 0 5px rgba(255, 255, 255, 1),
-	  0 0 10px rgba(255, 255, 255, 1);
+	  0 0 10px rgba(255, 255, 255, 0.8);
 	
   }
 
@@ -742,6 +749,7 @@ padding-left: 15%;
 	letter-spacing: 1px;
 	-webkit-backdrop-filter: blur(9px);
 	backdrop-filter: blur(70px);
+	text-shadow: rgba(28, 4, 49, 1) 0em 0.1em 0.3em;
 }
 
 /*background*/
@@ -764,6 +772,7 @@ padding-left: 15%;
 	width: 100%;
 	z-index:-1 ;  
 	animation:bgmshine 5s linear infinite;
+	transition:1s ease-in;
 
 	}
 
