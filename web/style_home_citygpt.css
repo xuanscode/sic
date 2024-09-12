@@ -99,7 +99,8 @@ html,body{
 #img{
 	align-items: center;
 	vertical-align: middle;
-	width: 30%;height: auto;
+	width: 50%;height: auto;
+	padding-left: 20px;
 	border:0px;padding-bottom: 10px;
 	font-size:0;
 
@@ -469,7 +470,8 @@ padding-left: 15%;
 }
 
 .f200{font-weight: 300;}
-
+.f400{font-weight: 400;}
+.f600{font-weight: 600;}
 
 #aboutext2{
 	
@@ -610,7 +612,21 @@ padding-left: 15%;
 	letter-spacing: 1px;
 }
 
-.navigation a:focus,a:active {
+.navigation:target {
+    color: #fff;
+    text-decoration: none;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+.navigation a:active {
+    color: #fff;
+    text-decoration: none;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+.navigation a:focus {
     color: #fff;
     text-decoration: none;
 	font-size: 22px;
@@ -628,12 +644,28 @@ padding-left: 15%;
 	letter-spacing: 1px;
 }
 
-.navigation.ab a:focus,a:active {
+.navigation.ab:target {
     color: #ebbcf5;
     text-decoration: none;
 	font-size: 22px;
 	letter-spacing: 1px;
 }
+
+.navigation.ab a:active {
+    color: #ebbcf5;
+    text-decoration: none;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+.navigation.ab a:focus {
+    color: #ebbcf5;
+    text-decoration: none;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+
 
   .navigation.ab{
 	color:#3e0958;
