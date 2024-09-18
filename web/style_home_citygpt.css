@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
 html {
     overflow: -moz-hidden-unscrollable;
@@ -97,9 +97,9 @@ html,body{
 	width:40%;height:11px;position: absolute;padding:0px;margin:0;right:40px;bottom: 30px;background: cover;
 	}
 
-.hon{font-size: 5dvh;letter-spacing: 5px;line-height: 6vh}
-.hon2{font-size: 2dvh;letter-spacing: 4.5px;line-height:7vh}
-.hon3{font-size: 2.5dvh;letter-spacing: 5px;line-height:6vh;}
+.hon{font-size: 5dvh;letter-spacing: 5px;line-height: 6vh;}
+.hon2{font-family: "Michroma", sans-serif;font-size: 2dvh;line-height:7vh;}
+.hon3{font-family: "Michroma", sans-serif;font-size: 2.5dvh;letter-spacing: 5px;line-height:6vh;}
 
 
 #pt1 {
@@ -241,6 +241,7 @@ a{
 }
 
 .eng{
+	font-family: "Michroma", sans-serif;
 	padding:65px 0px 65px;
 	margin: 0px;
 	line-height: 55px;
@@ -308,6 +309,7 @@ a{
 }
 
 #bt2 {
+	font-family: "Michroma", sans-serif;
 	z-index: 3;
 	letter-spacing: 2px;
 	transition:1s ease-in;
@@ -330,11 +332,13 @@ a{
  text-shadow:
  0 0 5px rgba(250, 241, 255, 1),
  0 0 10px rgba(250, 241, 255, 0.7);
-        animation:ate-shine 2s linear infinite;
+ animation:ate-shine 2s linear infinite;
  transition:1s ease-in;
 letter-spacing: 0.5px;}
 
 .ate{
+ font-family: "Michroma", sans-serif;
+ font-weight: 400;
  display: inline;
  font-size:28px;
  font-weight:400;
@@ -355,7 +359,6 @@ letter-spacing: 0.5px;}
 /*漸層底線*/
   .underline1 {
 	display: inline;
-	padding-bottom: 30px;
 	height: 130%;
 	background-image: linear-gradient(120deg, #4418d1 0%, #9966FF 100%);
 	background-repeat: no-repeat;
@@ -408,6 +411,20 @@ padding-left: 15%;
 }
 
 .secp img{
+	width: 100%;
+	text-align: center;
+}
+
+.secp2{
+	width: 74%;
+	height: auto;
+text-align: center;
+align-content: center;
+padding-left: 88px;
+
+}
+
+.secp2 img{
 	width: 100%;
 	text-align: center;
 }
@@ -504,8 +521,8 @@ padding-left: 15%;
 }
 
 .f200{font-weight: 300;line-height: 50px;}
-.f400{font-weight: 400;line-height: 50px}
-.f600{font-weight: 600;line-height: 50px}
+.f400{font-weight: 400;line-height: 50px;}
+.f600{font-weight: 600;line-height: 50px;}
 
 #aboutext2{
 	
@@ -781,10 +798,8 @@ padding-left: 15%;
   .neon-effect3{
 	text-shadow:
 	  0 0 5px rgba(255, 255, 255, 1),
-	  0 0 10px rgba(255, 255, 255, 1),
-	  0 0 20px rgba(255, 255, 255, 1),
-	  0 0 30px rgba(255,255,255, 1);
-	animation:neon-shine 2s linear infinite;
+	  0 0 10px rgba(255, 255, 255, 1);
+	animation:neon-shine 3s linear infinite;
 	
   }
 
@@ -849,7 +864,7 @@ padding-left: 15%;
 	text-shadow: rgba(28, 4, 49, 1) 0em 0.1em 0.3em;
 }
 
-.ls10{letter-spacing: 2px;}
+.ls10{letter-spacing: 1px;}
 
 /*background*/
 
