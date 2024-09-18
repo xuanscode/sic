@@ -46,7 +46,7 @@
 
 
     .hon{font-size: 6dvw;letter-spacing: 15px;padding-left:-15px;line-height: 6vh;}
-    .hon2{font-size: 4dvw;letter-spacing: 1.5px;margin-left:-1.5px;line-height: 6vh}
+    .hon2{font-size: 4dvw;margin-left:-1.5px;line-height: 6vh}
 
     @keyframes bgmshine{
     0%{opacity:1}
@@ -84,12 +84,12 @@
 
     img {border:0px;}
  
-    #bt {
+    #bt {font-family: "Michroma", sans-serif;
         padding:0px;
         letter-spacing: 3px;line-height: 70px;
     }
 
-    #bt2{
+    #bt2{font-family: "Michroma", sans-serif;
         padding: 0px;
     line-height: 70px;}
 
@@ -121,6 +121,20 @@
 
 }
 
+.secp2{
+	width: 90%;
+	height: auto;
+text-align: center;
+align-content: center;
+padding-left: 42px;
+
+}
+
+.secp2 img{
+	width: 100%;
+	text-align: center;
+}
+
 #aboutext{
     color: #fff;
      width: 70%;line-height: 80px;
@@ -133,6 +147,9 @@
     line-height: 90px;
     padding-top: 40px;
  }
+
+
+.ls10{padding-top:10px;line-height: 60px;}
 
 .box2{
     width:70%;
