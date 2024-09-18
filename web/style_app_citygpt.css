@@ -294,34 +294,34 @@ letter-spacing: 0.5px;
         font-size: 28px;}
 
     .navigation a:hover{
-        font-size: 38px;
+        font-size: 32px;
     }
 
     .navigation a:focus{
         letter-spacing: 1px;
-        font-size: 38px;
+        font-size: 32px;
         transition:1s ease-in;
     }
 
     .navigation a:active{
         letter-spacing: 1px;
-        font-size: 38px;
+        font-size: 32px;
         transition:1s ease-in;
     }
 
     .navigation.ab a:hover{
-        font-size: 38px;
+        font-size: 32px;
         transition:1s ease-in;
     }
 
     .navigation.ab a:focus{
-        font-size: 38px;
+        font-size: 32px;
         letter-spacing: 1px;
         transition:1s ease-in;
     }
 
     .navigation.ab a:active{
-        font-size: 38px;
+        font-size: 32px;
         font-weight: 400;
         letter-spacing: 1px;
         transition:1s ease-in;
