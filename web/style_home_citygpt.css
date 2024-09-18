@@ -549,8 +549,10 @@ padding-left: 15%;
           mask-composite: exclude;
   transform: translateZ(-1px);
   pointer-events: none;
+
 }
 .box2 sh::before {
+	
   content: "";
   position: absolute;
   inset: 0px;
