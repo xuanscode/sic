@@ -130,6 +130,8 @@ padding-left: 42px;
 
 }
 
+
+
 .secp2 img{
 	width: 100%;
 	text-align: center;
@@ -295,6 +297,7 @@ letter-spacing: 0.5px;
     nav::-webkit-scrollbar {
         display: none;
         width: 0px;
+        font-size: 28px;
     }
 
     .navigation a {
@@ -308,22 +311,23 @@ letter-spacing: 0.5px;
         margin: 0;}
 
     .navigation.ab a {
-        font-size: 28px;}
+        font-size: 28px;
+        transition:1s ease-in;}
 
     .navigation a:hover{
         font-size: 32px;
+        font-weight: 600;
     }
 
     .navigation a:focus{
         letter-spacing: 1px;
         font-size: 32px;
-        transition:1s ease-in;
+        font-weight: 600;
     }
 
     .navigation a:active{
         letter-spacing: 1px;
         font-size: 32px;
-        transition:1s ease-in;
     }
 
     .navigation.ab a:hover{
@@ -334,14 +338,12 @@ letter-spacing: 0.5px;
     .navigation.ab a:focus{
         font-size: 32px;
         letter-spacing: 1px;
-        transition:1s ease-in;
     }
 
     .navigation.ab a:active{
         font-size: 32px;
-        font-weight: 400;
+        font-weight: 600;
         letter-spacing: 1px;
-        transition:1s ease-in;
     }
 
 
