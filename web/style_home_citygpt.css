@@ -98,7 +98,7 @@ html,body{
 	}
 
 .hon{font-size: 5dvh;letter-spacing: 5px;line-height: 6vh;}
-.hon2{font-family: "Michroma", sans-serif;font-size: 2dvh;line-height:7vh;}
+.hon2{font-family: "Michroma", sans-serif;font-size: 2.1dvh;line-height:7vh;}
 .hon3{font-family: "Michroma", sans-serif;font-size: 2.5dvh;letter-spacing: 5px;line-height:6vh;}
 
 
@@ -181,7 +181,7 @@ a{
 			align-content: center;
 			align-self: center;
 			padding: 10px;
-        	text-shadow: rgba(28, 4, 49, 0.7) 0em 0em 0.1em;
+        	text-shadow: rgba(28, 4, 49, 0.7) 0em 0em 0.5em;
 			left:50%;
 			top:50%;
 			position: relative;
@@ -239,6 +239,13 @@ a{
 	transition:1s ease-in;
 	border: 0;margin: 0px;
 }
+
+
+
+.box2 p{margin-top:40px;}
+.box2 br{margin-top:40px;margin-bottom: 40px;}
+
+
 
 .eng{
 	font-family: "Michroma", sans-serif;
@@ -384,6 +391,11 @@ letter-spacing: 0.5px;}
 	padding: 100px;
 }
 
+#sec4{
+
+	padding: 100px 0px 0px 100px;
+}
+
 #sec3{
 
 	color: #9966FF;
@@ -489,6 +501,7 @@ padding-left: 88px;
 		/*三色渐变，中间为背景色，融入背景*/
 		background: linear-gradient(235deg, #4418d1, #060c21, #9966FF);
 		backdrop-filter: blur(50px);
+		
 	}
 	  .content {
 		transition:1s ease-in;
@@ -530,11 +543,12 @@ padding-left: 88px;
 	border: 0;
 	margin-top: -83px;
 	margin-left:45px;
-	line-height: 45px;
-}
+	line-height: 45px;}
+
+
 
 .aboutextc{
-	
+	margin-top:10px;
 	color:#fff;
 	line-height: 45px;
 	text-align: justify;
@@ -567,6 +581,7 @@ padding-left: 88px;
   pointer-events: none;
 
 }
+
 .box2 sh::before {
 	
   content: "";
@@ -643,6 +658,7 @@ padding-left: 88px;
 	overflow-y: hidden;
 	white-space: nowrap;
 	position: sticky;
+	position: -webkit-sticky;
 	transition:1s ease-in-out;
 	font-size: 20px;
 
@@ -829,14 +845,17 @@ padding-left: 88px;
 	 align-self: right;
   }
 
-.last1{ width:45%;padding:20px;}
-.last2{width:55%;padding:20px;
+.last1{ width:45%;padding:20px;padding-top:2px;}
+.last2{width:55%;padding:20px;padding-top:8px;
 	letter-spacing: 0.5px;
 	text-align:start;
 	color:#fbf0ff;
 	font-weight:400;
 	font-size:18px;
 	line-height: 40px;}
+
+	.last2 h3{font-size: 24px;padding-top:10px;}
+	.aboutexte h3{font-size: 24px;}
 
 
   .fin{
@@ -876,7 +895,7 @@ padding-left: 88px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-position-x: 50%;
-	background-position-y: 100%;
+	background-position-y: 0%;
 	position: fixed;
 	-webkit-postion: fixed;
 	-webkit-overflow-scrolling: touch;
