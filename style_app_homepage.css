@@ -1,4 +1,4 @@
-@media  (max-width: 800px) {
+@media  (max-width: 900px) {
 
 
 	html,body{
@@ -7,7 +7,6 @@
 		min-width: 300px;
 		margin: 0;
 		padding: 0;
-		background: var(--baseColor);
 		font-family: 'Noto Sans TC', sans-serif;
 	    font-weight: 400;
 	    scroll-behavior: smooth;
@@ -20,7 +19,6 @@
 
 	.BG{
 	/*background-color: red;*/
-		background-color: var(--baseColor);
 		width: 100%;
 		height: 100%;
 		min-width: 300px;
@@ -119,8 +117,8 @@
 		height: 100vh;
 		width: 100vw;
 		left: 0;
-		right: 0
-		gap:52px;
+		right: 0;
+		gap: 52px;
 		margin: auto;
 		/*justify-content: space-between;*/
 		
@@ -392,12 +390,12 @@
 	#head-title{
 		/*background-color: yellow;*/
 		color:#FFF;
-		space-hardware-text-align: center;
+		text-align: center;
 		font-family: "Cardo", serif;
 		font-weight: 700;
 		font-style: italic;
 		font-size: 30px;
-		line-height: 40px; /* 140% */
+		line-height: 70px; /* 140% */
 		letter-spacing: 0.4px;
 		padding-top: 50px;
 		left:40px;
@@ -486,7 +484,6 @@
 	#team-title01{
 	/*background-color: pink;*/
 		height: auto;
-		color: #000;
 		font-family: DM Sans;
 		font-size: 16px;
 		font-style: normal;
@@ -499,7 +496,6 @@
 	#team-title01 h1{
 		/*background-color: pink;*/
 			height: auto;
-			color: #000;
 			font-family: Noto Sans TC;
 			font-size: 16px;
 			font-style: normal;
@@ -520,7 +516,6 @@
 	}
 	#team-content-text h1{
 		/*background-color: pink;*/
-		color: #1A1A1A;
 		font-family: Noto Sans TC;
 		font-size: 15px;
 		font-style: normal;
@@ -532,7 +527,6 @@
 	#team-content-text p{
 		/*background-color: pink;*/
 		margin-top: -15px;
-		color: #1A1A1A;
 		font-family: Noto Sans TC;
 		font-size: 13px;
 		font-style: normal;
@@ -570,7 +564,6 @@
 		width: 100%;
 		min-width: 300px;
 		height: auto;
-		background-color: rgba(0,0,0,0);
 		align-content: center;
 		align-items: center;
 	}
@@ -582,7 +575,6 @@
 		width: 100%;
 		height: auto;
 		flex-direction: column;
-		background-color: rgba(0,0,0,0);
 	}
 
 	#space-wrapper{
@@ -617,7 +609,6 @@
 		height: auto;
 		position: relative;
 		top: 10px;
-		color:var(--lightGrey);
 		font-family: Noto Sans TC;
 		font-size: 16px;
 		font-style: normal;
@@ -686,7 +677,6 @@
 	}
 
 	.space-FP-title{
-		color:var(--lightGrey);
 		font-size: 15px;
 		font-style: normal;
 		font-weight: 400;
@@ -695,7 +685,6 @@
 	}
 
 	.space-FP-text{
-		color:var(--lightGrey);
 		font-size: 13px;
 		font-style: normal;
 		font-weight: 400;
@@ -765,7 +754,6 @@
 		height: 33px;
 		border-left: 1px solid white;
 		border-right: 1px solid white;
-		color: var(--lightGrey);
 		font-family: Noto Sans TC;
 		font-size: 16px;
 		font-style: normal;
@@ -780,7 +768,6 @@
 		width: 90%;
 		height: 72px;
 		padding-top: 20px;
-		color: #969697;
 		display: flex;
 		text-align: justify;
 		font-family: Noto Sans TC;
@@ -904,7 +891,6 @@
 		content: "";
 		width: 100%;
 		height: 0.5px;
-		border-top: 1px solid var(--lightGrey);
 		align-self: center;
 		line-height: 7px;
 
@@ -1010,7 +996,6 @@
 	.space-sound-title{
 		width: 100%;
 		/*background-color: pink;*/
-		color: var(--lightGrey);
 		font-family: Noto Sans TC;
 		font-size: 16px;
 		font-style: normal;
@@ -1021,7 +1006,6 @@
 	}
 
 	.space-sound-titleEN{
-		color:#969697;
 		font-family: DM Sans;
 		font-size: 15px;
 		font-style: normal;
@@ -1031,7 +1015,6 @@
 
 	.space-sound-text{
 		/*background-color: pink;*/
-		color: var(--lightGrey);
 		font-family: Noto Sans TC;
 		font-size: 13px;
 		font-style: normal;
@@ -1058,7 +1041,6 @@
 		object-fit: contain;
 		padding: 30px 30px;
 		border-radius: 20px;
-		background: #202020;
 		margin: auto;
 	}
 
@@ -1069,7 +1051,6 @@
 		content: "";
 		width: 80%;
 		height: 1px;
-		border-top: 1px solid var(--lightGrey);
 		margin-top: 0px;
 		align-self: center;
 	}
@@ -1109,7 +1090,6 @@
 		justify-content: center;
 		align-self: stretch;
 		width: 90%;
-		color:#969697;
 		font-family: DM Sans;
 		font-size: 16px;
 		font-style: normal;
@@ -1126,7 +1106,6 @@
 		content: "";
 		width: 80%;
 		height: 1px;
-		border-top: 1px solid var(--darkGrey);
 		margin-top: 0px;
 		align-self: center;
 	}
@@ -1139,16 +1118,13 @@
 		font-weight: 500;
 		line-height: normal;
 		letter-spacing: 0.8px;
-		height: 30px;
-		border-left: 1px solid var(--darkGrey);
-		border-right: 1px solid var(--darkGrey); 
+		height: 30px; 
 		text-align: center;
 		justify-content: center;
 		align-items: center;
 	}
 
 	#space-hardware-title span{
-		color: var(--darkGrey);
 		font-family: Noto Sans TC;
 		font-size: 13px;
 		font-style: normal;
@@ -1187,20 +1163,19 @@
 	}
 
 	.space-hardware-img-app img{
-		width: 100%
+		width: 100%;
 		object-fit:contain;
 	}
 
 	.space-hardware-deco{
 		/*background-color: pink;*/
-		width: 10%
+		width: 10%;
 		height: 22px;
 
 	}
 
 	.space-hardware-deco img{
-		width: 100%
-		
+		width: 100%;		
 		object-fit:contain;
 	}
 
@@ -1212,7 +1187,6 @@
 	}
 
 	.space-hardware-subtitle{
-		color: var(--darkGrey);
 		font-family: Noto Sans TC;
 		font-size: 16px;
 		font-style: normal;
@@ -1229,7 +1203,6 @@
 
 	.space-hardware-text-app{
 		display: flex;
-		color: var(--darkGrey);
 		text-align: justify;
 		font-family: Noto Sans TC;
 		font-size: 13px;
@@ -1237,6 +1210,7 @@
 		font-weight: 400;
 		line-height: 32px; /* 246.154% */
 		letter-spacing: 1.56px;
+		color: #E4E4E4;
 	}
 
 
@@ -1289,7 +1263,6 @@
 		justify-content: space-between;
 		align-items: flex-start;
 		margin: auto;
-		color: var(--lightGrey);
 		font-family: 'Poppins', sans-serif;
 		font-size: 10px;
 		font-style: normal;
@@ -1321,7 +1294,6 @@
 	#foo span{
 		text-decoration: none;
 		width: 100%;
-		color: var(--lightGrey);
 	
 	/*font-size: 10px;*/
 		
@@ -1329,12 +1301,10 @@
 
 	#foo-mail{
 		text-decoration: none;
-		color: var(--lightGrey);
 	}
 
 	#foo-phone{
 		text-decoration: none;
-		color: var(--lightGrey);
 		padding-bottom: 10px;
 	}
 	#foo-adress{
@@ -1344,17 +1314,14 @@
 
 	#foo span:hover{
 		cursor: pointer;
-		color: var(--greenColor);
 	}
 
 	#foo span:hover{
 		cursor: pointer;
-		color: var(--greenColor);
 	}
 
 	#foo-adress:hover{
 		cursor: pointer;
-		color: var(--greenColor);
 	}
 	#foo-mail:hover{
 		cursor: pointer;
@@ -1383,7 +1350,6 @@
 
 	#policy:hover{
 		cursor: pointer;
-		color: var(--greenColor);
 	}
 
 	#company{
@@ -1462,7 +1428,6 @@
 
 	#policy-body{
 		border-radius: 0px;
-		background: var(--lightGrey);
 		display: flex;
 		flex-direction: column;
 		width: 100%;
@@ -1481,7 +1446,6 @@
 	}
 
 	#policy-body h1{
-		color: #000;
 		font-family: Noto Sans TC;
 		font-size: 16px;
 		font-style: normal;
@@ -1491,7 +1455,6 @@
 	}
 
 	#policy-body h2{
-		color: #000;
 		font-family: Poppins;
 		font-size: 14px;
 		font-style: normal;
@@ -1503,7 +1466,7 @@
 
 	#deco-line{
 		content: "";
-		background-color: #000;
+		background-color: #788FF7;;
 		width: 100%;
 		height: 1px;
 		
@@ -1521,7 +1484,6 @@
 
 	.policy-subtitle{
 		/*background-color: yellow;*/
-		color: var(--darkGrey);
 		font-family: Noto Sans TC;
 		font-size: 14px;
 		font-style: normal;
@@ -1532,7 +1494,6 @@
 
 	.policy-content{
 		width: 100%;
-		color: var(--darkGrey);
 		font-family: Noto Sans TC;
 		font-size: 13px;
 		font-style: normal;
@@ -1547,7 +1508,6 @@
 
 	.policy-subtitle-EN{
 		/*background-color: yellow;*/
-		color: var(--darkGrey);
 		font-family: Poppins;
 		font-size: 14px;
 		font-style: normal;
@@ -1559,7 +1519,6 @@
 	.policy-content-EN{
 		/*background-color: yellow;*/
 		width: 100%;
-		color: var(--darkGrey);
 		font-family: Poppins;
 		font-size: 13px;
 		font-style: normal;
@@ -1576,7 +1535,6 @@
 	.policy-content-EN h1{
 		position: relative;
 		top: 0px;
-		color: var(--darkGrey);
 		font-family: Poppins;
 		font-size: 24px;
 		font-style: normal;
@@ -1588,11 +1546,9 @@
 
 
 	.contactus {
-		color: #FFF;
 		padding: 0px;
 		width: 94%;
 		height: auto;
-		background-color:rgba(0,0,0,0);
 		display: flex;
 		align-content: center;
 		align-items: center;
@@ -1606,22 +1562,18 @@
    textarea {
 	padding: 0.8rem;
 	border-radius: 5px;
-	border: 1px solid #555;
 	resize: none;
-	width:98%;
+	width:100%;
 	text-align: center;
+	width:300px;
    }
 
    .btn {
 	display: block;
-	width:112%;
-	margin-right:-22px;
-	margin-left:0px;
+	width:200px;
 	padding: 1rem 2rem;
 	border-radius: 5px;
 	border: none;
-	background: #333;
-	color: #fff;
 	cursor: pointer;
 	align-self: flex-end;
    }
@@ -1639,8 +1591,7 @@ body::-webkit-scrollbar {
 body {
     -ms-overflow-style: none;
     height: 100%;
-	width: calc(100vw + 18px);
-	overflow: auto;
+	width: 100%;
 }
 
 
