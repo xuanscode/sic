@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Emblema+One&family=Homemade+Apple&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kaushan+Script&family=Lavishly+Yours&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Parisienne&family=Playball&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+80s+Fade&family=Rubik+Glitch&family=Rubik+Pixels&family=Ruthie&family=Satisfy&family=Special+Elite&family=Tajawal:wght@200;300;400;500;700;800;900&family=Tiny5&family=Tiny5&family=Unna:ital,wght@0,400;0,700;1,400;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Emblema+One&family=Homemade+Apple&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kaushan+Script&family=Lavishly+Yours&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Parisienne&family=Playball&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+80s+Fade&family=Rubik+Glitch&family=Rubik+Pixels&family=Ruthie&family=Satisfy&family=Special+Elite&family=Tajawal:wght@200;300;400;500;700;800;900&family=Tiny5&family=Tiny5&family=Unna:ital,wght@0,400;0,700;1,400;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 
 
@@ -18,7 +18,7 @@ html {
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-/*公司標準色#00001E 深藍1 ｜#F6F5F1 米灰｜ 
+/*公司標準色#00001E 深藍1 ｜#F6F5F1 米灰｜#969697 深灰
 #2A3F58 深藍2 ｜ #5985B9 藍 ｜ #FC875B 橘*/
 
 
@@ -301,7 +301,7 @@ html,body{
 
 .menu-ok{z-index:9999 ;position: fixed;display:flex;top:30px;right:30px;transition:all 0.3s ease-in-out;justify-content: center;flex-direction: row nowrap;}
 .navigation.ab .menu-ok{padding-right:70px;}
-.menu-word:hover{color: #FC875B;}
+.menu-word{position:fixed;z-index: 999998;top:43px;right:100px;}
 .menu-ok-svg:hover{fill: #FC875B;}
 .menu-ok-svg a:hover{fill: #FC875B;}
 
@@ -314,35 +314,51 @@ html,body{
 }
 
 
-
-
-#btn {
-
-}
-
-
 #content {
-  z-index: 999999;
-  position: fixed;
-  float: right;
-  width: fit-content;
-  height: fit-content;
-  background-color: #FFFFFF;
-  padding: 20px;
-  right:0px;
-  top:0px;
-  font-size: 20px;
-  border-radius: 40px;
-  margin: 20px;
-  transition: all 0.5s ease-in-out;
-  transition: cs 0.5s ease-in-out;
-}
+    letter-spacing: 0.5px;
+    z-index: 999999;
+    position: fixed;
+    float: right;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Tajawal';
+    background-color: #FFFFFF;
+    padding-left: 35px;
+    padding-bottom:40px;
+    padding-right:35px;
+    right:0px;
+    top:0px;
+    font-size: 20px;
+    border-radius: 40px;
+    margin: 20px;
+    transition: all 0.5s ease-in-out;
+    transition: cs 0.5s ease-in-out;
+  }
+
+.menu-top{position:fixed;z-index: 9999999;top:30px;right:30px;}
+
+
+#btn {position: fixed;
+    float: right;}
+
+#close {justify-content: flex-end;flex-flow: row wrap;vertical-align:bottom;top:40px;text-align: right;padding-right:44px;padding-top:23px;}
+.close {font-family: 'Tajawal';font-weight: 300;font-size:24px;width:100%;display: block;text-align: right;flex-direction: row nowrap;justify-content: flex-end;color: #000;text-align: center;align-content: flex-end;}
+
+.blank{display: inline-block;width: 50px;height: 50px;}
+
+.menu-list{padding:10px;font-size: 30px;font-family: 'Outfit';font-weight: 500;}
+.list{font-size:16px;font-family: 'NOTO SANS TC';font-weight: 400;}
+
+.menu-list a{color: #000000;text-decoration: none;transition: all 0.5s ease-in-out;text-transform:uppercase;}
+.menu-list a:hover{color: #969697;margin-left:10px;}
+.sns{color:#969697;font-size:16px;font-family: 'outfit';font-weight: 400;}
+.sns a{color:#000000;}
+.sns a:hover{font-size:16px;color: #969697;margin-left:0px;}
 
 @keyframes cs{
     0%{opacity:0;}
     100%{opacity:1;}}
 
-.blank{display: block;width: 50px;height: 50px;}
 
 
 /*menu end*/
