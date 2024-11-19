@@ -49,25 +49,42 @@
 </head>
 
 <body translate="no">
+<!--右上選單svg和字-->
+<div>
+    <div class="menu-top" id="btn2" onclick="this.classList.toggle('active')">
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
+          <g stroke-width="3" stroke-linecap="round">
+            <path d="M72 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#000" />
+            <path d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554" fill="none" stroke="#000" />
+            <path d="M72 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#000" />
+            <path d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554" fill="none" stroke="#000" />
+            <path d="M100.75 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#000" />
+            <path d="M100.75 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#000" /> </g>
+        </svg></div>
+        </div>
+</div>
+<div class="font5 menu-word">menu</div>
 
-
+<!--右上選單svg和字-->
 
     <div style="display:none" id="content">
-        <div>
-            <div id="close">close</div><div class="blank"></div>
+        <div class="close">
+            <div id="close">close</div>
         </div>
-       <br>HOME
-       <br>回到首頁<br>
-       <br>WHO WE ARE
-       <br>關於我們<br>
-       <br>OUR WORKS
-       <br>歷年作品<br>
-       <br>SOCIAL MARKETING
-       <br>自媒體行銷<br>
-       <br>CONTACT
-       <br>聯絡我們<br>
-       <br>SOCIAL MEDIA
-       <br>INSTAGRAM｜FACEBOOK｜YOUTUBE｜TIKTOK
+       <div style="height: 30px;">&nbsp;</div>
+       <div class="menu-list"><a href="index.html">home
+       <br><span class="list">回到首頁</span></a></div>
+       <div class="menu-list"><a href="about.html">who we are
+       <br><span class="list">關於我們</span></a></div>
+       <div class="menu-list"><a href="work.html">our works
+       <br><span class="list">歷年作品</span></a></div>
+       <div class="menu-list"><a href="social.html">social marketing
+       <br><span class="list">自媒體行銷</span></a></div>
+       <div class="menu-list"><a href="contact.html">contact
+       <br><span class="list">聯絡我們</span></a></div>
+       <div class="menu-list">SOCIAL MEDIA
+       <div><span class="sns"><a href="https://instagram.com/CoolCreativeLTD" target="_blank">instagram</a>｜<a href="https://fb.com/CoolCreativeLTD" target="_blank">facebook</a>｜<a href="https://youtube.com/@酷客創藝" target="_blank">youtube</a>｜<a href="https://tiktok.com/@CoolCreativeLTD" target="_blank">tiktok</span></a></div>
+     </div>
     </div>
 
 
@@ -118,30 +135,12 @@
         </g>
       </svg>
     </a>
-
 </div>
-
-
-<div id="m.e.n.u">
-    
-    <div class="menu-ok" onclick="this.classList.toggle('active')"><div class="font5 menu-word" id="btn">menu</div> 
-    
-         <div><svg id="btn2" class="menu-ok-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
-           <g class="menu-ok-svg" stroke-width="3" stroke-linecap="round">
-             <path d="M72 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#000" />
-             <path d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554" fill="none" stroke="#000" />
-             <path d="M72 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#000" />
-             <path d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554" fill="none" stroke="#000" />
-             <path d="M100.75 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#000" />
-             <path d="M100.75 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#000" /> </g>
-         </svg></div>
-    </div>
-    
- </div>
+ 
 
 
 <div class="jarallax" data-jarallax data-video-src="mp4:./img/Header1.mp4" style="max-width:100%;">
-<div class="sec0 jarallax">   
+<div class="sec0 jarallax">   <br>
 <div class="slogan" text-split>Cool Creative, Infinite Inspiration<br>
 <span class="slogan_c">沈浸想像，未來無界</span></div>
 
@@ -168,7 +167,6 @@
 
 
 
-
 <div id="div2" class="sec2">
     <div class="label__2"><img src="./img/o1.svg" width="10px" height="auto"> &nbsp;<u>Original</u>&nbsp; ➘</div>
     
@@ -182,8 +180,9 @@
     <br><br><br><br>
     <button onclick="window.open('https://google.com')" class="button">
         ALL WORKS</button>
-
 </div>
+
+
 
 <div id="sectiono">
   
