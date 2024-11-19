@@ -51,22 +51,26 @@
 <body translate="no">
 
 
-    <div id="content" style="display:none">
-    <div id="close">close</div>
-    <br>HOME
-    <br>回到首頁<br>
-    <br>WHO WE ARE
-    <br>關於我們<br>
-    <br>OUR WORKS
-    <br>歷年作品<br>
-    <br>SOCIAL MARKETING
-    <br>自媒體行銷<br>
-    <br>CONTACT
-    <br>聯絡我們<br>
-    <br>SOCIAL MEDIA
-    <br>INSTAGRAM｜FACEBOOK｜YOUTUBE｜TIKTOK
 
-</div>
+    <div style="display:none" id="content">
+        <div>
+            <div id="close">close</div><div class="blank"></div>
+        </div>
+       <br>HOME
+       <br>回到首頁<br>
+       <br>WHO WE ARE
+       <br>關於我們<br>
+       <br>OUR WORKS
+       <br>歷年作品<br>
+       <br>SOCIAL MARKETING
+       <br>自媒體行銷<br>
+       <br>CONTACT
+       <br>聯絡我們<br>
+       <br>SOCIAL MEDIA
+       <br>INSTAGRAM｜FACEBOOK｜YOUTUBE｜TIKTOK
+    </div>
+
+
 
     <div id="gotop" class="contact_button"><a href="#contactus">
         <img src="./img/contact_us2.png">
@@ -75,6 +79,9 @@
 
    
 <div id="all">
+
+
+    
 
 <div class="navigation">
 
@@ -112,23 +119,25 @@
       </svg>
     </a>
 
-
-    <div id="btn" class="menu-ok" onclick="this.classList.toggle('active')"><div class="font5 menu-word">menu</div> 
-        <div><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
-          <g stroke-width="3" stroke-linecap="round">
-            <path d="M72 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#000" />
-            <path d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554" fill="none" stroke="#000" />
-            <path d="M72 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#000" />
-            <path d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554" fill="none" stroke="#000" />
-            <path d="M100.75 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#000" />
-            <path d="M100.75 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#000" /> </g>
-        </svg></div>
-      </div>
-      
 </div>
 
 
-</div>
+<div id="m.e.n.u">
+    
+    <div class="menu-ok" onclick="this.classList.toggle('active')"><div class="font5 menu-word" id="btn">menu</div> 
+    
+         <div><svg id="btn2" class="menu-ok-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
+           <g class="menu-ok-svg" stroke-width="3" stroke-linecap="round">
+             <path d="M72 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#000" />
+             <path d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554" fill="none" stroke="#000" />
+             <path d="M72 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#000" />
+             <path d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554" fill="none" stroke="#000" />
+             <path d="M100.75 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#000" />
+             <path d="M100.75 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#000" /> </g>
+         </svg></div>
+    </div>
+    
+ </div>
 
 
 <div class="jarallax" data-jarallax data-video-src="mp4:./img/Header1.mp4" style="max-width:100%;">
@@ -227,9 +236,6 @@
 </div><!--sectionO_end-->
 
 
- 
-
-
 
 <div class="ft">
 
@@ -260,7 +266,7 @@
     <div class="ft__3">&nbsp;</div>
 
  </div>
- 
+
 
 
 </div>
@@ -289,8 +295,12 @@ $("#btn").click(function(e){
   $("#content").toggle();
 });
 
-</script>
+$("#btn2").click(function(e){
+  e.stopPropagation();
+  $("#content").toggle();
+});
 
+</script>
 <script type="text/javascript">
     /* init Jarallax */
     jarallax(document.querySelectorAll(".jarallax"));
