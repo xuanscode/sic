@@ -1,26 +1,14 @@
 
 <!DOCTYPE html><html><head><meta charset="utf-8">
   <link rel="preload" href="img/loading.png" as="image" />
+  <link rel="preload" href="img/map-xin.png" as="image" />
+  <link rel="preload" href="img/map-xinyi.png" as="image" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatiable" content="ie=edge">
     <meta name="format-detection" content="telephone=no"/>
     <meta name="format-detection" content="email=no"/>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4CVMNHYMFE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4CVMNHYMFE');
-</script>
- <script src="./js/apng-canvas.min.js"></script>
- <script>
- APNG.ifNeeded().then(function() {
-     APNG.animateImage(chip);
- });
- </script>
+   
     <link rel="icon" href="favicon.ico">
     <link href="./style_hp.css" rel="stylesheet">
     <link href="./style_app_hp.css" rel="stylesheet">
@@ -60,7 +48,7 @@
 <body>
 
 
-<body translate="no">
+<body>
   <div id="loader">
       <div class="center">
       <img src="./img/loading.png" width="200px" style="border: 0;"><br>
@@ -84,8 +72,7 @@
       </svg></div>
       </div>
 </div>
-<div class="font5 menu-word" text-split>
-<div class="menu-right"><a class="menu-right_w" href="#original" id="mr2">沉浸式作品</a></div><div class="menu-right"><a class="menu-right_w" href="#social" id="mr1">自媒體行銷</a></div><div class="font5">Menu</div>
+<div class="font5 menu-word"><div class="menu-right"><a class="menu-right_w" href="work.html" id="mr2" text-split2>沉浸式作品</a></div><div class="menu-right"><a class="menu-right_w" href="sns.html" id="mr1" text-split2>自媒體行銷</a></div><div text-split2>Menu</div>
 </div>
 
 <!--右上選單svg和字end-->
@@ -111,8 +98,8 @@
 </div>
 
 <div id="gotop" class="contact_button2">
-<div class="contact_button2-2"><a href="#contactus">Contact Us</a></div>
-</div>
+  <div class="contact_button2-2"><a href="contact.html"><img src="img/contactus.svg"></a></div>
+  </div>
 
 <div id="gotop" class="contact_button"><a href="#contactus">
   <img src="./img/contact_us2.png">
@@ -127,7 +114,7 @@
   
   <a href="index.html">
     <svg class="my-edit-icon" width="140px" height="37.44px" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    viewBox="0 0 303 86.5" xml:space="preserve">
+    viewBox="0 0 300 86.5" xml:space="preserve">
   <g>
    <rect x="59.4" y="51.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -28.0201 68.1024)" width="17.5" height="31.9"/>
    <path d="M5.3,24.4l5.7,5.7c6.7,6.7,17.7,6.6,24.4-0.1L5.4,0C-1.3,6.8-1.3,17.7,5.3,24.4z"/>
@@ -197,26 +184,25 @@
   </svg>
       </a>
   </div>
-   
-  
-  <div class="jarallax" data-jarallax data-video-src="mp4:./img/Header3.mp4" style="width:100%;min-height: 110%;">
-  <div class="sec0 jarallax">  
+
+  <div class="jarallax" data-jarallax data-video-src="mp4:./img/Header3.mp4">
+    <div id="div1"><div class="sec0">  
       <div class="topcenter">
-          <div><div class="slogan"><div text-split>Cool Creative, <br class="app">Infinite Inspiration</div>
-              <div text-split><span class="slogan_c">沉浸想像，未來無界</span></div></div>
-          </div>
-          <div class="downlink">
-              <a href="#original"><img src="./img/down.png" width="42.5%" title="⤹ scroll down ⤹" style="border:0px;padding-right: 33px;"></a>
-          </div>
-      </div>   <br>
+        <div><div class="slogan"><div text-split>Cool Creative, <br class="app">Infinite Inspiration</div>
+            <div text-split><span class="slogan_c">沉浸想像，未來無界</span></div></div>
+        </div>
+        <div class="downlink">
+            <a href="#original"><img src="./img/down.png" width="42.5%" title="⤹ scroll down ⤹" style="border:0px;padding-right: 0px;"></a>
+        </div>
+    </div>   <br>
+    </div></div>
+    </div>
 
 
-  </div>
-  </div>
 
-  <div class="jaralla" data-jarallax data-video-src="mp4:./img/Header2.mp4" style="width:100%;background-size: cover;">
-    <div id="div1">
-      <div class="sec1">
+  <div data-jarallax data-video-src="mp4:./img/Header0.mp4" style="width:99.99%;background-size:cover;">
+    <div id="div1_1">
+      <div class="sec1"><section id="original"></section>
            <div class="label__1"><img src="./img/c.svg" class="label__pic" height="auto"> &nbsp;&nbsp;<u>Creative</u>&nbsp;&nbsp; <!--down_svg!--><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" class="desk"
               viewBox="0 0 13 13"  xml:space="preserve">
               <path class="down2" d="M12.5,3.9v8.6H3.9"/>
@@ -226,96 +212,108 @@
        <div class="index__1">
       <div class="context__1"><div class="context__1-1">點擊  &nbsp;&nbsp;</div><div class="deco__1">&nbsp;&nbsp; 了解我們 &nbsp;&nbsp;</div><div style="padding-top:2px;">  &nbsp;&nbsp;⤵</div>
        </div>
-       <div class="en__title1 left-right"><div text-split2><a href="about.html"><span class="cfont1 font2">Wh<span class="font3">o</span>&nbsp;we&nbsp;<span class="font3">are</span></a></div></div>
-    </div><section id="original"></section></div>
+       <div class="en__title1 left-right"><div text-split2><br class="app"><a href="about.html"><span class="cfont1 font2">Wh<span class="font3">o</span>&nbsp;we&nbsp;<span class="font3">are</span></a></div></div>
+    </div></div>
     </div>
     
 
     </div>
 
 
-<div id="div2">
-  <div class="sec2">
-  <div class="label__2"><img src="./img/o1.svg" class="label__pic" height="auto"> &nbsp;&nbsp;<u>Original</u>&nbsp;&nbsp; <!--down_svg!--><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" class="desk"
-      viewBox="0 0 13 13"  xml:space="preserve">
-      <path class="down2" d="M12.5,3.9v8.6H3.9"/>
-      <path class="down2" d="M0.5,0.5l11.9,11.9"/>
-      </svg></div>
-  <br>
-  <div class="index__2">
-    <div class="page__title" style="margin-top:-10px;"><span>O</span>ur w<span>o</span>rks</div>
-    <div class="en__title2-3">&nbsp;<span class="cfont6 font4">&nbsp;沉浸式體驗與歷年作品</span></div>
-  <br><div class="content__2"><span>結合體感互動、虛擬實境等創新元素，為觀眾帶來深具層次的五感體驗，將豐富多樣的創意融入日常生活，帶來全新的視野與感受。Combined with innovative elements such as somatosensory interaction and virtual reality, it brings a deep five-sense experience to the audience and integrates rich and diverse creativity into daily life with new perspectives and feelings.</span></div>
-</div>
-<div class="right__2"><div text-split2>Curation
-<br>Immersive Experience
-<br>Social Media Marketing</div></div>
-<br>
-<div class="table__2">
-  <div class="table__2-1" data-aos="fade-up">
-    <div class="pic__2-1"><div><img src="img/work-1.jpg"></div></div>
 
-    <div class="table__2-3"><br><button onclick='location.href="work.html"' class="button">
-    ALL WORKS</button></div></div>
-    <div class="table__2-2">
-      <div class="pic__2-2" data-aos="fade-down">
-        <div><img src="img/work-0.jpg" width="550px"></div>
+
+
+
+  <div id="div2">
+    <div class="sec2">
+    <div class="label__2"><img src="./img/o1.svg" class="label__pic" height="auto"> &nbsp;&nbsp;<u>Original</u>&nbsp;&nbsp; <!--down_svg!--><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" class="desk"
+        viewBox="0 0 13 13"  xml:space="preserve">
+        <path class="down2" d="M12.5,3.9v8.6H3.9"/>
+        <path class="down2" d="M0.5,0.5l11.9,11.9"/>
+        </svg></div>
+    <br><div class="pt65"></div>
+    <div class="index__2">
+      <div class="page__title" style="margin-top:-10px;"><span>O</span>ur <br class="app">w<span>o</span>rks</div>
+      <div class="en__title2-3">&nbsp;<span class="cfont6 font4">沉浸式體驗與歷年作品</span></div>
+    <br><div class="content__2"><span>透過尖端科技，我們將抽象概念轉化為可觸、可聽、可感的多重體驗，結合體感互動與虛擬實境等創新技術，為觀眾打造一場全方位、深具層次的五感體驗，讓您從旁觀者變成參與者，甚至是創造者，感受自身與空間的獨特連結。<br class="app"><br class="app">酷客創藝擅長將豐富多樣的美學融入日常生活，為您帶來全新的視野與感受，讓創意在日常中綻放無限可能！</span></div>
+  </div>
+  <div class="right__2"><div text-split2>Curation
+  <br>Immersive Experience
+  <br>Social Media Marketing</div></div>
+  <br>
+  <div class="table__2">
+    <div class="table__2-1" data-aos="fade-up">
+      <div class="pic__2-1" data-aos="fade-down">
+        <div><img src="img/w006.png"></div>
+      </div>
+  
+      <div class="table__2-3"><br><button onclick='location.href="work.html"' class="button">
+      ALL WORKS</button></div></div>
+      <div class="table__2-2">
+        <div class="pic__2-2" data-aos="fade-down">
+          <div><img src="img/w004.png" width="550px"></div>
+        </div>
       </div>
     </div>
+      </div>
   </div>
-    </div>
-</div>
+  
+  
+  
 
-<div id="sectiono">
-<div id="div3">
-<div class="sec3">
-  <span class="label__2" style="color: #F6F5F1;"><img src="./img/o2.svg" class="label__pic" height="auto"> &nbsp;&nbsp;<u>Optimal</u>&nbsp;&nbsp;
-  <!--down_svg!--><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" class="desk"
- viewBox="0 0 13 13"  xml:space="preserve">
-   <path class="down" d="M12.5,3.9v8.6H3.9"/>
-   <path class="down" d="M0.5,0.5l11.9,11.9"/>
-   </svg></span>
-  
-   <section id="social"></section>
-  <br><br><br><br><br>
-  
-  <div class="index__3">
-    <div class="en__title3">
-      <div class="cfont7 font2 white left lh120" text-split>S<span class="cfont7 font3 orange">OC</span>IAL <br class="app"> MEDIA</div>
-      <div class="cfont7 font2 white righ lh120" text-split>MARKETING.</div>
+
+
+  <div id="sectiono">
+    <div id="div3">
+    <div class="sec3">
+      <span class="label__2" style="color: #F6F5F1;"><img src="./img/o2.svg" class="label__pic" height="auto"> &nbsp;&nbsp;<u>Optimal</u>&nbsp;&nbsp;
+      <!--down_svg!--><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" class="desk"
+     viewBox="0 0 13 13"  xml:space="preserve">
+       <path class="down" d="M12.5,3.9v8.6H3.9"/>
+       <path class="down" d="M0.5,0.5l11.9,11.9"/>
+       </svg></span>
+      
+       <section id="social"></section>
+      <br><br><br><br><br>
+      
+      <div class="index__3">
+        <div class="en__title3">
+          <div class="cfont7 font2 white left lh120" text-split2>S<span class="cfont7 font3 orange">OC</span>IAL <br class="app"> MEDIA</div>
+          <div class="cfont7 font2 white righ lh120" text-split2>MARKETING.</div>
+        </div>
+        
+          <div class="content__3">
+            <div class="pt10"></div>
+            <div class="content__3-2 app">
+              <button onclick='location.href="sns.html"' class="button2" data-aos="fade-up">
+              CHECK IT</button></div>
+              <div class="pic__3"></div>
+              
+               <div class="content__3-1">
+                 <div class="text__3">
+                 <div class="white cfont6 font4 bt20"><br><br>自媒體行銷</div>
+                  <span class="white block2" text-split2>我們協助品牌經營自媒體平台，<br>整合行銷策略與專業製作，<br>打造獨特的品牌傳播效益。</span>
+                  <br><br>
+                  <div class="desktop">
+                  <div class="content__3-2">
+                   <button onclick='location.href="sns.html"' class="button2" data-aos="fade-up">
+                   CHECK IT</button></div>
+                   <br><br></div>
+                  </div>
+                </div>
+              </div>
+               
+              </div>
+          </div>
+    </div><div class="o2"><img src="./img/o2.svg" class="o2_pic" height="auto"></div>
     </div>
     
-      <div class="content__3">
-        <div class="pt10"></div>
-        <div class="content__3-2 app">
-          <button onclick='location.href="sns.html"' class="button2" data-aos="fade-up">
-          CHECK IT</button></div>
-          <div class="pic__3"></div>
-          
-           <div class="content__3-1">
-             <div class="text__3">
-             <div class="white cfont6 font4 bt20"><br><br>自媒體行銷</div>
-              <span class="white block2" text-split2>我們協助品牌經營自媒體平台，<br class="app">整合行銷策略與專業製作，打造獨特的品牌傳播效益。</span>
-              <br><br>
-              <div class="desktop">
-              <div class="content__3-2">
-               <button onclick='location.href="sns.html"' class="button2" data-aos="fade-up">
-               CHECK IT</button></div>
-               <br><br><br></div>
-              </div>
-            </div>
-          </div>
-           
-          </div>
-      </div><div class="o2"><img src="./img/o2.svg" class="o2_pic" height="auto"></div>
-</div>
-</div>
-
-
+  
 
 <section id="contactus"></section>
 
-<div id="div4" class="jarallax" data-jarallax>
+  <div id="div4_2" data-jarallax data-speed="0.6" class="jarallax">
+    <img class="jarallax-img c3" src="./img/c2.png">
  <div class="sec4">
   <div class="label__3"><img src="./img/l.svg" class="label__pic" height="auto"> &nbsp;&nbsp;<u>Limitless</u>&nbsp;&nbsp; <!--down_svg!--><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" class="desk"
       viewBox="0 0 13 13"  xml:space="preserve">
@@ -324,46 +322,56 @@
       </svg></div>
   <br><br><br>
   <div class="index__4" text-split>
-  有任何需求<br class="app">
+  有任何需求<br class="app"><span style="font-size:5px;"><br>&nbsp;</span>
   <span class="cen"><img src="img/contact.png" class="contact__pic"></span><br>
- </div>
- <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="app" width="5vw"
-      viewBox="0 0 13 13"  xml:space="preserve">
-      <path class="down2" d="M12.5,3.9v8.6H3.9"/>
-      <path class="down2" d="M0.5,0.5l11.9,11.9"/>
-      </svg><span class="cen"><button onclick='location.href="contact.html"' class="button contactus__bt">
+  <div class="down2_d"><svg viewBox="0 0 18.6 18.9" style="enable-background:new 0 0 18.6 18.9;" xml:space="preserve" class="app" width="5vw">
+    <path class="down4" d="M16.7,5.1c-0.6,0-1,0.4-1,1v8.3L2.3,1.1c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l13.3,13.3H5.9c-0.6,0-1,0.4-1,1s0.4,1,1,1h10.7
+      c0.6,0,1-0.4,1-1V6.1C17.7,5.5,17.2,5.1,16.7,5.1z"/>
+    </svg></div></div>
+ <span class="cen">
+  <button onclick='location.href="contact.html"' class="button contactus__bt">
   聯絡我們</button></span>
 </div>
 </div>
-<div class="c"><img src="./img/c.svg" width="335px" height="auto"></div>
+<!--<div class="c"><img src="./img/c.svg"></div>-->
 
 
-
-<div id="div5">
+<!--footer-->
+<div id="div5_2">
   <div class="ft">
       <div class="ft__0">
        <div class="ft__1">
            <div class="ft__title" text-split2>Nice, <br class="app">Fine and COOL</div>
-           <div class="lr ftw"><span class="desk">&nbsp;&nbsp;</span><span text-split2>對我們好奇？</span>&nbsp; &nbsp; <a href="./contact.html" style="color:#FC875B;">Contact Us</a></div>
+           <div class="lr ftw"><span class="desk">&nbsp;</span><span text-split2>對我們好奇？</span>&nbsp; &nbsp; <a href="./contact.html" style="color:#FC875B;">Contact Us</a></div>
        </div>
        
        <div class="ft__4 lr">
            <!--<div class="ft__sns lr" text-split2><a href="https://sparklab.tw" target="_blank">靈感時空 SIC ➚</a></div>-->
-           <div class="ft__sns lr" text-split2><a href="https://instagram.com/coolcreativeltd" target="_blank">Instagram ➚</a></div>
-           <div class="ft__sns lr" text-split2><a href="https://fb.com/CoolCreativeLTD" target="_blank">Facebook ➚</a></div>
-           <div class="ft__sns lr" text-split2><a href="https://youtube.com/@酷客創藝" target="_blank">Youtube ➚</div>
-            <div class="ft__sns lr" text-split2><a href="https://tiktok.com/@CoolCreativeLTD" target="_blank">Tiktok ➚</a></div>
+           <div class="ft__sns lr" text-split2><a href="https://instagram.com/coolcreativeltd" target="_blank">Instagram <svg version="1.1" id="sns" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="down3"
+            viewBox="0 0 17 17" xml:space="preserve"><g><g id="_圖層_1"><g><path d="M5.9,1.7C5.5,1.7,5.1,2,5.1,2.5s0.3,0.8,0.8,0.8h6.8L2,14c-0.3,0.3-0.3,0.8,0,1.1s0.8,0.2,1,0L13.7,4.4v6.8
+                 c0,0.4,0.3,0.8,0.8,0.8s0.8-0.3,0.8-0.8V2.6c0-0.4-0.3-0.9-0.8-0.9"/></g></g></g></svg></a></div>
+           <div class="ft__sns lr" text-split2><a href="https://fb.com/CoolCreativeLTD" target="_blank">Facebook <svg version="1.1" id="sns" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="down3"
+            viewBox="0 0 17 17" xml:space="preserve"><g><g id="_圖層_1"><g><path d="M5.9,1.7C5.5,1.7,5.1,2,5.1,2.5s0.3,0.8,0.8,0.8h6.8L2,14c-0.3,0.3-0.3,0.8,0,1.1s0.8,0.2,1,0L13.7,4.4v6.8
+                 c0,0.4,0.3,0.8,0.8,0.8s0.8-0.3,0.8-0.8V2.6c0-0.4-0.3-0.9-0.8-0.9"/></g></g></g></svg></a></div>
+           <div class="ft__sns lr" text-split2><a href="https://youtube.com/@酷客創藝" target="_blank">Youtube <svg version="1.1" id="sns" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="down3"
+            viewBox="0 0 17 17" xml:space="preserve"><g><g id="_圖層_1"><g><path d="M5.9,1.7C5.5,1.7,5.1,2,5.1,2.5s0.3,0.8,0.8,0.8h6.8L2,14c-0.3,0.3-0.3,0.8,0,1.1s0.8,0.2,1,0L13.7,4.4v6.8
+                 c0,0.4,0.3,0.8,0.8,0.8s0.8-0.3,0.8-0.8V2.6c0-0.4-0.3-0.9-0.8-0.9"/></g></g></g></svg></div>
+            <div class="ft__sns lr" text-split2><a href="https://tiktok.com/@CoolCreativeLTD" target="_blank">Tiktok <svg version="1.1" id="sns" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="down3"
+              viewBox="0 0 17 17" xml:space="preserve"><g><g id="_圖層_1"><g><path d="M5.9,1.7C5.5,1.7,5.1,2,5.1,2.5s0.3,0.8,0.8,0.8h6.8L2,14c-0.3,0.3-0.3,0.8,0,1.1s0.8,0.2,1,0L13.7,4.4v6.8
+                   c0,0.4,0.3,0.8,0.8,0.8s0.8-0.3,0.8-0.8V2.6c0-0.4-0.3-0.9-0.8-0.9"/></g></g></g></svg></a></div>
        </div>
       </div>
        <div class="ft__2">
-          <div class="ft__3" text-split2>© 酷客創藝 COOL CREATIVE Co., Ltd.</div>
+          <div class="ft__3">© 酷客創藝 COOL CREATIVE Co., Ltd.</div>
           <div class="ft__5">●</div>
           <div class="ft__3"><a href="./privacy.html">Privacy & Cookie Policy</a></div>
           <div class="ft__5">●</div>
+          <div class="ft__5 app">　</div>
           <div class="ft__3">總公司｜<br class="app"><a href="https://maps.app.goo.gl/gVYe7NZo1x8L3S779" target="_blank">臺北市信義區東興路 69 號 9F</a></div>
           <div class="ft__5">●</div>
           <div class="ft__3">TEL&nbsp;&nbsp;<a href="tel:0227689769" target="_blank">02-2768-9769</a></div>
           <div class="ft__5">●</div>
+          <div class="ft__5 app">　</div>
           <div class="ft__3">展演空間｜<br class="app"><a href="https://goo.gl/maps/HPiPrsR4JtShPEUN9" target="_blank">臺北市中正區新生南路一段 54 巷 8 號 1F</a></div>
           <div class="ft__3">&nbsp;</div>
           <div class="ft__3">&nbsp;</div>
@@ -551,11 +559,11 @@
 
 $('.menu-right_w').click(function(e){
   $('.menu-right_w').css("color", "#d7d7d7");
-  $(this).css("color", "#FC875B");
+  $(this).css("color", "#FC875B",);
 });
 
 $('.menu-right_w').mouseover(function(e){
-  $('.menu-right_w').css("color", "#d7d7d7");
+  $('.menu-right_w').css("color","#d7d7d7");
   $(this).css("color", '');
 });
 
