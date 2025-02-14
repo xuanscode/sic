@@ -1,15 +1,9 @@
-<!DOCTYPE html><html><head><meta charset="utf-8">
-    <link rel="preload" href="img/loading.png" as="image" />
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatiable" content="ie=edge">
-      <meta name="format-detection" content="telephone=no"/>
-      <meta name="format-detection" content="email=no"/>
-      
-      <link rel="icon" href="favicon.ico">
-      <link href="./style_hp.css" rel="stylesheet">
-      <link href="./style_app_hp.css" rel="stylesheet">
-      <title>酷客創藝 Cool Creative ｜ official website</title>
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="preload" href="img/loading.png" as="image" />
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" >
+<meta http-equiv="X-UA-Compatiable" content="ie=edge"><meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/><link rel="icon" href="favicon.ico">
+<link href="./style_hp.css" rel="stylesheet"><link href="./style_app_hp.css" rel="stylesheet">
+<title>酷客創藝 Cool Creative ｜ official website</title>
       <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
       <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
       <script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.6.1.min.js"></script>
@@ -19,7 +13,6 @@
       <link href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.css" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax-video.min.js"></script>
-  
       <script type="module">
           import { jarallax, jarallaxVideo } from "https://cdn.jsdelivr.net/npm/jarallax@2/+esm";
         
@@ -51,9 +44,6 @@
         <span>loading...</span>
     </div>
     </div>
-
-
-<!--右上選單svg和字-->
 <div>
   <div class="menu-top" id="btn2" onclick="this.classList.toggle('active')">
       <div><svg class="menu-top-c" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
@@ -69,8 +59,6 @@
 </div>
 <div class="font5 menu-word"><div class="menu-right"><a class="menu-right_w" href="work.html" id="mr2" text-split2>沉浸式作品</a></div><div class="menu-right"><a class="menu-right_w" href="sns.html" id="mr1" text-split2>自媒體行銷</a></div><div text-split2>Menu</div>
 </div>
-
-<!--右上選單svg和字end-->
 <div style="display:none" id="content">
     <a href="index.html"><img src="img/LOGO.svg" width="130" style="padding:30px" class="logo__left"></a>
       
@@ -209,7 +197,6 @@
        </div>
        
        <div class="ft__4 lr">
-           <!--<div class="ft__sns lr" text-split2><a href="https://sparklab.tw" target="_blank">靈感時空 SIC ➚</a></div>-->
            <div class="ft__sns lr" text-split2><a href="https://instagram.com/coolcreativeltd" target="_blank">Instagram <svg version="1.1" id="sns" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="down3"
             viewBox="0 0 17 17" xml:space="preserve"><g><g id="_圖層_1"><g><path d="M5.9,1.7C5.5,1.7,5.1,2,5.1,2.5s0.3,0.8,0.8,0.8h6.8L2,14c-0.3,0.3-0.3,0.8,0,1.1s0.8,0.2,1,0L13.7,4.4v6.8
                  c0,0.4,0.3,0.8,0.8,0.8s0.8-0.3,0.8-0.8V2.6c0-0.4-0.3-0.9-0.8-0.9"/></g></g></g></svg></a></div>
@@ -244,7 +231,6 @@
   </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
     <script>
-       // 點擊畫面DIV以外的任何地方就隱藏DIV
     $("body").click(function(){
       $("#content").hide();
     });
@@ -253,12 +239,10 @@
       $("#content").hide();
     });
      
-    // 點擊DIV時、不向上層冒泡。
     $("#content").click(function(e){
       e.stopPropagation();
     });
-     
-    // 點擊按鈕時顯示或隱藏DIV
+
     $("#btn").click(function(e){
       e.stopPropagation();
       $("#content").toggle();
@@ -271,7 +255,6 @@
     
     </script>
     <script type="text/javascript">
-        /* init Jarallax */
         jarallax(document.querySelectorAll(".jarallax"));
     
         jarallax(document.querySelectorAll(".jarallax-keep-img"), {
@@ -284,11 +267,9 @@
     <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js'></script>
-    <script id="rendered-js" >
-        console.clear();
+<script id="rendered-js" >console.clear();
     
     window.addEventListener("DOMContentLoaded", (event) => {
-      // Split text into spans
       let typeSplit = new SplitType("[text-split]", {
         types: "words, chars",
         tagName: "span"
@@ -304,7 +285,6 @@
             start: "top center",
             end: "bottom bottom",
             toggleActions: "play none none reverse",
-            //markers: { indent: 125 * i },
             id: 1 + i
           }
         });
@@ -315,9 +295,7 @@
     
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js'></script>
-          <script id="rendered-js" >
-
-
+<script id="rendered-js" >
 (function() {
   const blurProperty = gsap.utils.checkPrefix("filter"),
         blurExp = /blur\((.+)?px\)/,
@@ -353,8 +331,6 @@
   });
 })();
 
-
-
     gsap.set('.page__title2', {
         opacity: 1, scale:1, blur:0, duration: 0.5 });
     
@@ -367,9 +343,7 @@
         scrub: 5,
         pin: true,
         stagger: 0.05,
-        //markers: true,
         toggleActions: "play reverse play reverse" } });
-    
     
     tl.
     to('.page__title2', { opacity: 0.2, scale:1, blur:9, duration: 0.5 }, 0.5);
@@ -378,35 +352,9 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js'></script>
  <script>
-     
-///文字fade out
-
 gsap.set('h2', {
   opacity: 0
 })
-
-
-
-// // --- // --- without scrub ---
-
-// const tl = gsap.timeline( { 
-//   
-//   scrollTrigger: {
-//     trigger: "h2",
-//     start: "+=133 80%",
-//     end: "+=200 40%",
-//     scrub: false,
-//     markers: true,
-//     toggleActions: "play reverse play reverse",
-//   }
-//   
-// });
-// 
-// tl.to('h2', { opacity: 1, duration: 0.25 })
-
-
-
-// // --- // --- with scrub ---
 
  const tl2 = gsap.timeline( { 
    
@@ -415,7 +363,6 @@ gsap.set('h2', {
      start: "+=133 80%",
      end: "+=200 40%",
      scrub: true,
-     //markers: true,
      toggleActions: "play reverse play reverse",
    }
    
@@ -426,8 +373,6 @@ gsap.set('h2', {
    .to('h2', { opacity: 0, duration: 0.5 }, 0.5)
  ;
  </script>
-
-
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.min.js'></script>
     <script src='https://unpkg.com/gsap@3/dist/gsap.min.js'></script>
     <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
@@ -437,7 +382,6 @@ gsap.set('h2', {
         console.clear();
     
     window.addEventListener("DOMContentLoaded", (event) => {
-      // Split text into spans
       let typeSplit = new SplitType("[text-split2]", {
         types: "words, chars",
         tagName: "span"
@@ -453,7 +397,6 @@ gsap.set('h2', {
             start: "top bottom",
             end: "bottom bottom",
             toggleActions: "play none none none",
-            //markers: { indent: 125 * i },
             id: 1 + i
           }
         });
@@ -461,14 +404,7 @@ gsap.set('h2', {
     });
     
     </script>
-
-    
-    
-    
-    
-    
-    
-    <script src='https://unpkg.com/gsap@3/dist/gsap.min.js'></script>
+  <script src='https://unpkg.com/gsap@3/dist/gsap.min.js'></script>
     <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
     <script id="c_svg_motion">
@@ -494,8 +430,6 @@ gsap.set('h2', {
       }
       });
       });
-      
-    
     
           $(function () {
         $(document).scroll(function () {
@@ -536,80 +470,14 @@ gsap.set('h2', {
             };
     </script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
-
 <script type="text/javascript">
-
 $('.menu-right_w').click(function(e){
-    $('.menu-right_w').css("color", "#d7d7d7");
+    $('.menu-right_w').css("color", "#c8c8c8");
     $(this).css("color", "#FC875B");
   });
 
   $('.menu-right_w').mouseover(function(e){
-    $('.menu-right_w').css("color", "#d7d7d7");
+    $('.menu-right_w').css("color", "#c8c8c8");
     $(this).css("color", '');
   });
-
- // $(".menu-right_w").bind('mouseover', function() {
- //   var old_color = $(this).css("color");
- //   $(this)[0].style.color = '#FC875B';});
-
-
-</script>
-<script src="./js/index.js"></script>
-<script>
-  var parseAPNG = window["apng-js"].default;
-  // 播放器
-  var player = null;
-  // 播放速率
-  var playbackRate = Number(rate.value);
-  // 获取图片资源
-  fetch(chip.src).then(function(response) {
-      response.arrayBuffer().then(function(buffer) {
-            var apng = parseAPNG(buffer);
-          // img 替换成 canvas
-          var canvas = document.createElement('canvas');
-          canvas.width = apng.width;
-          canvas.height = apng.height;
-          chip.after(canvas);
-          chip.remove();
-          // 执行播放
-          apng.getPlayer(canvas.getContext('2d')).then(function (p) {
-              player = p;
-              player.playbackRate = playbackRate;
-              player.play();
-          });
-      });
-  });
-  
-  // 播放暂停以及速率的事件的处理
-  rate.addEventListener('change', function () {
-      playbackRate = Number(this.value);
-      if (player) {
-          player.playbackRate = playbackRate;
-      }
-  });
-
-  $('.chip').mouseover(function(){
-                player.pause();
-          });
-
-  $('.chip').mouseout(function(){
-                player.play();
-       });
-
-
-
-
-       $(function(){
-      $(window).mousemove(function() {
-      if ( $(this).mouseover(
-      $('.chip').pause;
-      } else {
-      $('.chip').play()};
-      )
-    });
-      
-
-
-  </script>
-</body></html>
+</script></body></html>
